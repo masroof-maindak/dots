@@ -1,17 +1,18 @@
 ## Dependencies
-Picom | JetBrainsMono Nerd Font | Kitty | Neovim | VS Code | gnome-screenshot |<br>
-Polybar | Neofetch | Cava | Ranger | w3m | htop | Cbonsai | Firefox | Feh | <br>
+Picom | JetBrainsMono Nerd Font | Kitty | Neovim | VS Code | Scrot | Feh |<br>
+Polybar | Neofetch | Cava | Ranger | w3m | htop | Cbonsai | Firefox | <br>
 
 ## VSCode Theme 
 ext install jdinhlife.gruvbox<br>
 
 ## Screenshots
-![Blank](https://user-images.githubusercontent.com/62666332/230425079-df5e7865-95dc-4704-881e-d9da33de4db2.png)
+
+![Blank](https://user-images.githubusercontent.com/62666332/233666058-1beec843-1cbf-4c93-bcc6-ed60751cc48f.png)
 
 ![VSCode](https://user-images.githubusercontent.com/62666332/230425561-7af54e65-efa1-4781-897a-e6d2dc47890c.png)
 
-![Bonsai](https://user-images.githubusercontent.com/62666332/230425581-094be50d-dd75-477f-a942-1c320a6ae770.png)
+![Bonsai](https://user-images.githubusercontent.com/62666332/233666134-2356907f-4e90-469d-b0cc-f7d282b16c4d.png)
 
-![Spotify](https://user-images.githubusercontent.com/62666332/230425631-51f82a34-5c41-4143-9d37-8dcd697abed2.png)
+![Spotify](https://user-images.githubusercontent.com/62666332/233666012-eadb4784-5ecf-4d29-9c6b-e75015d2dc67.png)
 
-![Firefox](https://user-images.githubusercontent.com/62666332/230425610-79cfa803-d02a-4646-ad44-8ac371ef2c24.png)
+![2023-04-21-194022_1920x1080_scrot](https://user-images.githubusercontent.com/62666332/233666224-3b4411df-5607-414f-ad2e-41c351b27c8b.png)
