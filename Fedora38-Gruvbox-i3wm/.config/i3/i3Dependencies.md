@@ -5,4 +5,4 @@ rofi |
 kitty | 
 scrot | 
 picom |
-polybar |
+polybar
