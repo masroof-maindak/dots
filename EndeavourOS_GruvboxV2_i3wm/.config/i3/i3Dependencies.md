@@ -1,8 +1,3 @@
-pactl |
-playerctl |
-nitrogen|
-rofi |
-kitty | 
-scrot | 
-picom |
-polybar
+(Not in the main rice readme) <br>
+- playerctl <br>
+- pactl
