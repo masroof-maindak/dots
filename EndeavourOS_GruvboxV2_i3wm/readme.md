@@ -1,4 +1,9 @@
-Based strongly on my original Fedora Gruvbox theme but refined to just the way I want it with a focus on usability, aesthetics, a modicum of minimalism and <i>cosiness</i>. Same wallpapers as my [previous](https://github.com/MujtabaAsim/dots/tree/main/Fedora38-Gruvbox-i3wm/Wallpapers) rice.
+<p align="center">
+	<h1 align="center">EOS_Gruv_i3</h1>
+</p>
+<p align = "center"> Based strongly on my original Fedora Gruvbox theme but refined to just the way I want it with a focus on usability, aesthetics, a modicum of minimalism and <i>cosiness</i>. Same wallpapers as my previous Gruvbox rice.</p>
+
+
 
 ### Programs
 firefox | zathura | thunar | w3m |<br>
