@@ -1,9 +1,7 @@
 <p align="center">
 	<h1 align="center">EOS_Gruv_i3</h1>
 </p>
-<p align = "center"> Based strongly on my original Fedora Gruvbox theme but refined to just the way I want it with a focus on usability, aesthetics, a modicum of minimalism and <i>cosiness</i>. Same wallpapers as my previous Gruvbox rice.</p>
-
-
+<p align = "center"> Based strongly on my original Fedora Gruvbox theme but refined to just the way I want it with a focus on usability, aesthetics, a modicum of minimalism and <i>cosiness</i>. The wallpaper collection included in 'releases' is to be placed in [~/Pictures/Wallpapers/].</p>
 
 ### Programs
 firefox | zathura | thunar | w3m |<br>
