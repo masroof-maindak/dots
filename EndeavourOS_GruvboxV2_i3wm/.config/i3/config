@@ -68,7 +68,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+g layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -146,6 +146,7 @@ for_window [class="Spotify"] move container to workspace $ws3
 # Shortcuts
 bindsym $mod+p exec "scrot"
 bindsym $mod+b exec "firefox"
+bindsym $mod+w exec "thunar"
 
 # Theme
 include i3gruv.config
