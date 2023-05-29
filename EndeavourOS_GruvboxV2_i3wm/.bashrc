@@ -28,7 +28,7 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias q="exit"
 alias v="nvim"
-alias bonsai="cbonsai -p"
+alias tree="cbonsai -p"
 alias cl="clear"
 alias r="ranger"
 
