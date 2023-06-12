@@ -1,0 +1,45 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "plain"
+[theme.overrides]
+idle_bg = "#2b3339"
+idle_fg = "#d3c6aa"
+separator_bg = "#2b3339"
+separator_fg = "#d3c6aa"
+good_bg = "#2b3339"
+good_fg = "#d3c6aa"
+info_bg = "#2b3339"
+info_fg = "#d3c6aa"
+critical_bg = "#2b3339"
+critical_fg = "#d3c6aa"
+warning_bg = "#2b3339"
+warning_fg = "#d3c6aa"
+separator = " / "
+
+[icons]
+icons = "awesome4"
+[icons.overrides]
+#bat = ["|E|", "|_|", "|=|", "|F|"]
+#bat_charging = "|^| "
+cpu = ""
+
+#[[block]]
+#block = "cpu"
+
+[[block]]
+block = "sound"
+format = " $icon "
+[[block.click]]
+button = "left"
+cmd = "amixer set Master toggle"
+
+[[block]]
+block = "battery"
+driver = "upower"
+format = "  $icon "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%R') "
