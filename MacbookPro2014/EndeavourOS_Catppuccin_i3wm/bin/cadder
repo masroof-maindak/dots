@@ -5,6 +5,7 @@ if [ -f /etc/os-release ]; then
     OS=$NAME
 fi
 KERNEL=$(uname -r)
+KERNEL="${KERNEL%?-?}"
 echo "  ／l、     "
 echo "（ﾟ､ ｡７    ${OS}"  
 echo " l  ~ ヽ    ${KERNEL}"
