@@ -4,13 +4,13 @@
 <p align = "center"> All my rices | Favourites marked with ✣</p>
 <p align = "center"> </p>
 
-### [✣ Catppuccin](./laptops/EndeavourOS_Catppuccin_i3wm/)
+### [✣ Catppuccin](./MacbookPro2014/EndeavourOS_Catppuccin_i3wm/)
 TODO: IMAGE
 
-### [Everforest_Light](./laptops/EndeavourOS_EverforestLight_i3wm/)
+### [Everforest_Light](./MacbookPro2014/EndeavourOS_EverforestLight_i3wm/)
 ![EverforestLight](https://github.com/MujtabaAsim/dots/assets/62666332/67081cfe-8831-47b5-a822-354ad72ed0bf)
 
-### [Everforest_Dark](./laptops/EndeavourOS_EverforestDark_i3wm/)
+### [Everforest_Dark](./MacbookPro2014/EndeavourOS_EverforestDark_i3wm/)
 ![EverforestDark](https://github.com/MujtabaAsim/dots/assets/62666332/8840c5fc-7e50-46ee-8538-0839b9f96726)
 
 ### [✣ Gruvbox_v2](./EndeavourOS_GruvboxV2_i3wm/)
