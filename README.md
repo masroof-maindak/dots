@@ -5,7 +5,8 @@
 <p align = "center"> </p>
 
 ### [✣ Catppuccin](./MacbookPro2014/EndeavourOS_Catppuccin_i3wm/)
-TODO: IMAGE
+![Catppuccin](https://github.com/MujtabaAsim/dots/assets/62666332/3b2b29a3-50ba-4e7e-90e4-346ee9bbcc8c)
+
 
 ### [Everforest_Light](./MacbookPro2014/EndeavourOS_EverforestLight_i3wm/)
 ![EverforestLight](https://github.com/MujtabaAsim/dots/assets/62666332/67081cfe-8831-47b5-a822-354ad72ed0bf)
