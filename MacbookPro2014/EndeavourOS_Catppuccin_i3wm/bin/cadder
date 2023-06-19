@@ -1,7 +1,12 @@
 #!/bin/sh
 
-echo "  ／l、    "
-echo "（ﾟ､ ｡７   "  
-echo " l  ~ ヽ   "
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    OS=$NAME
+fi
+KERNEL=$(uname -r)
+echo "  ／l、     "
+echo "（ﾟ､ ｡７    ${OS}"  
+echo " l  ~ ヽ    ${KERNEL}"
 echo " じしf_,)ノ"
 echo ""
