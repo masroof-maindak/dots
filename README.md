@@ -13,8 +13,5 @@
 ### [Everforest_Dark](./MacbookPro2014/EndeavourOS_EverforestDark_i3wm/)
 ![EverforestDark](https://github.com/MujtabaAsim/dots/assets/62666332/8840c5fc-7e50-46ee-8538-0839b9f96726)
 
-### [✣ Gruvbox_v2](./EndeavourOS_GruvboxV2_i3wm/)
+### [✣ Gruvbox_Dark](./EndeavourOS_GruvboxDark_i3wm/)
 ![GB2](https://github.com/MujtabaAsim/dots/assets/62666332/7fc6033b-02f6-4a82-b8ac-24697424ed13)
-
-### [Gruvbox](./Fedora38_Gruvbox_i3wm/)
-![GB](https://user-images.githubusercontent.com/62666332/233666058-1beec843-1cbf-4c93-bcc6-ed60751cc48f.png)
