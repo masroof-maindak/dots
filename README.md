@@ -1,7 +1,7 @@
 <p align="center">
 	<h1 align="center">Dotfiles.</h1>
 </p>
-<p align = "center"> All my rices | Favourites marked with ✣</p>
+<p align = "center">Favourites marked with ✣</p>
 <p align = "center"> </p>
 
 ### [✣ Catppuccin](./MacbookPro2014/EndeavourOS_Catppuccin_i3wm/)
