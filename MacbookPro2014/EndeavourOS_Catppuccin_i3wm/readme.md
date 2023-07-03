@@ -5,6 +5,10 @@
 
 ![2023-06-20-000550_2560x1600_scrot](https://github.com/MujtabaAsim/dots/assets/62666332/1abb5175-7c95-4b9b-8f5c-5386423c3f81)
 
+![2023-07-03-193014_2560x1600_scrot](https://github.com/MujtabaAsim/dots/assets/62666332/89870354-8d41-4906-9000-7c3c8e7f90cc)
+
+
+
 ### Resources
 <b>Polybar:</b> [Z-8Bit](https://github.com/Z-8Bit/Polybar-Collection/tree/main) and [arkzuse](https://github.com/arkzuse/polybar-theme) <br>
 <b>Everything Else:</b> [Official Catppuccin repo.](https://github.com/catppuccin/catppuccin)
