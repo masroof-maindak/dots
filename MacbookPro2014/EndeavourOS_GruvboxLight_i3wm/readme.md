@@ -14,6 +14,7 @@
 <b>GTK Theme:</b> [Gruvbox Full GTK](https://github.com/esmaeilytabar/gruvbox-full-gtk/) <br>
 <b>GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack) <br>
 <b>Fetch Script:</b> [GruvFetch](https://github.com/MujtabaAsim/GruvFetch/tree/main) <br>
+<b>Discord Theme:</b> [Own](https://github.com/MujtabaAsim/GruvboxLight-Discord) <br>
 
 ### Font
 ttf-proggyclean-nerd
