@@ -5,6 +5,7 @@
 
 ### Screenshots [wip]
 ![Camp](https://github.com/MujtabaAsim/dots/assets/62666332/6d738da6-76e1-427c-ba9d-214bde36c4c7)
+![Knights](https://github.com/MujtabaAsim/dots/assets/62666332/40308cf9-9121-4bf0-ae6c-ed4b86d6acfb)
 ![Discord](https://github.com/MujtabaAsim/GruvboxLight-Discord/assets/62666332/3d09d978-9f80-46e7-a7d5-f9d13a42de14)
 
 ### Resources
