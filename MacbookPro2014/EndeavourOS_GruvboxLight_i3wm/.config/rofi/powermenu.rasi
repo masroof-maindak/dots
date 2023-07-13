@@ -1,18 +1,13 @@
-/*******************************************************
- * ROFI configs i3 powermenu for EndeavourOS
- * Maintainer: joekamprad <joekamprad@endeavouros.com>
- *******************************************************/
-
 *{
     bgc:                           #f2e5bc;
-    cream:                         #3c3836;
+    cream:                         #282828;
     red-alt:                       #458588;
 }
 
 
 
 configuration {
-    font:                          "Roboto Condensed Bold 27";
+    font:                          "ProggyClean Nerd Font 45";
     show-icons:                    false;
     icon-theme: 		   "Qogir";
     scroll-method:                 0;
@@ -26,12 +21,12 @@ window {
     border-color:		   @bgc;
     padding:                       0;
     transparency:                  "real";
-    width:                         1000px;
+    width:                         1100px;
     location:                      center;
 }
 
 listview {
-    border:			              1;
+    border:			              0;
     background-color:              @bgc;
     lines:                         1;
     columns:                       4;
