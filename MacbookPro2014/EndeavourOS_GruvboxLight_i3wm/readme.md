@@ -8,6 +8,8 @@
 ![Knights](https://github.com/MujtabaAsim/dots/assets/62666332/40308cf9-9121-4bf0-ae6c-ed4b86d6acfb)
 ![Discord](https://github.com/MujtabaAsim/GruvboxLight-Discord/assets/62666332/3d09d978-9f80-46e7-a7d5-f9d13a42de14)
 ![Fetch](https://github.com/MujtabaAsim/dots/assets/62666332/c133ff96-9ac0-42d7-9c22-66a01a737da7)
+![VS Code + Dunst](https://github.com/MujtabaAsim/dots/assets/62666332/8641c31c-39c8-41e9-b8b2-06a56f83d61d)
+![Neovim + Ranger + Cava](https://github.com/MujtabaAsim/dots/assets/62666332/4705ccd7-8cec-4978-ba41-0ac3c5720348)
 
 
 ### Resources
