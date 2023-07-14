@@ -84,23 +84,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+semicolon split h
@@ -110,7 +98,6 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -166,7 +153,6 @@ set $ws10 "10"
 # bind program to workspace and focus to them on startup:
 for_window [class="Code"] move container to workspace $ws1
 for_window [class="firefox"] move container to workspace $ws2
-for_window [class="Spotify"] move container to workspace $ws3
 for_window [class="discord"] move container to workspace $ws4
 
 #############################################
@@ -181,7 +167,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # set wallpaper
-exec --no-startup-id nitrogen --restore && i3-msg restart
+exec --no-startup-id nitrogen --restore
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -221,4 +207,3 @@ focus_on_window_activation focus
 bindcode $mod+40 exec "rofi -show drun -dpi 1"
 
 include gruvbox-light-soft
-
