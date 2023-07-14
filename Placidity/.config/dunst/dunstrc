@@ -1,0 +1,22 @@
+[global]
+font = ProggyClean Nerd Font 18
+progress_bar = true
+scale = 2
+sort = yes
+alignment = center
+frame_color = "#ebdbb2"
+separator_color= frame
+width = 250
+
+[urgency_low]
+background = "#f2e5bc"
+foreground = "#3c3836"
+
+[urgency_normal]
+background = "#f2e5bc"
+foreground = "#3c3836"
+
+[urgency_critical]
+background = "#282828"
+foreground = "#f2e5bc"
+frame_color = "#cc241d"
