@@ -1,4 +1,5 @@
 initial_screen = "library"
+library_tabs = ["tracks","albums","artists","playlists"]
 use_nerdfont = true
 notify = true
 gapless = true
