@@ -12,6 +12,7 @@
 
 ![NCSpot](https://github.com/MujtabaAsim/dots/assets/62666332/32d46dec-a0f6-4530-ada2-529b73d7f935)
 
+![Powermenu](https://github.com/MujtabaAsim/dots/assets/62666332/af5d458b-e43c-4648-928b-165e27d79794)
 
 ## <p align = "center"> Other </p>
 GTK Theme: [Gruvbox Full GTK](https://github.com/esmaeilytabar/gruvbox-full-gtk/) <br>
