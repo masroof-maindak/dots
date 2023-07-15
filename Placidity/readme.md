@@ -8,6 +8,11 @@
 
 ![VS Code + Dunst](https://github.com/MujtabaAsim/dots/assets/62666332/8641c31c-39c8-41e9-b8b2-06a56f83d61d)
 
+![Zathura](https://github.com/MujtabaAsim/dots/assets/62666332/dddf94bc-06d9-4297-96c5-b08861913b3f)
+
+![NCSpot](https://github.com/MujtabaAsim/dots/assets/62666332/32d46dec-a0f6-4530-ada2-529b73d7f935)
+
+
 ## <p align = "center"> Other </p>
 GTK Theme: [Gruvbox Full GTK](https://github.com/esmaeilytabar/gruvbox-full-gtk/) <br>
 GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack) <br>
