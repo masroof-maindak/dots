@@ -20,7 +20,7 @@ gaps outer 3
 gaps inner 6
 gaps bottom 40
 for_window [class="^.*"] border pixel 3 
-floating_maximum_size 1920 x 1200
+floating_maximum_size 2400 x 1400
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
