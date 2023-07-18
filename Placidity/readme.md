@@ -3,7 +3,7 @@
 ### <p align = "center"> Screens </p>
 ![Camp](https://github.com/MujtabaAsim/dots/assets/62666332/6d738da6-76e1-427c-ba9d-214bde36c4c7)
 
-![Knights](https://github.com/MujtabaAsim/dots/assets/62666332/40308cf9-9121-4bf0-ae6c-ed4b86d6acfb)
+![Pages](https://github.com/MujtabaAsim/dots/assets/62666332/2caf0a91-7790-4aa1-8a41-8614d9929e29)
 
 ![VS Code + Dunst](https://github.com/MujtabaAsim/dots/assets/62666332/8641c31c-39c8-41e9-b8b2-06a56f83d61d)
 
