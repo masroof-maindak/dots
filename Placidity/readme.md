@@ -11,7 +11,8 @@
 
 ![VS Code + Dunst](https://github.com/MujtabaAsim/dots/assets/62666332/8641c31c-39c8-41e9-b8b2-06a56f83d61d)
 
-![Powermenu](https://github.com/MujtabaAsim/dots/assets/62666332/af5d458b-e43c-4648-928b-165e27d79794)
+![Rofi Powermenu](https://github.com/MujtabaAsim/dots/assets/62666332/e7520dc8-f78a-406c-bb0c-2c2602afeb8f)
+
 
 ### <p align = "center"> Other </p>
 GTK Theme: [Gruvbox Full GTK](https://github.com/esmaeilytabar/gruvbox-full-gtk/) <br>
