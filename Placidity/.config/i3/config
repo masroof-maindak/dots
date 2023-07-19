@@ -129,7 +129,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 ## App shortcuts
-bindsym $mod+p exec scrot
+bindsym $mod+p exec maim -s ~/$(date +%s).png
+bindsym $mod+Shift+p exec shotgun
 bindsym $mod+w exec thunar
 bindsym $mod+b exec firefox
 
