@@ -23,18 +23,21 @@ Fetch Script: [GruvFetch](https://github.com/MujtabaAsim/GruvFetch/tree/main) <b
 
 Font: [ttf-proggyclean-nerd](./gotta-patch-em-all-font-patcher\!.sh) <br><br>
 
-|Package Type    | Package                        |
-|----------------|--------------------------------|
-| Window Manager | i3wm                           |
-| Terminal       | WezTerm                        |
-| File Manager   | Thunar + Ranger w/ Dragon-Drag |
-| Compositor     | Picom                          |
-| Browser        | Firefox                        |
-| Media          | mpv + ncspot                   |
-| Editor         | VS Code + Neovim               |
-| Images         | Feh + gThumb + w3m             |
-| Core           | git + scrot + nitrogen         |
-| Torrents       | QBitTorrent                    |
-| Launcher/Menus | Rofi                           |
-| Notifications  | Dunst                          |
-| Bar            | Polybar                        |
+|Package Type     | Package                |
+|----------------:|:-----------------------|
+| Window Manager  | i3wm                   |
+| Terminal        | WezTerm                |
+| File Manager    | Thunar                 |
+| File Manager    | Ranger w/ Dragon-Drag  |
+| Compositor      | Picom                  |
+| Browser         | Firefox                |
+| Media           | mpv + ncspot           |
+| Editor          | VS Code + Neovim       |
+| Images          | Feh + gThumb + w3m     |
+| Core            | git + scrot + nitrogen |
+| Core            | cpupower-gui + mbpfan  |
+| Torrents        | QBitTorrent            |
+| Launcher/Menus  | Rofi                   |
+| Notifications   | Dunst                  |
+| Bar             | Polybar                |
+| Display Manager | LightDM (Slick)        |
