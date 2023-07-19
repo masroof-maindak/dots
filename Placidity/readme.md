@@ -26,18 +26,22 @@ Font: [ttf-proggyclean-nerd](./gotta-patch-em-all-font-patcher\!.sh) <br><br>
 |Package Type        | Package                |
 |-------------------:|:-----------------------|
 | Window Manager     | i3wm                   |
+| Bar                | Polybar                |
 | Terminal           | WezTerm                |
-| File Manager (GUI) | Thunar                 |
-| File Manager (CLI) | Ranger w/ Dragon-Drag  |
 | Browser            | Firefox                |
-| Media              | mpv + ncspot           |
-| Editor             | VS Code + Neovim       |
-| Images             | Feh + gThumb + w3m     |
-| Screenshots        | maim + shotgun         |
-| Core               | git +  + nitrogen      |
-| Core               | cpupower-gui + mbpfan  |
-| Torrents           | QBitTorrent            |
 | Launcher/Menus     | Rofi                   |
 | Notifications      | Dunst                  |
-| Bar                | Polybar                |
-| Display Manager    | LightDM (Slick)        |
+| Launcher/Menus     | Rofi                   |
+| Notifications      | Dunst                  |
+| Torrents           | QBitTorrent            |
+| Files (GUI)        | Thunar                 |
+| Files (CLI)        | Ranger w/ Dragon-Drag  |
+| Screenshots        | maim + shotgun         |
+| Images             | feh + gThumb + w3m     |
+| Media              | mpv + ncspot + zathura |
+| Editor             | VS Code + Neovim       |
+| Core               | git + htop + nitrogen  |
+| Core               | cpupower-gui + mbpfan  |
+
+
+
