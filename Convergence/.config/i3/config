@@ -153,8 +153,7 @@ bindsym $mod+w exec "thunar"
 include i3gruv.config
 
 # Gaps
-gaps inner 5
-gaps outer 5
+gaps inner 10
 smart_borders on
 focus_on_window_activation focus
 
