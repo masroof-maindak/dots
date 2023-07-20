@@ -35,7 +35,7 @@ Font: [ttf-proggyclean-nerd](./gotta-patch-em-all-font-patcher\!.sh) <br><br>
 | Notifications      | Dunst                  |
 | Torrents           | QBitTorrent            |
 | Files (GUI)        | Thunar                 |
-| Files (CLI)        | Ranger w/ Dragon-Drag  |
+| Files (CLI)        | Ranger w/ Dragon       |
 | Screenshots        | maim + shotgun         |
 | Images             | feh + gThumb + w3m     |
 | Media              | mpv + ncspot + zathura |
