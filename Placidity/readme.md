@@ -21,7 +21,7 @@ GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plu
 Discord CSS: [GruvboxLight-Discord](https://github.com/MujtabaAsim/GruvboxLight-Discord) <br>
 Fetch Script: [GruvFetch](https://github.com/MujtabaAsim/GruvFetch/tree/main) <br>
 
-Font: [ttf-proggyclean-nerd](./gotta-patch-em-all-font-patcher\!.sh) <br><br>
+Font: ttf-proggyclean-nerd<br><br>
 
 |Package Type        | Package                |
 |-------------------:|:-----------------------|
