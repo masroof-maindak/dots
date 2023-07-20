@@ -5,8 +5,6 @@
 
 ![NCSpot](https://github.com/MujtabaAsim/dots/assets/62666332/32d46dec-a0f6-4530-ada2-529b73d7f935)
 
-![Pages](https://github.com/MujtabaAsim/dots/assets/62666332/2caf0a91-7790-4aa1-8a41-8614d9929e29)
-
 ![Zathura](https://github.com/MujtabaAsim/dots/assets/62666332/dddf94bc-06d9-4297-96c5-b08861913b3f)
 
 ![VS Code + Dunst](https://github.com/MujtabaAsim/dots/assets/62666332/8641c31c-39c8-41e9-b8b2-06a56f83d61d)
