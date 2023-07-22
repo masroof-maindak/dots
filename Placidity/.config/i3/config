@@ -1,7 +1,7 @@
 font pango:monospace 13
 
 # set the mod key to the winkey:
-set $mod Mod1
+set $mod Mod4
 
 #####################
 # workspace layout: #
@@ -9,7 +9,6 @@ set $mod Mod1
 
 # default i3 tiling mode:
 workspace_layout default
-
 
 ##############################
 # extra options for windows: #
@@ -53,14 +52,12 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 bindsym $mod+Shift+9    move container to workspace  $ws9
 bindsym $mod+Shift+0    move container to workspace  $ws10
 
-
-
 ######################################
 # keybindings for different actions: #
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec kitty 
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+q kill
@@ -112,7 +109,6 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
 
 # Multimedia Keys
 
