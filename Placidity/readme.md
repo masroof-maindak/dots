@@ -23,7 +23,7 @@ Font: ttf-proggyclean-nerd<br><br>
 
 |Package Type        | Package                |
 |-------------------:|:-----------------------|
-| Window Manager     | i3wm                   |
+| Window Manager     | i3wm w/ autotiling     |
 | Bar                | Polybar                |
 | Terminal           | WezTerm                |
 | Browser            | Firefox                |
