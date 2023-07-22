@@ -24,12 +24,8 @@ Font: ttf-proggyclean-nerd<br><br>
 |Package Type        | Package                |
 |-------------------:|:-----------------------|
 | Window Manager     | i3wm w/ autotiling     |
-| Bar                | Polybar                |
-| Terminal           | WezTerm                |
-| Browser            | Firefox                |
-| Launcher/Menus     | Rofi                   |
-| Notifications      | Dunst                  |
-| Launcher/Menus     | Rofi                   |
+| Bar & Terminal     | Polybar & Wezterm      |
+| Browser & Menus    | Firefox & Rofi         | 
 | Notifications      | Dunst                  |
 | Torrents           | QBitTorrent            |
 | Files (GUI)        | Thunar                 |
@@ -39,7 +35,7 @@ Font: ttf-proggyclean-nerd<br><br>
 | Media              | mpv + ncspot + zathura |
 | Editor             | VS Code + Neovim       |
 | Core               | git + htop + nitrogen  |
-| Core               | cpupower-gui + mbpfan  |
+|                    | cpupower-gui + mbpfan  |
 
 
 
