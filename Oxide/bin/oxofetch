@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Nasty little hardcoded fetch for ultimate performance on specifically EndeavourOS.
+# To adjust for your distro, just edit line #26 and replace with your distro's name.
+
+#Get kernel
+KERNEL=$(uname -r)
+KERNEL="${KERNEL%-arch?-?}"
+
+#Colours
+PINK="\033[38;2;238;83;150m"
+PURPLE="\033[38;2;190;149;255m"
+
+#Reset formatting
+R="\033[m"
+
+#Get WM name
+id=$(xprop -root -notype _NET_SUPPORTING_WM_CHECK)
+id=${id##* }
+wm=$(xprop -id "$id" -notype -len 100 -f _NET_WM_NAME 8t)
+wm=${wm/*WM_NAME = }
+wm=${wm/\"}
+wm=${wm/\"*}
+
+#Print
+echo -e "${PINK} (\ /)  ${PURPLE}os  ${R}endvr"
+echo -e "${PINK} ( . .)  ${PURPLE}kr  ${R}${KERNEL}"
+echo -e "${PINK} c(${R}\"${PINK})(${R}\"${PINK})  ${PURPLE}wm  ${R}${wm}"
+echo -e ""
