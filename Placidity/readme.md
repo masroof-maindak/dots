@@ -29,7 +29,7 @@ Font: ttf-proggyclean-nerd<br><br>
 | Notifications      | Dunst                  |
 | Torrents           | QBitTorrent            |
 | Files (GUI)        | Thunar                 |
-| Files (CLI)        | Ranger w/ Dragon       |
+| Files (CLI)        | ranger w/ dragon       |
 | Screenshots        | maim + shotgun         |
 | Images             | feh + gThumb + w3m     |
 | Media              | mpv + ncspot + zathura |
