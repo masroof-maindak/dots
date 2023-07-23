@@ -6,7 +6,7 @@ GTK Icons:</b> [Oxocarbon Papirus Folders](https://github.com/BattleCh1cken/oxoc
 
 Discord CSS: [OxocarbonDark-Discord](https://github.com/MujtabaAsim/OxocarbonDark-Discord) <br>
 Startpage: WIP <br>
-Fetch Script: WIP <br>
+Fetch Script: [Oxofetch](https://github.com/MujtabaAsim/FetchScripts/tree/main/Oxofetch) <br>
 
 Font: IosevkaTerm & Iosevka Nerd Font(s)<br><br>
 
