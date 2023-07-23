@@ -1,13 +1,13 @@
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser";
+  font: "Iosevka Nerd Font 13";
+        modi:                       "drun,run,filebrowser";
     show-icons:                 false;
-    display-drun:               "Apps";
-    display-run:                "Run";
-    display-filebrowser:        "Files";
-    display-window:             " Windows";
-	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
-	window-format:              "{w} · {c} · {t}";
+    display-drun:               "󰍉";
+    display-run:                "";
+    display-filebrowser:        "";
+        drun-display-format:        "{name}";
+        window-format:              "{w} · {c} · {t}";
 }
 
 /*****----- Global Properties -----*****/
@@ -16,7 +16,7 @@ configuration {
 
 
 * {
-    background:     #262626;
+    background:     #161616;
     background-alt: #393939;
     foreground:     #f2f4f8;
     selected:       #ee5396;
@@ -156,7 +156,7 @@ listview {
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
-    
+
     spacing:                     20px;
     margin:                      0px;
     padding:                     0px;
@@ -226,7 +226,7 @@ element alternate.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32;
+    size:                        48;
     cursor:                      inherit;
 }
 element-text {
