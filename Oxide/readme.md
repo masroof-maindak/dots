@@ -1,4 +1,4 @@
-<p align = "center"><img src=https://github.com/MujtabaAsim/dots/assets/62666332/862d945e-5f4c-49bf-b077-33b3e8073f3e></p>
+<p align = "center"><img src=https://github.com/MujtabaAsim/dots/assets/62666332/6fa1f992-0751-435e-8e2d-ac7186abc9e4></p>
 
 ### <p align = "center"> Screens </p>
 
