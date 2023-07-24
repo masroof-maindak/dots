@@ -6,7 +6,7 @@
 GTK Theme: WIP <br>
 GTK Icons:</b> [Oxocarbon Papirus Folders](https://github.com/BattleCh1cken/oxocarbon-papirus-folders) <br>
 
-Discord CSS: [OxocarbonDark-Discord](https://github.com/MujtabaAsim/OxocarbonDark-Discord) <br>
+Discord CSS: [OxocarbonDark](https://github.com/MujtabaAsim/Discord_Themes/blob/main/OxocarbonDark.css) <br>
 Startpage: WIP <br>
 Fetch Script: [Oxofetch](https://github.com/MujtabaAsim/FetchScripts/tree/main/oxofetch) <br>
 
