@@ -37,6 +37,12 @@ XF86AudioPrev
 XF86AudioStop
   playerctl stop
 
+XF86MonBrightnessUp
+  brightnessctl set 5%+
+
+XF86MonBrightnessDown
+  brightnessctl set 5%-
+
 # make sxhkd reload its configuration files:
 super + shift + r
 	pkill -USR1 -x sxhkd

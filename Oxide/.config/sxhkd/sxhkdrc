@@ -37,6 +37,12 @@ XF86AudioPrev
 XF86AudioStop
   playerctl stop
 
+XF86MonBrightnessUp
+  brightnessctl set 5%+
+
+XF86MonBrightnessDown
+  brightnessctl set 5%-
+
 #
 # move/resize
 #
