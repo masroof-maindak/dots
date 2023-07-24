@@ -18,9 +18,9 @@ Font: IosevkaTerm & Iosevka (Nerd Fonts)<br><br>
 | Window Manager    | i3wm w/ autotiling      |
 |                   | bspwm w/ sxhkd          |
 |                   | Berry                   |
-| Terminal & Notifs | WezTerm & Dunst         |
+| Bar & Terminal    | Polybar & Wezterm       |
 | Browser & Menus   | Firefox & Rofi          |
-| Bars              | Polybar + Lemonbar      |
+| Notifications     | Dunst                   |
 | Torrents          | QBitTorrent             |
 | Files (GUI)       | Thunar                  |
 | Files (CLI)       | ranger w/ dragon        |
