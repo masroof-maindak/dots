@@ -17,8 +17,10 @@ Font: IosevkaTerm & Iosevka (Nerd Fonts)<br><br>
 |------------------:|:------------------------|
 | Window Manager    | i3wm w/ autotiling      |
 |                   | bspwm w/ sxhkd          |
-| Bar & Terminal    | Polybar & Wezterm       |
-| Browser & Menus   | Firefox & Rofi          | | Notifications     | Dunst                   |
+|                   | Berry                   |
+| Terminal & Notifs | WezTerm & Dunst         |
+| Browser & Menus   | Firefox & Rofi          |
+| Bars              | Polybar + Lemonbar      |
 | Torrents          | QBitTorrent             |
 | Files (GUI)       | Thunar                  |
 | Files (CLI)       | ranger w/ dragon        |
