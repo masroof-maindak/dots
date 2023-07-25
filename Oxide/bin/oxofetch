@@ -23,7 +23,7 @@ wm=${wm/\"}
 wm=${wm/\"*}
 
 #Print
-echo -e "${PINK} (\ /)  ${PURPLE}os  ${R}endvr"
-echo -e "${PINK} ( . .)  ${PURPLE}kr  ${R}${KERNEL}"
-echo -e "${PINK} c(${R}\"${PINK})(${R}\"${PINK})  ${PURPLE}wm  ${R}${wm}"
+echo -e "${PINK} (\ /)    ${PURPLE}os  ${R}endvr"
+echo -e "${PINK} ( . .)    ${PURPLE}kr  ${R}${KERNEL}"
+echo -e "${PINK} c(${R}\"${PINK})(${R}\"${PINK})    ${PURPLE}wm  ${R}${wm}"
 echo -e ""
