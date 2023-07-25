@@ -29,4 +29,4 @@ berryc name_desktop 9 X
 
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
-~/.config/polybar/launch.sh
+polybar -c $HOME/.config/berry/config.ini main
