@@ -1,19 +1,12 @@
 <p align = "center"><img src=https://github.com/MujtabaAsim/dots/assets/62666332/cc547c62-a653-44ef-8ae6-fa95d5d3766d></p>
 
-![1690291147]()
-
-
 ### <p align = "center"> Screens </p>
 
 ### <p align = "center"> Other </p>
-GTK Theme: WIP <br>
 GTK Icons:</b> [Oxocarbon Papirus Folders](https://github.com/BattleCh1cken/oxocarbon-papirus-folders) <br>
-
 Discord CSS: [OxocarbonDark](https://github.com/MujtabaAsim/Discord_Themes/blob/main/OxocarbonDark.css) <br>
-Startpage: WIP <br>
-Fetch Script: [Oxofetch](https://github.com/MujtabaAsim/FetchScripts/tree/main/oxofetch) <br>
-
-Font: IosevkaTerm & Iosevka (Nerd Fonts)<br><br>
+Fetch Script: [Oxofetch](https://github.com/MujtabaAsim/FetchScripts/tree/main/oxofetch) <br>  
+Font: Iosevka Nerd<br><br>
 
 
 |Package Type       | Package                 |
