@@ -35,18 +35,19 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ $1 == '--shutdown' ]]; then
-		systemctl poweroff
-	elif [[ $1 == '--reboot' ]]; then
-		systemctl reboot
-	elif [[ $1 == '--logout' ]]; then
-		if [[ "$DESKTOP_SESSION" == 'berry' ]]; then
-		  berryc quit	
-		elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
-			bspc quit
-		elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
-			i3-msg exit
-		fi
-	fi
+	    systemctl poweroff
+    elif [[ $1 == '--reboot' ]]; then
+            systemctl reboot
+    elif [[ $1 == '--logout' ]]; then
+    	wm="`wmctrl -m | grep Name | awk -F': ' '{print $2}'`"
+        if [[ "$wm" == 'berry' ]]; then
+          berryc quit
+        elif [[ "$wm" == 'bspwm' ]]; then
+        	bspc quit
+        elif [[ "$wm" == 'i3' ]]; then
+            i3-msg exit
+        fi
+    fi
 }
 
 # Actions
