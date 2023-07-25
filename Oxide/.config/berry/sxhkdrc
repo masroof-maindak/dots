@@ -60,7 +60,7 @@ super + shift + r
 #
 
 super + shift + q
-  berryc quit
+  . $HOME/.config/berry/autostart
 
 super + {h, j, k, l}
     berryc window_move {-50 0, 0 50, 0 -50, 50 0}
