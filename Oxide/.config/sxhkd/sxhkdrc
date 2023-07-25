@@ -6,9 +6,12 @@
 super + Return
   wezterm
 
-# program launcher
+# rofi
 super + d
   rofi -show drun -dpi 1
+
+super + shift + e
+  $HOME/.config/rofi/scripts/powermenu.sh
 
 super + w
   thunar
@@ -16,6 +19,11 @@ super + w
 super + b
   firefox
 
+# Screenshots
+super + {_,shift + }p
+  {maim -s ~/$(date +%s).png, shotgun}
+
+# Media
 XF86AudioLowerVolume
   amixer -D pulse sset Master 5%-
 
