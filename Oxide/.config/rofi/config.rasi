@@ -1,7 +1,7 @@
 /*****----- Configuration -----*****/
 configuration {
   font: "Iosevka Nerd Font 13";
-	modi:                       "drun,run,filebrowser";
+	modi:                       "drun";
   show-icons:                 false;
   display-drun:               "󰍉";
   display-run:                "";
@@ -61,7 +61,6 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
     border-color:                @border-colour;
     cursor:                      "default";
     background-color:            @background-colour;
@@ -74,10 +73,9 @@ mainbox {
     margin:                      0px;
     padding:                     40px;
     border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview", "mode-switcher" ];
+    children:                    [ "inputbar", "message", "listview"];
 }
 
 /*****----- Inputbar -----*****/
@@ -87,7 +85,6 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -95,14 +92,14 @@ inputbar {
 }
 
 prompt {
-    enabled:                     false;
+    enabled:                     true;
     background-color:            inherit;
-    text-color:                  inherit;
+    text-color:                  selected;
 }
 textbox-prompt-colon {
-    enabled:                     false;
+    enabled:                     true;
     expand:                      false;
-    str:                         "::";
+    str:                         "";
     background-color:            inherit;
     text-color:                  inherit;
 }
@@ -156,7 +153,6 @@ listview {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -165,7 +161,6 @@ listview {
 scrollbar {
     handle-width:                10px ;
     handle-color:                @handle-colour;
-    border-radius:               0px;
     background-color:            @alternate-background;
 }
 
@@ -233,31 +228,6 @@ element-text {
     horizontal-align:            0.0;
 }
 
-/*****----- Mode Switcher -----*****/
-mode-switcher{
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @border-colour;
-    background-color:            transparent;
-    text-color:                  @foreground-colour;
-}
-button {
-    padding:                     5px 10px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @border-colour;
-    background-color:            @alternate-background;
-    text-color:                  inherit;
-    cursor:                      pointer;
-}
-button selected {
-    background-color:            var(selected-normal-background);
-    text-color:                  var(selected-normal-foreground);
-}
 
 /*****----- Message -----*****/
 message {
@@ -273,7 +243,6 @@ message {
 textbox {
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -287,7 +256,6 @@ textbox {
 error-message {
     padding:                     10px;
     border:                      2px solid;
-    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;
