@@ -17,5 +17,5 @@ Font: Iosevka Nerd<br><br>
 | Files (GUI)       | Thunar                  |
 | Files (CLI)       | ranger w/ dragon        |
 | Screenshots       | grim                    |
-| Images            | gThumb + swaybg         |
+| Images            | gThumb + swaybg + feh   |
 
