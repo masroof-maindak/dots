@@ -19,23 +19,7 @@ GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plu
 Discord CSS: [GruvboxLightSoft](https://github.com/MujtabaAsim/Discord_Themes/blob/main/GruvboxLightSoft.css) <br>
 Fetch Script: [GruvFetch](https://github.com/MujtabaAsim/FetchScripts/blob/main/gruvfetch) <br>
 
-Font: ttf-proggyclean-nerd<br><br>
-
-|Package Type        | Package                |
-|-------------------:|:-----------------------|
-| Window Manager     | i3wm w/ autotiling     |
-| Bar & Terminal     | Polybar & Wezterm      |
-| Browser & Menus    | Firefox & Rofi         | 
-| Notifications      | Dunst                  |
-| Torrents           | QBitTorrent            |
-| Files (GUI)        | Thunar                 |
-| Files (CLI)        | ranger w/ dragon       |
-| Screenshots        | maim + shotgun         |
-| Images             | feh + gThumb + w3m     |
-| Media              | mpv + ncspot + zathura |
-| Editor             | VS Code + Neovim       |
-| Core               | git + htop + nitrogen  |
-|                    | cpupower-gui + mbpfan  |
+Font: ttf-proggyclean-nerd
 
 
 

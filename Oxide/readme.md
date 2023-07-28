@@ -27,12 +27,8 @@ Font: Iosevka Nerd<br><br>
 | Bar & Terminal    | Polybar & Wezterm       |
 | Browser & Menus   | Firefox & Rofi          |
 | Notifications     | Dunst                   |
-| Torrents          | QBitTorrent             |
 | Files (GUI)       | Thunar                  |
 | Files (CLI)       | ranger w/ dragon        |
 | Screenshots       | maim + shotgun          |
-| Images            | feh + gThumb + w3m      |
-| Media             | mpv + ncspot + zathura  |
-| Editor            | VS Code + Neovim        |
-| Core              | git + h/btop + nitrogen |
-|                   | cpupower-gui + mbpfan   |
+| Images            | feh + gThumb + nitrogen |
+| Core              | cpupower-gui + mbpfan   |
