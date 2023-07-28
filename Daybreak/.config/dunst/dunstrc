@@ -1,0 +1,14 @@
+[global]
+progress_bar = true
+sort = yes
+alignment = center
+frame_color = "#d7827e"
+background = "#faf4ed"
+foreground = "#575279"
+corner_radius = 12
+separator_color= frame
+
+[urgency_critical]
+background = "#191724"
+foreground = "#d7827e"
+frame_color = "#286983"
