@@ -4,6 +4,7 @@
 
 ### <p align = "center"> Other </p>
 Colour Scheme: Rose Pine Dawn<br>
+Startpage: [Aurora](https://github.com/MujtabaAsim/Aurora) <br>
 Font: Iosevka Nerd<br><br>
 
 
