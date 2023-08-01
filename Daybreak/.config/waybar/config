@@ -1,0 +1,99 @@
+// clock, weather, systray
+// workspaces
+// temp, net, battery, audio, github
+
+[{
+    "position": "left",
+    "name": "main",
+    "layer": "top",
+    "output": ["DP-1"],
+    "width": 44,
+    "margin": "100 0 100 15",
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["clock"], 
+    "modules-right": ["custom/blf", "pulseaudio", "custom/pwrmnu"],
+   
+    "clock": {
+        "format": "{:%I\n%M\n%p}"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "wlr/workspaces": {
+        "on-click": "activate",
+        "persistent_workspaces":{
+          "1": ["DP-1"],
+          "2": ["DP-2"],
+          "3": ["DP-1"],
+          "4": ["DP-2"],
+          "5": ["DP-1"],
+          "6": ["DP-2"],
+          "7": ["DP-1"],
+          "8": ["DP-2"]
+        },
+        "format": "{icon}",
+           "format-icons": {
+            "urgent": "🌕︎",
+            "active": "  "
+		},
+        "sort-by-number": true
+    },
+    "pulseaudio": {
+        "rotate": 0,
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
+        "format-muted": "󰖁",
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip-format": "{volume}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+    "custom/pwrmnu": {
+      "on-click": "~/.config/wofi/scripts/powermenu.sh",
+      "format": "⏻ ",
+    },
+    "custom/blf": {
+      "on-click": "~/.config/waybar/scripts/shader",
+      "format": "󱟐 ",
+    },
+}, 
+
+{
+    "name": "side",
+    "position": "bottom",
+    "layer": "top",
+    "output": ["DP-2"],
+    "margin": "5 10 15 700",
+    "padding-right": 50,
+    "padding-left": 50,
+    "modules-right": ["wlr/workspaces#2"],
+    "modules-left": ["clock"],
+
+    "clock": {
+        "format": "{:%a, %b %d}"
+    },
+
+    "wlr/workspaces#2": {
+        "on-click": "activate",
+        "persistent_workspaces":{
+          "1": ["DP-1"],
+          "2": ["DP-2"],
+          "3": ["DP-1"],
+          "4": ["DP-2"],
+          "5": ["DP-1"],
+          "6": ["DP-2"],
+          "7": ["DP-1"],
+          "8": ["DP-2"]
+        },
+        "format": "{icon}",
+           "format-icons": {
+            "urgent": "🌕︎",
+            "active": "  "
+		},
+        "sort-by-number": true
+    }
+}]

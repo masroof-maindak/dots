@@ -1,0 +1,89 @@
+#waybar {
+  background: #faf4ed;
+  color: #575579;
+  font-family: "Iosevka Nerd Font";
+  border-radius: 12px;
+  border: 3px solid;
+  border-color: #d7827e;
+}
+
+#clock {
+	font-size: 18px;
+	margin: 12px;
+}
+
+#workspaces.2 {
+  margin: 5;
+}
+
+#workspaces {
+  margin: 12 0 0 0;
+  padding: 0px;
+ 	font-size: 20px;
+}
+
+#workspaces button.persistent {
+  color: #797593;
+}
+
+#workspaces button {
+	margin: 0px 0px 0px 3px;
+  color: #286983;
+}
+
+#workspaces button:hover {
+	box-shadow: inherit;
+	background: transparent;
+	border: transparent;
+}
+
+#workspaces button.urgent {
+	color: #ffb86c;
+}
+
+#workspaces button.active label {
+	box-shadow: 0 0 0px black; 
+	font-size: 14px;
+	margin: 5px 0px 5px 0;
+	background-image: linear-gradient(
+	  #b4637a,
+    #d7827e,
+    #907aa9
+  );
+	background-size: 800% 800%;
+	animation: active 120s linear infinite;
+	transition: ease-in-out;
+	border-radius: 50%;
+}
+
+@keyframes active {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 800% 800%;
+	}
+}
+
+#tray {
+  margin: 8px 0px 6px 0px;
+  opacity: 0.80;
+}
+
+#tray > widget > image {
+  margin: 8px 0 8px 0;
+}
+
+#pulseaudio {
+  margin: 4 5 15 0;
+  font-size: 22px;
+}
+
+#custom-blf {
+  font-size: 27px;
+  margin: 0 0 15 13;
+}
+
+#custom-pwrmnu {
+  margin: 3 0 18 4;
+}
