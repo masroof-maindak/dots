@@ -6,7 +6,7 @@
 ![RPD](https://github.com/MujtabaAsim/dots/assets/62666332/874d6d32-cead-49d9-90e3-6ad7d83fe347)
 
 ### <i>Oxide</i>
-![OXO](https://github.com/MujtabaAsim/dots/assets/62666332/86bb8869-d673-4eb3-ba98-1758bbd900d5)
+![OXO](https://github.com/MujtabaAsim/dots/assets/62666332/9aa84a8f-2346-4904-bb80-fc69756200b7)
 
 ### <i>Placidity</i>
 ![GB_L](https://github.com/MujtabaAsim/dots/assets/62666332/69129426-2c09-41fe-aa28-7c81f2aeaefd)
