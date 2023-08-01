@@ -1,6 +1,7 @@
-<p align = "center"><img src=https://github.com/MujtabaAsim/dots/assets/62666332/9528768c-a4b6-4b5e-8b30-997e61a1dfbc></p>
-
 ### <p align = "center"> Screens </p>
+![1690919243](https://github.com/MujtabaAsim/dots/assets/62666332/aa4f3ac5-693f-4d03-82ae-c48587ee57a2)
+
+![1690918714](https://github.com/MujtabaAsim/dots/assets/62666332/73f42248-2612-487a-86de-f97e672863ff)
 
 ### <p align = "center"> Other </p>
 Colour Scheme: Rose Pine Dawn<br>
