@@ -1,0 +1,31 @@
+initial_screen = "library"
+library_tabs = ["tracks","albums","artists","playlists"]
+use_nerdfont = true
+notify = true
+gapless = true
+flip_status_indicators=true
+shuffle = false
+repeat = 'off'
+hide_display_names = true
+cover = true
+share_clipboard = true
+cover_max_scale = 2
+
+[theme]
+background = "#fdf6e3"
+primary = "#5c6a72"
+secondary = "#efebd4"
+title = "#35a77c"
+playing = "#efebd4"
+playing_selected = "#8da101"
+playing_bg = "#8da101"
+highlight = "#8da101"
+highlight_bg = "#343f44"
+error = "#2d353b"
+error_bg = "#F85552"
+statusbar = "#2d353b"
+statusbar_progress = "#DFA000"
+statusbar_bg = "#35a77c"
+cmdline = "#525252"
+cmdline_bg = "#93b259"
+
