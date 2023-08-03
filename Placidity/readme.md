@@ -11,7 +11,6 @@
 
 ![Rofi Powermenu](https://github.com/MujtabaAsim/dots/assets/62666332/e7520dc8-f78a-406c-bb0c-2c2602afeb8f)
 
-
 ### <p align = "center"> Other </p>
 GTK Theme: [Gruvbox Full GTK](https://github.com/esmaeilytabar/gruvbox-full-gtk/) <br>
 GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack) <br>

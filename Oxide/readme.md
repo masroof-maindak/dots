@@ -12,23 +12,9 @@
 
 ![tvgirl](https://github.com/MujtabaAsim/dots/assets/62666332/5c6ce587-bd89-48c2-baf2-a8de4e3bb700)
 
+
 ### <p align = "center"> Other </p>
-GTK Icons:</b> [Oxocarbon Papirus Folders](https://github.com/BattleCh1cken/oxocarbon-papirus-folders) <br>
-Discord CSS: [OxocarbonDark](https://github.com/MujtabaAsim/Discord_Themes/blob/main/OxocarbonDark.css) <br>
+GTK Icons:</b> [BattleCh1cken](https://github.com/BattleCh1cken/oxocarbon-papirus-folders) <br>
+Discord CSS: [Tsukki](https://github.com/tsukki9696/oxocarbon-discord) <br>
 Fetch Script: [Oxofetch](https://github.com/MujtabaAsim/FetchScripts/tree/main/oxofetch) <br>  
 Font: Iosevka Nerd<br><br>
-
-
-|Package Type       | Package                 |
-|------------------:|:------------------------|
-| Window Manager    | i3wm w/ autotiling      |
-|                   | bspwm w/ sxhkd          |
-|                   | Berry                   |
-| Bar & Terminal    | Polybar & Wezterm       |
-| Browser & Menus   | Firefox & Rofi          |
-| Notifications     | Dunst                   |
-| Files (GUI)       | Thunar                  |
-| Files (CLI)       | ranger w/ dragon        |
-| Screenshots       | maim + shotgun          |
-| Images            | feh + gThumb + nitrogen |
-| Core              | cpupower-gui + mbpfan   |

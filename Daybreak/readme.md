@@ -3,6 +3,7 @@
 
 ![1690918714](https://github.com/MujtabaAsim/dots/assets/62666332/73f42248-2612-487a-86de-f97e672863ff)
 
+
 ### <p align = "center"> Other </p>
 Colour Scheme: Rose Pine Dawn<br>
 Startpage: [Aurora](https://github.com/MujtabaAsim/Aurora) <br>
