@@ -1,0 +1,14 @@
+<actions>
+<action>
+        <icon>utilities-terminal</icon>
+        <name>Open Terminal Here</name>
+        <submenu></submenu>
+        <unique-id>1681325005761436-1</unique-id>
+        <command>wezterm start --cwd %f</command>
+        <description>Example for a custom action</description>
+        <range></range>
+        <patterns>*</patterns>
+        <startup-notify/>
+        <directories/>
+</action>
+</actions>
