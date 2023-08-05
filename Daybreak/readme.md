@@ -19,7 +19,7 @@ Font: Iosevka Nerd<br><br>
 | Notifications     | Dunst                   |
 | Music             | spotify-player          |
 | Files (GUI)       | Thunar                  |
-| Files (CLI)       | ranger w/ dragon        |
+| Files (CLI)       | ranger w/ dragon-drop   |
 | Screenshots       | grim                    |
 | Images            | gThumb + swaybg + feh   |
 

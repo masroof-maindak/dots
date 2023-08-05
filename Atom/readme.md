@@ -18,7 +18,7 @@ Font: Cozette & ProggyClean<br><br>
 | Browser & Menus   | Firefox & Rofi          |
 | Notifications     | Dunst                   |
 | Files (GUI)       | Thunar                  |
-| Files (CLI)       | ranger w/ dragon        |
+| Files (CLI)       | ranger w/ dragon-drop   |
 | Screenshots       | maim + shotgun          |
 | Images            | feh + gThumb + nitrogen |
 | Core              | cpupower-gui + mbpfan   |
