@@ -21,7 +21,7 @@ gaps outer 4
 gaps inner 6
 gaps bottom 40
 smart_borders on
-default border pixel 3
+for_window [class="^.*"] border pixel 3
 floating_maximum_size 2400 x 1400
 
 # Use Mouse+$mod to drag floating windows to their wanted position
