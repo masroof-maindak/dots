@@ -1,7 +1,7 @@
 ### <p align = "center"> Screens </p>
 
 ### <p align = "center"> Other </p>
-GTK Theme: [Gruvbox-Dark-GTK](https://github.com/jmattheis/gruvbox-dark-gtk) <br>
+GTK Theme: [Gruvbox-GTK](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme) <br>
 GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack) <br>
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
