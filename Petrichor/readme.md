@@ -1,11 +1,13 @@
 ### <p align = "center"> Screens </p>
 
 ### <p align = "center"> Other </p>
-GTK Theme: [Gruvbox Full GTK](https://www.pling.com/p/1681313) <br>
+GTK Theme: [Gruvbox-Dark-GTK](https://github.com/jmattheis/gruvbox-dark-gtk) <br>
 GTK Icons:</b> [Gruvbox Plus Icon Pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack) <br>
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord CSS: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
+
+Fetch Script: [Sysfetch](https://github.com/MujtabaAsim/FetchScripts/blob/main/sysfetch) <br>
 Font: Iosevka & IosevkaTerm<br><br>
 
 
