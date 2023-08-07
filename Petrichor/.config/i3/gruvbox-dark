@@ -1,0 +1,8 @@
+set $bg #282828
+set $pink #458588
+
+# target                 title     bg    text   indicator  border
+client.focused          $blue $blue $darkgray $pink $pink
+client.focused_inactive $darkgray $darkgray $yellow $bg $bg
+client.unfocused        $darkgray $darkgray $yellow $pink $bg
+client.urgent           $red $red $white $red $red

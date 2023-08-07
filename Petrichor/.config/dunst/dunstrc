@@ -1,0 +1,16 @@
+[global]
+font = Iosevka Nerd Font 13
+progress_bar = true
+sort = yes
+alignment = center
+scale = 2
+frame_color = "#458588"
+separator_color= frame
+width = 250
+background = "#282828"
+foreground = "#ebdbb2"
+
+[urgency_critical]
+frame_color = "#cc241d"
+background = "#ebdbb2"
+foreground = "#282828"
