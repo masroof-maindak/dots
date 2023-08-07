@@ -1,6 +1,4 @@
 ### <p align = "center"> Screens </p>
-![GB](https://github.com/MujtabaAsim/dots/assets/62666332/d0efe387-1a10-4eae-9188-b5bd81df110d)
-
 ![Zathura](https://github.com/MujtabaAsim/dots/assets/62666332/1447124e-c05d-4ff0-b78e-06d997c3db89)
 
 ![Rofi](https://github.com/MujtabaAsim/dots/assets/62666332/0e0185fd-db79-4775-854e-43411a704334)
