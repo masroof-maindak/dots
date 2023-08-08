@@ -23,5 +23,8 @@ alias p="pacman"
 alias i3w="startx"
 alias awm="startx ~/.xinitrc awesome"
 
+alias i3wc="cd .config/i3/"
+alias awmc="cd .config/awesome/"
+
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
