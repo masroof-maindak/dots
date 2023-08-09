@@ -20,11 +20,13 @@ alias v="nvim"
 alias r="ranger"
 alias p="pacman"
 
-alias i3w="startx"
+alias i3w="startx ~/.xinitrc i3"
 alias awm="startx ~/.xinitrc awesome"
+alias ber="startx ~/.xinitrc berry"
+alias bsp="startx ~/.xinitrc bspwm"
 
 alias i3wc="cd .config/i3/"
-alias awmc="cd .config/awesome/"
+ali
 
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
