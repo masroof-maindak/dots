@@ -1,5 +1,5 @@
-set $bg #282828
-set $pink #458588
+set $bg #ebdbb2
+set $pink #b16286
 
 # target                 title     bg    text   indicator  border
 client.focused          $blue $blue $darkgray $pink $pink

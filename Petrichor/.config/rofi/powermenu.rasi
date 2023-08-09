@@ -9,7 +9,7 @@ configuration {
     background:                  #282828;
     background-alt:              #3c3836;
     foreground:                  #ebdbb2;
-    urgent:                      #458588;
+    urgent:                      #b16286;
 }
 
 /*

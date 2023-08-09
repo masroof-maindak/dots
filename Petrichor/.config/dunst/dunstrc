@@ -1,12 +1,12 @@
 [global]
-font = Iosevka Nerd Font 13
+font = Iosevka Nerd Font 11
 progress_bar = true
 sort = yes
 alignment = center
 scale = 2
-frame_color = "#458588"
+frame_color = "#b16286"
+frame_width = 2
 separator_color= frame
-width = 250
 background = "#282828"
 foreground = "#ebdbb2"
 

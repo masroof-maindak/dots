@@ -11,7 +11,7 @@ configuration {
     background:     #282828;
     background-alt: #3c3836;
     foreground:     #ebdbb2;
-    selected:       #458588;
+    selected:       #b16286;
     active:         #3a94c5;
     urgent:         #f85552;
 }
