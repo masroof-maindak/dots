@@ -2,7 +2,7 @@
 
 ![firefox](https://github.com/MujtabaAsim/Earthy/assets/62666332/566a7ce0-eaaf-4274-bf02-c8aa21483c9b)
 
-![ranger](https://github.com/MujtabaAsim/dots/assets/62666332/57862d95-fe3a-4410-805e-9845106171ed)
+![rofi](https://github.com/MujtabaAsim/dots/assets/62666332/fa36b0b4-44e4-41cd-bde1-9265b4851959)
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
