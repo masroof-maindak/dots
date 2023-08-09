@@ -8,4 +8,7 @@ Discord CSS: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
 Fetch Script: [Sysfetch](https://github.com/MujtabaAsim/FetchScripts/blob/main/sysfetch) <br>
 Font: Iosevka & IosevkaTerm<br>
 
-Dependencies: ```paru -S broadcom-wl wmctrl pulseaudio pulseaudio-alsa alsa-utils networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi polybar wezterm b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop autotiling lutgen-git ttf-icomoon-feather-git``` & enable services for `NetworkManager` + `mbpfan`.<br>
+Install:<br> 
+1. ```sudo pacman -S broadcom-wl wmctrl pulseaudio pulseaudio-alsa alsa-utils networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi polybar wezterm```
+2. Enable services for `NetworkManager` + `mbpfan`.
+3. ```paru -S b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop autotiling lutgen-git ttf-icomoon-feather-git```.<br>
