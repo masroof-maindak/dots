@@ -26,7 +26,7 @@ alias ber="startx ~/.xinitrc berry"
 alias bsp="startx ~/.xinitrc bspwm"
 
 alias i3wc="cd .config/i3/"
-ali
+alias berc="cd .config/berry/"
 
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"

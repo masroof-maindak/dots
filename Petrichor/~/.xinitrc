@@ -1,3 +1,3 @@
 xrdb -merge ~/.Xresources
 
-exec ${1:-i3}
+exec ${1:-berry}

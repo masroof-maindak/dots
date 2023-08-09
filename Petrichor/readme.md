@@ -14,7 +14,7 @@ Font: Iosevka & IosevkaTerm<br><br>
 |Package Type       | Package                 |
 |------------------:|:------------------------|
 | Window Manager    | i3wm w/ autotiling      |
-|                   | Awesome                 |
+|                   | Berry                   |
 | Bar & Terminal    | Polybar & Wezterm       |
 | Browser & Menus   | Firefox & Rofi          |
 | Notifications     | Dunst                   |
