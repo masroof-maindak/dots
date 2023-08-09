@@ -20,6 +20,6 @@ Discord: [talwat](https://github.com/talwat/everforest-BD) <br>
 Font: Cozette & ProggyClean<br><br>
 
 Install:<br> 
-1. ```sudo pacman -S broadcom-wl wmctrl pulseaudio pulseaudio-alsa alsa-utils networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi polybar wezterm```
+1. ```sudo pacman -S reflector broadcom-wl wmctrl pulseaudio pulseaudio-alsa alsa-utils networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi polybar wezterm```
 2. Enable services for `NetworkManager` + `mbpfan`.
 3. ```paru -S b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop autotiling lutgen-git ttf-icomoon-feather-git```.<br>

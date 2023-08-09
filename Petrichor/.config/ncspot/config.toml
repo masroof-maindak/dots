@@ -7,9 +7,9 @@ flip_status_indicators=true
 shuffle = false
 repeat = 'off'
 hide_display_names = true
-cover = true
+cover = false
 share_clipboard = true
-cover_max_scale = 2
+audio_cache = false
 
 [theme]
 background = "#282828"
