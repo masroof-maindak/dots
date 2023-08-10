@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+currentshader=$(hyprctl getoption decoration:screen_shader | awk 'FNR == 4 {print $2}' | cut -d '"' -f2)
+
+if [[ "$currentshader" != *"BLF.frag" ]]; then
+    hyprctl keyword decoration:screen_shader '~/.config/hypr/BLF.frag'
+else
+    hyprctl keyword decoration:screen_shader ''
+    hyprctl reload
+fi
