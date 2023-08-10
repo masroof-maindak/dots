@@ -4,4 +4,5 @@
 
 Startpage: [Aurora](https://github.com/MujtabaAsim/Aurora) <br>
 Waybar: [Ozwaldorf](https://github.com/ozwaldorf/dotfiles) <br>
-Font: Iosevka<br><br>
+Font: Iosevka<br>
+WM: Hyprland <br><br>
