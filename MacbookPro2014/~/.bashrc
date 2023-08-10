@@ -21,9 +21,7 @@ alias r="ranger"
 alias p="pacman"
 
 alias i3w="startx ~/.xinitrc i3"
-alias awm="startx ~/.xinitrc awesome"
 alias ber="startx ~/.xinitrc berry"
-alias bsp="startx ~/.xinitrc bspwm"
 
 alias i3wc="cd .config/i3/"
 alias berc="cd .config/berry/"
