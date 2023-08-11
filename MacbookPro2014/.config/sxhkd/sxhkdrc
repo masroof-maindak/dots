@@ -65,7 +65,7 @@ super + c
 
 # restart bspwm & sxhkd
 super + shift + r
-  bspc wm -r & pkill -USR1 -x sxhkd
+  bspc wm -r && pkill -USR1 -x sxhkd
 
 # close
 super + q

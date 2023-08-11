@@ -2,6 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh &
+xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkitd &
 nitrogen --restore &
@@ -15,7 +16,7 @@ bspc config normal_border_color "#ebdbb2"
 
 bspc config border_width         4
 bspc config window_gap          12
-bspc config top_padding         82
+bspc config top_padding         78
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
