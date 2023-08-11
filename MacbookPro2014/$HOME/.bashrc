@@ -22,9 +22,12 @@ alias p="pacman"
 
 alias i3w="startx ~/.xinitrc i3"
 alias ber="startx ~/.xinitrc berry"
+alias bsp="startx ~/.xinitrc bspwm"
 
-alias i3wc="cd .config/i3/"
-alias berc="cd .config/berry/"
+alias i3c="cd .config/i3/"
+alias bec="cd .config/berry/"
+alias bsc="cd .config/bspwm/"
+alias sxc="nvim .config/sxhkd/sxhkdrc"
 
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"

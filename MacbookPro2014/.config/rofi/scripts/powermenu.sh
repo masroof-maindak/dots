@@ -42,8 +42,10 @@ run_cmd() {
     wm="`wmctrl -m | grep Name | awk -F': ' '{print $2}'`"
 		if [[ "$wm" == 'i3' ]]; then
 		  i3-msg exit 
-		elif [[ "$wm" == 'awm' ]]; then
+		elif [[ "$wm" == 'bspwm' ]]; then
 			bspc quit
+		elif [[ "$wm" == 'berry' ]]; then
+			berryc quit
 		fi
 	fi
 }

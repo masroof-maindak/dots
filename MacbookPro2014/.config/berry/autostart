@@ -36,3 +36,6 @@ berryc name_desktop 9 "j"
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
 $HOME/.config/polybar/launch.sh
+xset s 480 dpms 600 600 600 &
+/usr/lib/polkit-1/polkit-d &
+dunst

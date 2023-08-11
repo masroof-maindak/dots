@@ -155,7 +155,6 @@ for_window [class="discord"] move container to workspace $ws4
 #############################################
 exec_always --no-startup-id autotiling
 exec --no-startup-id /usr/lib/polkit-1/polkitd
-exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id nitrogen --restore && i3-msg restart
 exec --no-startup-id xset s 480 dpms 600 600 600
