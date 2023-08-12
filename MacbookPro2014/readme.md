@@ -9,7 +9,6 @@ WM: bspwm
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
-Fetch Script: [Sysfetch](https://github.com/MujtabaAsim/FetchScripts/blob/main/sysfetch) <br>
 Font: Iosevka & IosevkaTerm<br>
 WM: i3 + Berry<br><br>
 
