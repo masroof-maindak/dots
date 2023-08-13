@@ -1,3 +1,3 @@
 xrdb -merge ~/.Xresources
 
-exec ${1:-berry}
+exec ${1:-bspwm}

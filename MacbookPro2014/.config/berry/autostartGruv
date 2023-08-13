@@ -4,17 +4,17 @@
 berryc border_width 2
 berryc inner_border_width 4
 berryc title_height 40
-berryc edge_gap 13 13 106 13
+berryc edge_gap 85 15 15 15
 
 # Text
-berryc draw_text "true"
+berryc draw_text "False"
 berryc set_font "Iosevka Nerd Font-9"
 
 # Set decoration colors
-berryc focus_color         191724
-berryc unfocus_color       191724
-berryc inner_focus_color   9ccfd8
-berryc inner_unfocus_color 6e6a86 
+berryc focus_color         282828 
+berryc unfocus_color       282828
+berryc inner_focus_color   B16286 
+berryc inner_unfocus_color EBDBB2 
 
 # Other options
 berryc smart_place "true"
@@ -35,7 +35,7 @@ berryc name_desktop 9 "j"
 # Start sxhkd and other programs
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
-eww daemon && eww open bar --restart
+$HOME/.config/polybar/launch.sh
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkit-d &
 dunst

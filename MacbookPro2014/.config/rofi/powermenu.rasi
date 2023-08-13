@@ -6,10 +6,10 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "Iosevka Nerd Font 18";
-    background:                  #282828;
-    background-alt:              #3c3836;
-    foreground:                  #ebdbb2;
-    urgent:                      #b16286;
+    background:                  #191724;
+    background-alt:              #1f1d2e;
+    foreground:                  #e0def4;
+    urgent:                      #31748f;
 }
 
 /*

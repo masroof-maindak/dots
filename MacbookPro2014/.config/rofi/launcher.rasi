@@ -8,10 +8,10 @@ configuration {
 }
 
 * {
-    background:     #282828;
-    background-alt: #3c3836;
-    foreground:     #ebdbb2;
-    selected:       #b16286;
+    background:     #191724;
+    background-alt: #1f1d2e;
+    foreground:     #e0def4;
+    selected:       #31748f;
     active:         #3a94c5;
     urgent:         #f85552;
 }
@@ -25,7 +25,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       800px;
-    height:                      800px;
+    height:                      670px;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -56,7 +56,7 @@ listbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    padding:                     175px 200px;
+    padding:                     170px 200px;
     background-color:            transparent;
     background-image:            url("~/.config/rofi/images/lnchr.jpg", width);
     text-color:                  @foreground;
