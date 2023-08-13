@@ -1,4 +1,3 @@
-Discord: [Official](https://github.com/rose-pine/discord)
 Font: <br>
 WM: bspwm + berry<br>
 Changes:<br>

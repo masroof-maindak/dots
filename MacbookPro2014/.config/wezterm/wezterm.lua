@@ -1,7 +1,8 @@
 local wezterm = require 'wezterm'
+local colours = require("colors.rose-pine").colors()
 local config = {}
 
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+config.colors = colours
 config.enable_tab_bar = false
 config.font = wezterm.font 'IosevkaTerm Nerd Font'
 config.font_size = 12
