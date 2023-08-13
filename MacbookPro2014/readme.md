@@ -1,4 +1,4 @@
-Font: <br>
+Font: Comic Shanns<br>
 WM: bspwm + berry<br>
 Changes:<br>
 - Removed polybar & i3wm<br> 

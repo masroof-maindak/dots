@@ -5,7 +5,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Iosevka Nerd Font 18";
+    font:                        "ComicShannsMono Nerd Font 18";
     background:                  #191724;
     background-alt:              #1f1d2e;
     foreground:                  #e0def4;

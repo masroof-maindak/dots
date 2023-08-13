@@ -4,7 +4,7 @@ local config = {}
 
 config.colors = colours
 config.enable_tab_bar = false
-config.font = wezterm.font 'IosevkaTerm Nerd Font'
+config.font = wezterm.font 'ComicShannsMono Nerd Font'
 config.font_size = 12
 config.default_cursor_style = 'SteadyUnderline'
 config.window_close_confirmation = 'NeverPrompt'

@@ -1,6 +1,6 @@
 /*****----- Configuration -----*****/
 configuration {
-  font:                       "Iosevka Nerd Font 20";
+  font:                       "ComicShannsMono Nerd Font 20";
   terminal:                   "wezterm";
 	modi:                       "drun";
   show-icons:                 false;
