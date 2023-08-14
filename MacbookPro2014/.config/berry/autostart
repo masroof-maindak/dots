@@ -8,7 +8,7 @@ berryc edge_gap 13 13 106 13
 
 # Text
 berryc draw_text "true"
-berryc set_font "Iosevka Nerd Font-9"
+berryc set_font "ComicShannsMono Nerd Font-9"
 
 # Set decoration colors
 berryc focus_color         191724
@@ -35,7 +35,7 @@ berryc name_desktop 9 "j"
 # Start sxhkd and other programs
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
-eww daemon && eww open bar --restart
+$HOME/.config/polybar/launch.sh &
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkit-d &
 dunst
