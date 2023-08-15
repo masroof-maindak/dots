@@ -20,11 +20,8 @@ alias v="nvim"
 alias r="ranger"
 alias p="pacman"
 
-alias ber="startx ~/.xinitrc berry"
 alias bsp="startx ~/.xinitrc bspwm"
-
 alias ewc="cd .config/eww/"
-alias bec="cd .config/berry/"
 alias bsc="nvim .config/bspwm/bspwmrc"
 alias sxc="nvim .config/sxhkd/sxhkdrc"
 

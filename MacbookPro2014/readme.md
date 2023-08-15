@@ -1,7 +1,8 @@
 Font: Comic Shanns<br>
 WM: bspwm + berry<br>
 Changes:<br>
-- Removed i3wm<br> 
+- Removed i3wm, berry & polybar<br>
+- Took the Eww pill<br>
 - ncspot was superseded by spotify_player<br>
 
 ## Petrichor

@@ -1,0 +1,44 @@
+* {
+  all: unset;
+  font-family: "ComicShannsMono Nerd Font"
+}
+
+//Global Styles
+.bar {
+  background-color: #191724;
+  color: #e0def4;
+  padding: 10px;
+}
+
+.date {
+  margin-top: 15px;
+}
+
+.time {
+  margin-bottom: 15px;
+}
+
+.workspaces {
+  background: #2a273f;
+  padding-left:   6px;
+  padding-right:  6px;
+  padding-top:    6px;
+  padding-bottom: 6px;
+  button {
+    margin: 1.6px;
+    &.inactive {
+      color: #6e6a86;
+    }
+    &.occupied {
+      font-size: 1.1rem;
+      color:  #9ccfd8;
+    }
+    &.empty {
+      font-size: 1.1rem;
+    }
+    &.active {
+      font-size: 1rem;
+      color: #eb6f92;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-$HOME/.config/polybar/launch.sh &
+eww -c $HOME/.config/eww/bar --restart open bar &
 xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkitd &
 nitrogen --restore &
 dunst &
 
-bspc monitor -d I II III IV V VI VII VII XI X
+bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 normal="#6e6a86"
 accent="#9ccfd8"

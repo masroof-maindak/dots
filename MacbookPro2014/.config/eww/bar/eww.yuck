@@ -1,0 +1,53 @@
+(defwidget bar []
+  (centerbox :orientation "v"
+    (date)
+    (wspcOG)
+    (time)))
+
+(defwidget wspcOG []
+  (box :class "workspaces"
+       :orientation "v"
+       :space-evenly true
+       :halign "center"
+       :valign "center"
+       :spacing 8
+    (button :onclick "wmctrl -s 0" '一')
+    (button :onclick "wmctrl -s 1" '二')
+    (button :onclick "wmctrl -s 2" '三')
+    (button :onclick "wmctrl -s 3" '四')
+    (button :onclick "wmctrl -s 4" '五')
+    (button :onclick "wmctrl -s 5" '六')
+    (button :onclick "wmctrl -s 6" '七')
+    (button :onclick "wmctrl -s 7" '八')
+    (button :onclick "wmctrl -s 8" '九')))
+
+(defwidget date []
+  (box :orientation "v"
+       :class "date"
+       :halign "center"
+       :valign "start"
+    month date))
+
+(defpoll date :interval "10m" "date +%d")
+(defpoll month    :interval "2h"  "date +%b")
+
+(defwidget time []
+  (box :orientation "v" 
+       :class "time"
+       :space-evenly false
+       :valign "end"
+    hour min))
+
+(defpoll hour :interval "1h" "date +%H")
+(defpoll min  :interval "30s" "date +%M")
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "47px"
+                      :height "100%"
+                      :anchor "left center")
+  :reserve (struts :side "left" :distance "7.5%")
+  (bar))
