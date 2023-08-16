@@ -8,14 +8,15 @@ super + Return
 
 # Spawn new terminal as floating
 super + shift + Return
-  bspc rule -a \* -o state=floating && wezterm
+  bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && wezterm
+
+# Eww dashboard
+super + e
+  eww -c ~/.config/eww/dash open --toggle dash
 
 # rofi
 super + d
   $HOME/.config/rofi/scripts/launcher.sh
-
-super + shift + e
-  $HOME/.config/rofi/scripts/powermenu.sh
 
 super + w
   thunar

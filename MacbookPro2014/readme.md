@@ -2,9 +2,10 @@
 
 Font: Comic Shanns<br>
 WM: bspwm<br>
-- i3wm -> bspwm<br>
-- polybar -> Eww<br>
-- ncspot -> spotify_player<br>
+- i3wm -> bspwm
+- polybar -> Eww
+- rofi (pwrmnu) -> Eww
+- ncspot -> spotify_player
 
 ## Petrichor
 ![windows](https://github.com/MujtabaAsim/dots/assets/62666332/6e65b87b-da01-4a41-8850-1e681356dc75)
