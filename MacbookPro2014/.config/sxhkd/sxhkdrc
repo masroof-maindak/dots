@@ -2,11 +2,11 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# Spawn terminal
 super + Return
   wezterm
 
-# Spawn new terminal as floating
+# Spawn terminal (floating)
 super + shift + Return
   bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && wezterm
 
@@ -14,47 +14,39 @@ super + shift + Return
 super + e
   eww -c ~/.config/eww/dash open --toggle dash
 
-# rofi
+# Rofi launcher
 super + d
   $HOME/.config/rofi/scripts/launcher.sh
 
-super + w
-  thunar
-
-super + b
-  firefox
+# Applications
+super + {w, b, c}
+ {thunar, firefox, code}
 
 # Screenshots
 super + {_,shift + }p
   {maim -s ~/$(date +%s).png, shotgun}
 
-# Media
-XF86AudioLowerVolume
-  amixer -D pulse sset Master 5%-
-
-XF86AudioRaiseVolume
-  amixer -D pulse sset Master 5%+
+# Vol
+XF86Audio{Lower,Raise}Volume
+  amixer -D pulse sset Master {5%-, 5%+}
 
 XF86AudioMute
-  amixer sset Master toggle
+  amixer set Master toggle
 
-XF86AudioPlay
-  playerctl play-pause
+# Media
+XF86Audio{Next,Prev,Play}
+  playerctl {next, previous, play-pause}
 
-XF86AudioNext
-  playerctl next
+# Brightness
+XF86MonBrightness{Up,Down}
+  brightnessctl set {5%+, 5%-}
 
-XF86AudioPrev
-  playerctl previous
+# restart bspwm & sxhkd
+super + shift + r
+  pkill -USR1 -x sxhkd
 
-XF86AudioStop
-  playerctl stop
-
-XF86MonBrightnessUp
-  brightnessctl set 5%+
-
-XF86MonBrightnessDown
-  brightnessctl set 5%-
+super + shift + q
+  bspc wm -r
 
 #
 # bspwm hotkeys
@@ -64,13 +56,10 @@ XF86MonBrightnessDown
 super + c
   eval "$(bspc query -T -n | jq -r '"X=\(.client.floatingRectangle.x+(.client.floatingRectangle.width/2)-1280)\nY=\(.client.floatingRectangle.y+(.client.floatingRectangle.height/2)-800)"')" && dx=$(($X * -1)) && dy=$(($Y * -1)) && bspc node -v $dx $dy
 
-# restart bspwm & sxhkd
-super + shift + r
-  bspc wm -r && pkill -USR1 -x sxhkd
-
 # close
 super + q
 	bspc node -c
+
 
 #
 # Focusing
