@@ -1,4 +1,6 @@
 ## Nightshade
+![dash](https://github.com/MujtabaAsim/dots/assets/62666332/c0413b26-3246-4f18-9cfe-b7365ae557f6)
+![rofi](https://github.com/MujtabaAsim/dots/assets/62666332/29e67dca-f040-4f90-b827-40950c54aacc)
 
 Font: Comic Shanns<br>
 WM: bspwm<br>
