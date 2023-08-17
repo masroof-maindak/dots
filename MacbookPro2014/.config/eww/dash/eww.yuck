@@ -18,11 +18,11 @@
 	(box :class "systray" :orientation "v" :halign "center" :space-evenly "true"
 			(box :class "vol_bar" :orientation "h" :spacing 35 :space-evenly "false" :tooltip "${_volume}%"
 				(label :class "iconvol" :text "")
-				(scale :min 0 :max 100 :value _volume :onchange "amixer -D pulse sset Master {}%")
+				(scale :min 0 :max 100 :value _volume :active "false")
 			)
 			(box :class "bright_bar" :orientation "h" :spacing 35 :space-evenly "false" :tooltip "${_brightness}%"
 				(label :class "iconbright" :text "")
-				(scale :min 0 :max 100 :value _brightness :onchange "brightnessctl s {}%")
+				(scale :min 0 :max 100 :value _brightness :active "false")
 			)
 			(box :class "disk_bar" :orientation "h" :spacing 35 :space-evenly "false"
 				(label :class "icondisk" :text "")
