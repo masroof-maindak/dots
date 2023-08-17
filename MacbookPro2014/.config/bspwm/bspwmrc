@@ -2,6 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 eww -c $HOME/.config/eww/bar --restart open bar &
+$HOME/.config/eww/dash/scripts/quotes update
 xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkitd &
