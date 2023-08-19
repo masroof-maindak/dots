@@ -1,5 +1,6 @@
 ## Oxide
 
+Icons: [Papirus (Modded)](https://github.com/BattleCh1cken/oxocarbon-papirus-folders)<br>
 GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
 Font: Fira Code Nerd<br>
 WM: bspwm<br>
