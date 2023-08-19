@@ -12,7 +12,8 @@ super + shift + Return
 
 # Eww dashboard
 super + e
-  eww -c ~/.config/eww/dash open --toggle dash
+  $HOME/.config/rofi/scripts/powermenu.sh
+  #eww -c ~/.config/eww/dash open --toggle dash
 
 # Rofi launcher
 super + d

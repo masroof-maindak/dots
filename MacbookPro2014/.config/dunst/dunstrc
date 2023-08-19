@@ -1,16 +1,15 @@
 [global]
-font = Iosevka Nerd Font 11
+font = FireCodeNerdFontMono 11
 progress_bar = true
 sort = yes
 alignment = center
 scale = 2
-frame_color = "#9ccfd8"
+frame_color = "#ee5396"
 frame_width = 1
 separator_color= frame
-background = "#191724"
-foreground = "#e0def4"
+background = "#161616"
+foreground = "#fff"
 
 [urgency_critical]
-frame_color = "#eb6f92"
-background = "#e0def4"
-foreground = "#191724"
+background = "#fff"
+foreground = "#161616"

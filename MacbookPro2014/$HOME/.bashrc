@@ -11,7 +11,7 @@ bind '"\e[B":history-search-forward'
 alias ls="ls -hN --color=auto --group-directories-first"
 alias grep='grep --color=auto'
 
-PS1='\W π '
+PS1='[\W] %: '
 
 alias cl="clear"
 alias q="exit"

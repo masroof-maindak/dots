@@ -1,6 +1,6 @@
 /*****----- Configuration -----*****/
 configuration {
-    font:                       "ComicShannsMono Nerd Font 20";
+    font:                       "FireCodeNerdFontMono 20";
     terminal:                   "wezterm";
 	modi:                       "drun";
     show-icons:                 false;
@@ -8,10 +8,10 @@ configuration {
 }
 
 * {
-    background:     #191724;
-    background-alt: #1f1d2e;
-    foreground:     #e0def4;
-    selected:       #31748f;
+    background:     #161616;
+    background-alt: #262626;
+    foreground:     #FFFFFF;
+    selected:       #ee5396;
     active:         #3a94c5;
     urgent:         #f85552;
 }

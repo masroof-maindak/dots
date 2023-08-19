@@ -1,3 +1,11 @@
+## Oxide
+
+GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
+Font: Fira Code Nerd<br>
+WM: bspwm<br>
+- Deleted Eww because of battery drain
+- Eww (bar) -> tint2
+
 ## Nightshade
 ![dash](https://github.com/MujtabaAsim/dots/assets/62666332/c0413b26-3246-4f18-9cfe-b7365ae557f6)
 ![rofi](https://github.com/MujtabaAsim/dots/assets/62666332/29e67dca-f040-4f90-b827-40950c54aacc)
@@ -9,6 +17,7 @@ WM: bspwm<br>
 - polybar -> Eww
 - rofi (pwrmnu) -> Eww
 - ncspot -> spotify_player
+- i3 and berry are henceforth unmaintained
 
 ## Petrichor
 ![windows](https://github.com/MujtabaAsim/dots/assets/62666332/6e65b87b-da01-4a41-8850-1e681356dc75)
