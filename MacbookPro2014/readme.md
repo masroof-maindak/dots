@@ -1,4 +1,7 @@
 ## Oxide
+![nvim](https://github.com/MujtabaAsim/dots/assets/62666332/8794a010-c0fb-4aa0-a011-8911e6c2fa96)
+![paint](https://github.com/MujtabaAsim/dots/assets/62666332/c535fa63-39aa-41dd-b585-77d6a35ee4f6)
+
 
 Icons: [Papirus (Modded)](https://github.com/BattleCh1cken/oxocarbon-papirus-folders)<br>
 GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
