@@ -1,0 +1,15 @@
+[global]
+progress_bar = true
+sort = yes
+alignment = center
+font = Liberation Serif 20
+frame_color = "#262626"
+background = "#0f0f0f"
+foreground = "#f0f0f0"
+corner_radius = 12
+separator_color= frame
+
+[urgency_critical]
+background = "#f0f0f0"
+foreground = "#0f0f0f"
+frame_color = "#286983"
