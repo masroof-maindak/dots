@@ -1,0 +1,89 @@
+[{
+    "position": "bottom",
+    "name": "main",
+    "layer": "top",
+    "output": ["DP-1"],
+    "margin": "-3px 20px 20px 20px",
+    "modules-left": ["clock","wlr/workspaces"],
+    "modules-center": ["wlr/taskbar"], 
+    "modules-right": ["custom/blf", "pulseaudio", "custom/pwrmnu"],
+   
+    "clock": {
+        "format": "{:%I:%M %p}"
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+   
+   "wlr/workspaces": {
+        "disable-scroll": true,
+        "persistent_workspaces":{
+          "1": ["DP-1"],
+          "2": ["DP-1"],
+          "3": ["DP-1"],
+          "4": ["DP-1"],
+          "5": ["DP-1"],
+          "6": ["DP-1"]
+        },
+        "sort-by-number": true
+    },
+    
+    "pulseaudio": {
+        "format": "vol {volume}",
+        "format-muted": "muted",
+        "tooltip-format": "{volume}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+    "custom/pwrmnu": {
+      "on-click": "~/.config/wofi/scripts/powermenu.sh",
+      "format": "⏻ "
+    },
+    "custom/blf": {
+      "on-click": "~/.config/waybar/scripts/shader",
+      "format": "blf"
+    },
+    "wlr/taskbar": {
+	"format": "  {app_id}  ",
+	"tooltip-format": "{title}",
+  "on-click": "activate",
+	"on-click-right": "close",
+	"app_ids-mapping": {
+		"org.pwmt.zathura": "Zathura",
+    "org.wezfurlong.wezterm": "WezTerm",
+		"pavucontrol": "Pavu Control",
+		"firefox": "Firefox",
+    "nemo": "Nemo"
+		}
+	}
+
+
+
+}, 
+{
+    "name": "side",
+    "position": "bottom",
+    "layer": "top",
+    "output": ["DP-2"],
+    "margin": "0 20 15 540",
+    "modules-right": ["wlr/workspaces#2"],
+    "modules-left": ["clock"],
+
+    "clock": {
+        "format": "{:%a, %b %d}"
+    },
+
+    "wlr/workspaces#2": {
+        "on-click": "activate",
+        "persistent_workspaces":{
+          "7": ["DP-2"],
+          "8": ["DP-2"],
+          "9": ["DP-2"],
+          "10": ["DP-2"]
+        },
+        "sort-by-number": true
+    }
+}]
+

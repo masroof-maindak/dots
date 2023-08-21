@@ -1,0 +1,66 @@
+#waybar {
+  background: #f0f0f0;
+  color: #0f0f0f;
+  font-family: "CozetteHiDpi";
+  border-radius: 20px;
+}
+
+#clock {
+	margin: 28px;
+}
+
+
+#workspaces {
+  margin: 15px 22px;
+}
+
+#workspaces button {
+  color: #0f0f0f;
+  padding: 5px 10px;
+}
+
+#workspaces button.persistent {
+  color: #767676;
+}
+
+#workspaces button.urgent {
+	background-color: #AC8AAC;
+}
+
+#workspaces button.active {
+  background-color: #8aac8b;
+  color: #0f0f0f;
+}
+
+
+#tray {
+  margin: 8px 0px 6px 0px;
+  opacity: 0.80;
+}
+
+#tray > widget > image {
+  margin: 8px 0 8px 0;
+}
+
+#custom-pwrmnu,
+#pulseaudio{
+  margin: 20px;
+}
+
+#custom-blf {
+  margin: 23px;
+}
+
+
+#taskbar {
+  margin: 15px;
+}
+#taskbar button{ 
+  padding: 5px 0px;
+	color: #262626; }
+#taskbar button.active{
+	background-color: #8aac8b;
+}
+#taskbar button.minimized{
+	background-color: #462b2b; }
+
