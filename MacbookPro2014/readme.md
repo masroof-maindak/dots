@@ -5,7 +5,9 @@ WM: berry<br>
 - Barless, minimal attempt
 
 ## Oxide
+![nvim](https://github.com/MujtabaAsim/dots/assets/62666332/1ee8767c-bef9-446e-8e49-fa809e8703bc)
 
+![paint](https://github.com/MujtabaAsim/dots/assets/62666332/d9aab5a1-6e79-436c-b393-6a662877224f)
 
 Icons: [Papirus (Modded)](https://github.com/BattleCh1cken/oxocarbon-papirus-folders)<br>
 GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
