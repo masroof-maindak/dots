@@ -1,7 +1,14 @@
+## <br>
+
+Font: <br>
+WM: berry<br>
+- Minimal attempt
+- Barless
+
 ## Oxide
 ![nvim](https://github.com/MujtabaAsim/dots/assets/62666332/8794a010-c0fb-4aa0-a011-8911e6c2fa96)
-![paint](https://github.com/MujtabaAsim/dots/assets/62666332/c535fa63-39aa-41dd-b585-77d6a35ee4f6)
 
+![paint](https://github.com/MujtabaAsim/dots/assets/62666332/c535fa63-39aa-41dd-b585-77d6a35ee4f6)
 
 Icons: [Papirus (Modded)](https://github.com/BattleCh1cken/oxocarbon-papirus-folders)<br>
 GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
@@ -12,6 +19,7 @@ WM: bspwm<br>
 
 ## Nightshade
 ![dash](https://github.com/MujtabaAsim/dots/assets/62666332/c0413b26-3246-4f18-9cfe-b7365ae557f6)
+
 ![rofi](https://github.com/MujtabaAsim/dots/assets/62666332/29e67dca-f040-4f90-b827-40950c54aacc)
 
 Eww: [rxhyn](https://github.com/rxyhn/tokyo)'s profile module + sys info script<br>
@@ -21,7 +29,7 @@ WM: bspwm<br>
 - polybar -> Eww
 - rofi (pwrmnu) -> Eww
 - ncspot -> spotify_player
-- i3 and berry are henceforth unmaintained
+- i3 is henceforth unmaintained
 
 ## Petrichor
 ![windows](https://github.com/MujtabaAsim/dots/assets/62666332/6e65b87b-da01-4a41-8850-1e681356dc75)
@@ -31,11 +39,4 @@ WM: bspwm<br>
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
 Font: Iosevka & IosevkaTerm<br>
-WM: i3 + berry<br><br>
-
-## Atom
-![pwrmnu](https://github.com/MujtabaAsim/dots/assets/62666332/ab907df8-5461-49fb-8d7f-94bc07ec66e0)
-
-Discord: [talwat](https://github.com/talwat/everforest-BD) <br>
-Font: Cozette & ProggyClean<br>
-WM: i3 + berry<br><br>
+WM: i3 + berry<br>

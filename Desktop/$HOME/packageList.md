@@ -1,2 +1,2 @@
-- `sudo pacman -S` ranger wezterm grim slurp neworkmanager playerctl pulseaudio pulseaudio-alsa qbittorrent alsa-utils nemo feh wofi waybar dunst reflector htop firefox neovim mpv imagemagick ffmpeg zathura zathura-pdf-mupdf unzip jq
+- `sudo pacman -S` ranger wezterm grim slurp neworkmanager playerctl pulseaudio pulseaudio-alsa qbittorrent alsa-utils nemo feh wofi gthumb waybar dunst reflector htop firefox neovim mpv imagemagick ffmpeg zathura zathura-pdf-mupdf unzip jq
 - `paru -S` dragon-drop nwg-look-bin azote spotify-player visual-studio-code-bin lutgen-git

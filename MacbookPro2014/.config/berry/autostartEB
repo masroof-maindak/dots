@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Set decoration geometry
+berryc border_width 0
+berryc inner_border_width 0
+berryc title_height 69
+berryc edge_gap 15 15 15 15
+
+# Text
+berryc draw_text "False"
+berryc set_font "Liberation Serif-10"
+
+# Set decoration colors
+#berryc focus_color         191724
+#berryc unfocus_color       191724
+berryc inner_focus_color   232a2d
+berryc inner_unfocus_color 141b1e 
+berryc text_focus_color    b3b9b8
+berryc text_unfocus_color  b3b9b8 
+
+# Other options
+berryc smart_place "true"
+berryc focus_follows_pointer "false"
+
+# Desktop names
+berryc name_desktop 0 "a"
+berryc name_desktop 1 "b"
+berryc name_desktop 2 "c"
+berryc name_desktop 3 "d"
+berryc name_desktop 4 "e"
+berryc name_desktop 5 "f"
+berryc name_desktop 6 "g"
+berryc name_desktop 7 "h"
+berryc name_desktop 8 "i"
+berryc name_desktop 9 "j"
+
+# Start sxhkd and other programs
+sxhkd -c $HOME/.config/berry/sxhkdrc &
+nitrogen --restore &
+xset s 480 dpms 600 600 600 &
+dunst
