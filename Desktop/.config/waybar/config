@@ -18,7 +18,6 @@
     },
    
    "wlr/workspaces": {
-        "disable-scroll": true,
         "persistent_workspaces":{
           "1": ["DP-1"],
           "2": ["DP-1"],
@@ -76,7 +75,6 @@
     },
 
     "wlr/workspaces#2": {
-        "on-click": "activate",
         "persistent_workspaces":{
           "7": ["DP-2"],
           "8": ["DP-2"],
