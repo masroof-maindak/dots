@@ -1,8 +1,8 @@
 #waybar {
-  background: #f0f0f0;
-  color: #0f0f0f;
+  color: #f0f0f0;
+  background: #0f0f0f;
   font-family: "CozetteHiDpi";
-  border-radius: 20px;
+  border-radius: 20;
 }
 
 #clock {
@@ -15,7 +15,6 @@
 }
 
 #workspaces button {
-  color: #0f0f0f;
   padding: 5px 10px;
 }
 
@@ -29,7 +28,6 @@
 
 #workspaces button.active {
   background-color: #8aac8b;
-  color: #0f0f0f;
 }
 
 
@@ -57,9 +55,10 @@
 }
 #taskbar button{ 
   padding: 5px 0px;
-	color: #262626; }
+	color: #767676; }
 #taskbar button.active{
 	background-color: #8aac8b;
+  color: #f0f0f0;
 }
 #taskbar button.minimized{
 	background-color: #462b2b; }
