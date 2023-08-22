@@ -3,8 +3,8 @@
 #
 
 # Spawn terminal
-super + Return
-  wezterm
+super + {_,alt + }Return
+  {st, wezterm}
 
 # Spawn terminal (floating)
 super + shift + Return

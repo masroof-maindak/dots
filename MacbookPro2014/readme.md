@@ -3,6 +3,7 @@
 Font: <br>
 WM: berry<br>
 - Barless, minimal attempt
+- Also use st (Siduck's (requires gd))
 
 ## Oxide
 ![nvim](https://github.com/MujtabaAsim/dots/assets/62666332/1ee8767c-bef9-446e-8e49-fa809e8703bc)
