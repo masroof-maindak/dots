@@ -1,8 +1,7 @@
 ## Nanga Parbat
-![zathura](https://github.com/MujtabaAsim/dots/assets/62666332/1bef72b7-8878-4c56-b816-99e8d3bfa2ae)
+![main](https://github.com/MujtabaAsim/dots/assets/62666332/0db21a54-51fd-4dee-b5b6-72b0a9b18fef)
 
-![firefox](https://github.com/MujtabaAsim/dots/assets/62666332/603d7c80-3374-4297-a560-87b73ff3c974)
-
+![zathura](https://github.com/MujtabaAsim/dots/assets/62666332/351bf5b1-f890-43cc-baea-aa7e04f01db7)
 
 Startpage: [K2](https://github.com/MujtabaAsim/K2)<br>
 Font: Cozette & Liberation Serif<br>
