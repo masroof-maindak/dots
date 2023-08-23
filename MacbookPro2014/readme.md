@@ -1,9 +1,10 @@
 ## <br>
 
-Font: <br>
+Font: Cozette & Liberation Serif<br>
 WM: berry<br>
 - Barless, minimal attempt
-- Also use st (Siduck's (requires gd))
+- Started using st in addition to wezterm (Siduck's (requires gd))
+- Probably my last time updating Rofi - no change except colours in the foreseeable future
 
 ## Oxide
 ![nvim](https://github.com/MujtabaAsim/dots/assets/62666332/1ee8767c-bef9-446e-8e49-fa809e8703bc)
