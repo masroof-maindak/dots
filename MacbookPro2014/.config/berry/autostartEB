@@ -10,13 +10,14 @@ berryc edge_lock false
 # Text
 berryc draw_text true
 berryc set_font "Liberation Serif-12"
+berryc decorate_new false
 
 # Set decoration colors
 #berryc focus_color         191724
 #berryc unfocus_color       191724
 berryc inner_focus_color   232a2d
 berryc inner_unfocus_color 141b1e 
-berryc text_focus_color    b3b9b8
+berryc text_focus_color    dadada
 berryc text_unfocus_color  141b1e
 
 # Other options
