@@ -1,4 +1,7 @@
-## <br>
+## Ivy<br>
+![quote](https://github.com/MujtabaAsim/dots/assets/62666332/0944f951-a91c-4a51-a0f1-6757f9c88a4c)
+
+![other](https://github.com/MujtabaAsim/dots/assets/62666332/a99ffc1a-813c-4505-8dd8-82f5e10178ec)
 
 Font: Cozette & Liberation Serif<br>
 WM: berry<br>
