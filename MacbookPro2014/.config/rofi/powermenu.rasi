@@ -1,0 +1,100 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "Liberation Serif 20";
+    background:                  #141b1e;
+    background-alt:              #232a2d;
+    foreground:                  #dadada;
+    urgent:                      #8ccf7e;
+}
+
+
+/*
+USE_BUTTONS=YES
+*/
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @urgent;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "listview", "imagebox" ];
+}
+
+/*****----- Imagebox -----*****/
+imagebox {
+    expand:                      false;
+    width:                       500px;
+    spacing:                     0px;
+    padding:                     100px;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/pwrmnu.jpg", height);
+    children:                    [ "dummy", "message" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       4;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     30px;
+    margin:                      50px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     20px 10px;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            var(urgent);
+    text-color:                  var(background);
+}

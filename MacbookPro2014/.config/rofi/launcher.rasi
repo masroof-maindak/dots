@@ -2,9 +2,9 @@
 configuration {
     font:                       "Liberation Serif 20";
     terminal:                   "wezterm";
-        modi:                       "drun";
+	modi:                       "drun";
     show-icons:                 false;
-        drun-display-format:        "{name}";
+	drun-display-format:        "{name}";  
 }
 
 * {
@@ -55,7 +55,8 @@ inputbar {
 
 listbox {
     spacing:                     20px;
-    padding:                     20px;
+    width:                       500px;
+    padding:                     50px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -69,7 +70,7 @@ dummy {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       8;
+    lines:                       4;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -77,8 +78,8 @@ listview {
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
-
-    spacing:                     10px;
+    
+    spacing:                     30px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
@@ -87,8 +88,7 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     15px;
-    padding:                     8px;
+    padding:                     20px 30px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
@@ -105,7 +105,7 @@ element normal.active {
 }
 element selected.normal {
     background-color:            @selected;
-    text-color:                  @background;
+    text-color: @background;
 }
 element selected.urgent {
     text-color:                  @foreground;
