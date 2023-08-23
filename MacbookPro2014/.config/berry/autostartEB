@@ -4,11 +4,12 @@
 berryc border_width 0
 berryc inner_border_width 0
 berryc title_height 69
-berryc edge_gap 15 15 15 15
+berryc edge_gap 13 13 13 13
+berryc edge_lock false
 
 # Text
-berryc draw_text "False"
-berryc set_font "Liberation Serif-10"
+berryc draw_text true
+berryc set_font "Liberation Serif-12"
 
 # Set decoration colors
 #berryc focus_color         191724
@@ -16,7 +17,7 @@ berryc set_font "Liberation Serif-10"
 berryc inner_focus_color   232a2d
 berryc inner_unfocus_color 141b1e 
 berryc text_focus_color    b3b9b8
-berryc text_unfocus_color  b3b9b8 
+berryc text_unfocus_color  141b1e
 
 # Other options
 berryc smart_place "true"
