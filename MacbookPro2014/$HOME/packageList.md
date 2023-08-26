@@ -1,0 +1,2 @@
+- `sudo pacman -S` reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq
+- `paru -S` b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player.
