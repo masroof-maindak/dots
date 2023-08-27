@@ -37,7 +37,7 @@
         "on-click-right": "pavucontrol"
     },
     "custom/pwrmnu": {
-      "on-click": "~/.config/wofi/scripts/powermenu.sh",
+      "on-click": "~/.config/tofi/scripts/powermenu.sh",
       "format": "⏻ "
     },
     "custom/blf": {
