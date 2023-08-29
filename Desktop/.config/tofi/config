@@ -168,7 +168,7 @@
 	border-color = #8aac8b
 
 	# Radius of window corners in pixels.
-	corner-radius = 20
+	corner-radius = 10
 
 	# Padding between borders and text. Can be pixels or a percentage.
 	padding-top = 8
