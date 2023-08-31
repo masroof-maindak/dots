@@ -1,3 +1,13 @@
+## Placidity
+
+Font: <br>
+WM: River<br>
+- Hyprland -> River
+- Azote -> swww
+- Dunst -> Mako
+- tofi -> rofi
+- Hyprland is henceforth unmaintained
+
 ## Nanga Parbat
 ![main](https://github.com/MujtabaAsim/dots/assets/62666332/0db21a54-51fd-4dee-b5b6-72b0a9b18fef)
 
