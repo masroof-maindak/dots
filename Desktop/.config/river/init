@@ -153,4 +153,5 @@ riverctl set-cursor-warp on-output-change
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
-rivertile -view-padding 20 -outer-padding 20 &
+rivertile -view-padding 20 -outer-padding 20 -main-ratio 0.52 &
+waybar &
