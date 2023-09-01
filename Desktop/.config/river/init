@@ -4,7 +4,7 @@
 # documentation.
 
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
-riverctl map normal Super Return spawn wezterm
+riverctl map normal Super Return spawn foot
 
 riverctl map normal Super D spawn tofi-drun
 riverctl map normal Super E spawn $HOME/.config/tofi/scripts/powermenu.sh
@@ -132,9 +132,9 @@ do
 done
 
 # Set background and border color
-riverctl background-color 0x002b36
-riverctl border-color-focused 0x93a1a1
-riverctl border-color-unfocused 0x586e75
+riverctl background-color 0xfcf1c7
+riverctl border-color-focused 0x458588
+riverctl border-color-unfocused 0x282828
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
@@ -144,6 +144,11 @@ riverctl rule-add float -app-id 'float*' -title 'foo'
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add csd -app-id "bar"
+
+riverctl attach-mode bottom
+riverctl border-width 3
+riverctl focus-follows-cursor normal
+riverctl set-cursor-warp on-output-change
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
