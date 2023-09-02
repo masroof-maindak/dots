@@ -3,11 +3,21 @@
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
 
+waybar &
+./.azotebg
+
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Return spawn foot
 
 riverctl map normal Super D spawn tofi-drun
 riverctl map normal Super E spawn $HOME/.config/tofi/scripts/powermenu.sh
+
+riverctl map normal Super+Shift P spawn 'grim "$(date + %s).png"'
+riverctl map normal Super P spawn 'grim -g "$(slurp -d)" "$(date + %s).png"'
+
+riverctl map normal Super W spawn thunar
+riverctl map normal Super B spawn firefox
+riverctl map normal Super V spawn code
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
@@ -131,7 +141,7 @@ do
     riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 done
 
-# Set background and border color
+# Set backuround and border color
 riverctl background-color 0xfcf1c7
 riverctl border-color-focused 0x458588
 riverctl border-color-unfocused 0x282828
@@ -150,8 +160,11 @@ riverctl border-width 3
 riverctl focus-follows-cursor normal
 riverctl set-cursor-warp on-output-change
 
+
+
+
+
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 rivertile -view-padding 20 -outer-padding 20 -main-ratio 0.52 &
-waybar &
