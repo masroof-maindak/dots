@@ -6,7 +6,7 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "VictorMono 18";
-    background:                  #fcf1c7;
+    background:                  #fbf1c7;
     foreground:                  #282828;
     urgent:                      #458588;
 }
