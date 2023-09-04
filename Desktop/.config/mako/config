@@ -1,0 +1,9 @@
+margin=20
+font=Victor Mono 16
+background-color=#fcf1c7
+border-color=#ebdbb2
+border-size=3
+text-color=#282828
+height=300
+anchor=bottom-left
+output=DP-1

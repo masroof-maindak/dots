@@ -1,0 +1,43 @@
+#waybar {
+  color: #282828;
+  background-color: #fcf1c7;
+  border: 3px solid;
+  border-bottom: none;
+  font-family: "VictorMono";
+  font-size: 18px;
+
+}
+
+#tags {
+  margin: 13px 40px 10px;
+  font-size: 20px;
+}
+
+#tags button {
+  padding: 3px;
+  font-style: italic;
+  color: #928374;
+  border-radius: 5px;
+}
+
+#tags button.occupied {
+  color: #282828;
+}
+
+#tags button.focused {
+	color: #458588;
+}
+
+#custom-spr {
+  font-size: 20px;
+  margin: 0px -20px;
+}
+
+#custom-scr,
+#pulseaudio {
+  margin: 0px 40px;
+}
+
+#clock{
+  margin: 0px 40px;
+}

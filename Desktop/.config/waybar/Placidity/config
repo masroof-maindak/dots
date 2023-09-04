@@ -1,0 +1,61 @@
+[{
+    "position": "bottom",
+    "name": "main",
+    "layer": "top",
+    "output": ["DP-1"],
+    "margin": "0px 40px 0px 40px",
+    "modules-left": ["image", "river/tags"],
+    "modules-center": ["mpris"], 
+    "modules-right": ["pulseaudio", "custom/spr", "clock"],
+   
+    "image": {
+        "path": "~/Downloads/chameleon.png",
+        "width": 30,
+        "height": 30
+    },
+
+    "mpris": {
+      "format": "<i><b>{title}</b> <small>by</small> <b>{artist}</b></i>",
+      "ignored-players": ["firefox"]
+    },
+
+    "clock": {
+        "format": "<i>{:%I:%M <b>%p</b>}</i>"
+    },
+    
+    "pulseaudio": {
+        "format": "<i><b>vol</b> {volume}%</i>",
+        "format-muted": "muted",
+        "tooltip-format": "{volume}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+
+    "custom/spr": {
+      "format": "|"
+    }
+}, 
+{
+    "name": "side",
+    "position": "bottom",
+    "layer": "top",
+    "output": ["DP-2"],
+    "margin": "0 40 0 40",
+    "modules-right": ["river/tags" ],
+    "modules-left": ["clock", "custom/spr", "custom/scr"],
+
+    "custom/spr": {
+      "format": "|"
+    },
+
+    "custom/scr": {
+      "format": "<i><b>grim</b></i>",
+      "on-click": "grim \"$(date +%s)\".png && notify-send 'screenshot taken.'"
+    },
+
+    "clock": {
+        "format": "<i>{:<b>%a</b>, %d %b}</i>"
+    }
+
+}]
+

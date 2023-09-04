@@ -1,6 +1,7 @@
 ## Placidity
 
-Font: <br>
+GTK: [PK](https://github.com/prettykool/oomox-gruvish)<br>
+Font: Victor Mono<br>
 WM: River<br>
 - Hyprland -> River
 - Azote -> swww
