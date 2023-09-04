@@ -46,14 +46,21 @@ imagebox {
     expand:                      false;
     width:                       500px;
     spacing:                     0px;
-    padding:                     100px;
+    padding:                     75px;
     background-color:            transparent;
     background-image:            url("~/.config/rofi/images/pwrmnu.jpg", height);
     children:                    [ "dummy", "message" ];
 }
 
 message {
-    color: #458588;
+    padding: 15px 5px;
+    background-color:            @background;
+}
+textbox {
+    background-color:            inherit;
+    text-color: @urgent;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
 }
 
 

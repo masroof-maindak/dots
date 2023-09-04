@@ -12,7 +12,8 @@ logout='Logout'
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
-		-mesg "bruh" \
+		-mesg "$(uptime | sed -E 's/^[^,]*up *//; s/, *[[:digit:]]* users.*//; s/min/minutes/; s/([[:digit:]]+):0?([[:digit:]]+)/\1 hours, \2 minutes/' 
+)" \
 		-theme $HOME/.config/rofi/powermenu.rasi
 }
 
@@ -53,11 +54,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
-		fi
+		swaylock -l -L -F --indicator-radius 80 --indicator-thickness 12 -e -i ~/Pictures/Wallpapers/Chinatown.jpg 
         ;;
     $logout)
 		run_cmd --logout
