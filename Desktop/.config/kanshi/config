@@ -1,0 +1,10 @@
+profile {
+	output DP-1 mode 2560x1440
+}
+profile {
+	output DP-2 mode 1920x1080 transform 270
+}
+profile {
+	output DP-1 mode 2560x1440 position 1080,240
+	output DP-2 mode 1920x1080 position 0,0 transform 270
+}
