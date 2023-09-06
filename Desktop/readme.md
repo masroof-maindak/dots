@@ -1,6 +1,4 @@
 ## Placidity
-![wall](https://github.com/masroof-maindak/dots/assets/62666332/16a43316-cafc-4869-911f-7feadd30e840)
-
 ![panel](https://github.com/masroof-maindak/dots/assets/62666332/aa74b872-5895-41e8-8daf-222853f483c1)
 
 ![shit](https://github.com/masroof-maindak/dots/assets/62666332/ce0f47d6-651d-484b-8a01-a717427eae4e)
