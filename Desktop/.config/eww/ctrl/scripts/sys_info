@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Uptime
+get_uptime(){
+	uptime | sed -E 's/^[^,]*up *//; s/, *[[:digit:]]* users.*//; s/min/minutes/; s/([[:digit:]]+):0?([[:digit:]]+)/\1 hours, \2 minutes/'
+}
+
+# Execute accordingly
+if [[ "$1" == "vol" ]]; then
+	get_vol
+elif [[ "$1" == "upt" ]]; then
+	get_uptime
+fi

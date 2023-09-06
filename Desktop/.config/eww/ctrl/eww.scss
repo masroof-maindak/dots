@@ -1,0 +1,180 @@
+$background: #fcf1c7;
+$background-alt: #ebdbb2;
+$background-alt2: #26233a;
+$foreground: #282828;
+$blue: #458588;
+$green: #98971a;
+$redLight: #fb4934;
+$yellow: #d79921;
+$pink: #b16286;
+$aqua: #689d6a;
+
+* {
+	all: unset;
+	font-family: "Victor Mono";
+}
+
+.dash {
+	border: 3px solid #282828;
+	padding: 20px;
+	background-color: $background;
+	border-style: solid solid solid none;
+}
+
+
+.lambda_media_cover {
+	margin-right: 10px;
+	min-width: 240px;
+	min-height: 240px;
+
+	background-repeat: no-repeat;
+	background-size: 12rem;
+	background-position: center;
+      }
+      
+      .lambda_media_progress {
+	padding: 0px 58px 0px 0px;
+      }
+      
+      scale.lambda_media_progress trough {
+	background: $background-alt;
+	min-width: 10px;
+	min-height: 180px;
+      }
+      
+      scale.lambda_media_progress trough highlight {
+	background: $blue; 
+      }
+
+      .lambda_box {
+	background-color: $background;
+	color: $foreground;
+	margin: 20px;
+	padding: 1.5rem;
+	border: 3px solid $background-alt;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+.cal_box {
+	margin: 20px;
+	padding: 1.5rem;
+	border: 3px solid $background-alt;
+}
+
+.calendarApna {
+	background-color: $background;
+	color: $foreground;
+  	font-size: 16px;
+}
+
+calendar {
+	padding: 2px 12px;
+	&:selected {
+	  color: $blue;
+	  background: $background-alt;
+	}
+}
+
+tooltip {
+	color: $aqua;
+	font-style: italic;
+	background-color: $background-alt;
+	border: 1px dotted;
+}
+
+.systray{
+	background-color: $background;
+	padding: 2.5rem;
+	margin: 20px;
+	border: 3px solid $background-alt;
+}
+
+.iconcpu, .icondisk, .iconram {
+	font-size : 26px;
+	color: #928374;
+	font-weight : normal;
+}
+
+.cpu_bar, .disk_bar, .ram_bar, scale trough {
+	all: unset;
+	background-color: $background-alt;
+	min-height: 32px;
+	min-width: 280px;
+	margin: 5px;
+}
+
+.cpu_bar, .disk_bar, .ram_bar, .bat_bar, scale trough highlight {
+	all: unset;
+}
+
+
+.disk_bar scale trough highlight,
+.ram_bar scale trough highlight,
+.cpu_bar scale trough highlight {
+	background-color: $blue;
+}
+
+
+
+
+
+
+.uptime-text{
+	font-size: 1em;
+	font-style: italic;
+	margin-top: 2em;
+	color: $foreground;
+}
+
+.powermenu {
+	background-color: $background;
+	color: $foreground;
+	font-style: italic;
+	padding: 1.5rem 0.5rem;
+	font-size: 1.1em;
+	margin: 20px;
+	border: 3px solid $background-alt;
+	button:hover {
+		color: $green;
+	}
+}
+
+.profile{
+	background-color: $background;
+	border: 3px solid $background-alt;
+	padding: 1.5rem 2rem;
+	margin: 20px;
+
+}
+.pfp {
+	background-image: url("assets/profile.png");
+	background-repeat: no-repeat;
+	background-size: 8.5rem;
+	background-position: center;
+	min-height: 130px;
+	min-width: 130px;
+	border-radius: 50%;
+}
+.name {
+	margin-top: 30px;
+	color: $aqua;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.subpfptxt {
+	color: $green;
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+

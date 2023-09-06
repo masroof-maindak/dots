@@ -1,0 +1,129 @@
+(defwidget dash[]
+	(box :orientation "v"	 
+		 :class "dash"
+		 :space-evenly "false"
+		 (profile)(cal)(lambda_media)(systray)(powermenu)
+	)
+)
+
+
+
+(defpoll lambda_media_cover_state:interval "10s"
+	"./scripts/mediaControl.sh update")
+      
+(defwidget lambda_media_cover[]
+	(box 
+	    :class "lambda_media_cover"
+	    :style lambda_media_cover_state
+	)
+)
+      
+(defpoll lambda_media_progress_state :interval "3s" 
+	"./scripts/mediaControl.sh progress")
+      
+(defwidget lambda_media_progress[]
+	(box
+	  (scale 
+	    :class "lambda_media_progress"
+	    :flipped true
+	    :orientation "v"
+	    :min 0 :max 101
+	    :value lambda_media_progress_state)
+	  )
+)
+      
+(defwidget lambda_media_buttons[]
+	(box
+	  :class "lambda_media_buttons"
+	  :orientation "v"
+	  :valign "center"
+	  :halign "center"
+	  :space-evenly false
+	  :spacing 60
+	  (button :onclick "./scripts/mediaControl.sh prev"   "")
+	  (button :onclick "./scripts/mediaControl.sh toggle" "")
+	  (button :onclick "./scripts/mediaControl.sh next"   "")
+	  )
+)
+      
+(defwidget lambda_media[]
+	(box
+	  :orientation "h"
+	  :class "lambda_box"
+	  :space-evenly false
+	  (lambda_media_cover)
+	  (lambda_media_progress)
+	  (lambda_media_buttons)
+	  )
+)
+
+;; calendar
+(defwidget cal[]
+	(box 
+	  :class "cal_box"
+	  :orientation "v"
+	  :space-evenly false
+      
+	  (calendar 
+	    :class "calendarApna"
+	    :show-heading false)
+	)
+)
+      
+
+;; system
+(defwidget systray [] 
+	(box :class "systray" :orientation "v" :halign "center" :space-evenly "false" :spacing "5"
+		(box :class "ram_bar" :orientation "h" :spacing 35 :space-evenly "false" :halign "end" :tooltip "${EWW_RAM.used_mem_perc}% ram usage"
+			(label :class "iconram" :text "")
+			(scale :min 0 :max 100 :value {EWW_RAM.used_mem_perc} :active "false")
+		)
+		(box :class "cpu_bar" :orientation "h" :spacing 36 :space-evenly "false" :halign "end" :tooltip "${EWW_CPU.avg}% cpu usage"
+			(label :class "iconcpu" :text "")
+			(scale :min 0 :max 100 :value {EWW_CPU.avg} :active "true")
+		)
+		(box :class "disk_bar" :orientation "h" :spacing 36 :space-evenly "false" :halign "end" :tooltip "${round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}% disk usage"
+			(label :class "icondisk" :text "")
+			(scale :min 0 :max 100 :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)} :active "false")
+		)
+		(box :class "uptime-text"  "${_uptime}")
+
+	)
+)
+(deflisten _uptime "~/.config/eww/ctrl/scripts/sys_info upt")
+
+
+;; Powermenu
+(defwidget powermenu []
+	(box :orientation "h"
+		 :class "powermenu"
+		 :space-evenly "true"
+		 (button :class "powermenu-item" :halign "center" :valign "center" :onclick "riverctl quit" "logout")
+		 (button :class "powermenu-item" :halign "center" :valign "center" :onclick "systemctl reboot" "reboot")
+		 (button :class "powermenu-item" :halign "center" :valign "center" :onclick "systemctl poweroff" "power")
+	)
+)
+
+;;  Profile
+(defwidget profile [] 
+	    (box :orientation "h" 
+		 :space-evenly "false"
+		 :spacing "50"
+		 :class "profile" 
+    		(box :orientation "h" :space-evenly "false" 
+    			(box :class "pfp")
+		)
+    		(box :orientation "v" :space-evenly "false"  
+    			(box :class "name" :halign "start" "vagabond")
+    			(box :class "subpfptxt" :halign "start" "@rubicon")
+		)
+	)
+)
+
+(defwindow dash
+    :monitor 0
+    :geometry (geometry :x "0" :y "0" :anchor "center left" :height "70%" :width "20%")
+    :windowtype "dock"
+    :wm-ignore true
+	(dash)
+)
