@@ -1,3 +1,12 @@
+## Nocturn
+Discord: [ArticExploit](https://github.com/ArticExploit/solarized-discord-theme/tree/master)<br>
+Font: 0xProto<br>
+WM: i3wm<br>
+- Installed Ueberzug for images on st, uninstalled wez
+- BSPWM and Berry are henceforth unmaintained
+- Shorten rofi powermenu script
+- tint2 -> i3status-rs
+
 ## Ivy<br>
 ![quote](https://github.com/MujtabaAsim/dots/assets/62666332/0944f951-a91c-4a51-a0f1-6757f9c88a4c)
 

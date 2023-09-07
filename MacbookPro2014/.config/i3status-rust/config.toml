@@ -1,0 +1,57 @@
+[theme]
+theme = "solarized-dark"
+[theme.overrides]
+alternating_tint_bg = "#073642"
+alternating_tint_fg = "#eee8d5"
+
+[icons]
+icons = "awesome6"
+[icons.overrides]
+
+[[block]]
+block = "net"
+interval = 10
+format = " $icon $ssid "
+
+
+[[block]]
+block = "temperature"
+interval = 10
+scale = "celsius"
+format = " $icon $max  "
+chip = "*-isa-*"
+
+[[block]]
+block = "cpu"
+format = " $icon $utilization "
+
+[[block]]
+block = "music"
+[[block.click]]
+button = "left"
+action = "play_pause"
+
+[[block]]
+block = "memory"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "amixer sset Master toggle"
+
+[[block]]
+block = "battery"
+interval = 60
+format = " $icon $percentage "
+
+[[block]]
+block = "time"
+interval = 10
+format = " $timestamp.datetime(f:' %a %d %b') "
+
+[[block]]
+block = "time"
+interval = 10
+format = " $timestamp.datetime(f:' %I:%M %p') "
