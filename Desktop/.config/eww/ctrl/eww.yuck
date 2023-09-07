@@ -8,7 +8,7 @@
 
 
 
-(defpoll lambda_media_cover_state:interval "10s"
+(defpoll lambda_media_cover_state :interval "10s"
 	"./scripts/mediaControl.sh update")
       
 (defwidget lambda_media_cover[]
