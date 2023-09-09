@@ -1,7 +1,7 @@
 ## Nocturn
 ![solar](https://github.com/masroof-maindak/dots/assets/62666332/82bb7e1f-86b5-4ba5-a673-f429a6076a35)
 
-![dragon](https://github.com/masroof-maindak/dots/assets/62666332/53787394-92ed-4ae3-bf07-8cf6b45ed6ed)
+![rofi](https://github.com/masroof-maindak/dots/assets/62666332/a062c2f5-7cba-494a-a48c-9bacaee6bd44)
 
 Discord: [ArticExploit](https://github.com/ArticExploit/solarized-discord-theme/tree/master)<br>
 Font: 0xProto<br>
