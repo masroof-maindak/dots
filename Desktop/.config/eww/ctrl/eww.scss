@@ -78,7 +78,7 @@ $aqua: #689d6a;
 }
 
 calendar {
-	padding: 2px 12px;
+	padding: 1px;
 	&:selected {
 	  color: $blue;
 	  background: $background-alt;
@@ -124,17 +124,6 @@ tooltip {
 	background-color: $blue;
 }
 
-
-
-
-
-
-.uptime-text{
-	font-size: 1em;
-	font-style: italic;
-	margin-top: 2em;
-	color: $foreground;
-}
 
 .powermenu {
 	background-color: $background;

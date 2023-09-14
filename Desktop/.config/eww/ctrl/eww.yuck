@@ -86,12 +86,8 @@
 			(label :class "icondisk" :text "")
 			(scale :min 0 :max 100 :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)} :active "false")
 		)
-		(box :class "uptime-text"  "${_uptime}")
-
 	)
 )
-(deflisten _uptime "~/.config/eww/ctrl/scripts/sys_info upt")
-
 
 ;; Powermenu
 (defwidget powermenu []
