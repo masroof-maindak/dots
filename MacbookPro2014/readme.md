@@ -1,13 +1,11 @@
 ## Nocturn
-![solar](https://github.com/masroof-maindak/dots/assets/62666332/82bb7e1f-86b5-4ba5-a673-f429a6076a35)
-
-![rofi](https://github.com/masroof-maindak/dots/assets/62666332/a062c2f5-7cba-494a-a48c-9bacaee6bd44)
+![screen](https://github.com/masroof-maindak/dots/assets/62666332/614ff822-00ee-44c6-95e5-ffa809747203)
 
 Discord: [ArticExploit](https://github.com/ArticExploit/solarized-discord-theme/tree/master)<br>
 Font: 0xProto<br>
 WM: i3wm<br>
 - Installed Ueberzug for images on st, uninstalled wez
-- BSPWM and Berry are henceforth unmaintained
+- Berry is henceforth unmaintained
 - Shorten rofi powermenu script
 - tint2 -> i3status-rs
 
