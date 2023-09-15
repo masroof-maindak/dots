@@ -1,8 +1,6 @@
 [theme]
 theme = "solarized-dark"
 [theme.overrides]
-alternating_tint_bg = "#073642"
-alternating_tint_fg = "#eee8d5"
 
 [icons]
 icons = "awesome6"
@@ -30,10 +28,6 @@ block = "music"
 [[block.click]]
 button = "left"
 action = "play_pause"
-
-[[block]]
-block = "memory"
-format = " $icon $mem_total_used_percents.eng(w:2) "
 
 [[block]]
 block = "sound"
