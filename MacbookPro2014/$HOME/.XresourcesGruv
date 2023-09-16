@@ -1,5 +1,21 @@
 Xft.dpi: 192
 
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+Xft.hintstyle:	hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter:	lcddefault
+
+st.font: Maple Mono:pixelsize=28
+
+! window padding
+st.borderpx: 40
+
+!- 0.1 to 0.9 = transparency
+st.alpha: 1.0
+
+
 *background: #282828
 *foreground: #ebdbb2
 

@@ -1,12 +1,24 @@
+## Petrichor
+Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
+Icons: [Gruvbox Plus](https://github.com/SylEleuth/gruvbox-plus-icon-pack)<br>
+GTK: [Elkowar](https://github.com/elkowar/gtk/tree/master)<br>
+Font: Maple Mono<br>
+WM: <br>
+- Back to Gruvbox...
+- Most configs were re-used from Dirt as-is
+
+
 ## Nocturn
 ![screen](https://github.com/masroof-maindak/dots/assets/62666332/614ff822-00ee-44c6-95e5-ffa809747203)
 
 Discord: [ArticExploit](https://github.com/ArticExploit/solarized-discord-theme/tree/master)<br>
+GTK: [RTL88](https://www.gnome-look.org/p/1974519)<br>
 Font: 0xProto<br>
-WM: i3wm<br>
+WM: i3<br>
 - Installed Ueberzug for images on st, uninstalled wez
-- Berry is henceforth unmaintained
+- BSPWM & Berry are henceforth unmaintained
 - Shorten rofi powermenu script
+- BSPWM -> i3
 - tint2 -> i3status-rs
 
 ## Ivy<br>
@@ -16,6 +28,7 @@ WM: i3wm<br>
 
 Font: Cozette & Liberation Serif<br>
 WM: berry<br>
+- Pretty much everything else is from the official Everblush repo
 - Barless, minimal attempt
 - Started using st in addition to wezterm (Siduck's (requires gd))
 - Probably my last time updating Rofi - no change except colours in the foreseeable future
@@ -36,14 +49,14 @@ WM: bspwm<br>
 Eww: [rxhyn](https://github.com/rxyhn/tokyo)'s profile module + sys info script<br>
 Font: Comic Shanns<br>
 WM: bspwm<br>
-- i3wm -> bspwm
+- i3 -> bspwm
 - polybar -> Eww
 - rofi (pwrmnu) -> Eww
 - ncspot -> spotify_player
 - i3 is henceforth unmaintained
 
-## Petrichor
-![windows](https://github.com/MujtabaAsim/dots/assets/62666332/6e65b87b-da01-4a41-8850-1e681356dc75)
+## Dirt
+![firefox](https://github.com/MujtabaAsim/Earthy/assets/62666332/566a7ce0-eaaf-4274-bf02-c8aa21483c9b)
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
