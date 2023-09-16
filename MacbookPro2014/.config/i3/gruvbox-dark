@@ -1,8 +1,18 @@
-set $bg #ebdbb2
-set $pink #b16286
+bar {
+        status_command i3status-rs
+        colors {
+        separator #cc241d
+        background #3c3836
+        statusline #ebdbb2
+        focused_workspace #98971a #3c3836 #ebdbb2
+        active_workspace #333333 #002b36 #ebdbb2
+        inactive_workspace #504945 #3c3836 #ebdbb2
+        urgent_workspace #cc241d #3c3836 #ebdbb2
+    }
+}
 
-# target                 title     bg    text   indicator  border
-client.focused          $blue $blue $darkgray $pink $pink
-client.focused_inactive $darkgray $darkgray $yellow $bg $bg
-client.unfocused        $darkgray $darkgray $yellow $pink $bg
-client.urgent           $red $red $white $red $red
+
+client.focused          #98971a #98971a #ebdbb2 #b8bb26
+client.focused_inactive #3c3836 #3c3836 #fcf1c7 #504945
+client.unfocused        #3c3836 #3c3836 #fcf1c7 #504945
+client.urgent           #cc241d #cc241d #fcf1c7 #fb4934
