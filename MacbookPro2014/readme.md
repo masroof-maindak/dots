@@ -4,12 +4,12 @@
 ![windows](https://github.com/masroof-maindak/dots/assets/62666332/d7017240-de1e-42cf-9e7b-c3c724bbc519)
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
+Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
 Icons: [Gruvbox Plus](https://github.com/SylEleuth/gruvbox-plus-icon-pack)<br>
 GTK: [Elkowar](https://github.com/elkowar/gtk/tree/master)<br>
 Font: Maple Mono<br>
 WM: BSPWM<br>
 - Back to Gruvbox... And BSPWM... And Polybar...
-- Most configs were re-used from Dirt as-is
 - i3 -> BSPWM
 
 ## Nocturn
@@ -58,11 +58,3 @@ WM: bspwm<br>
 - rofi (pwrmnu) -> Eww
 - ncspot -> spotify_player
 - i3 is henceforth unmaintained
-
-## Dirt
-![firefox](https://github.com/MujtabaAsim/Earthy/assets/62666332/566a7ce0-eaaf-4274-bf02-c8aa21483c9b)
-
-Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
-Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
-Font: Iosevka & IosevkaTerm<br>
-WM: i3 + berry<br>
