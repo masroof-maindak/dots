@@ -1,15 +1,14 @@
 [global]
-font = FireCodeNerdFontMono 11
+font = Maple Mono 12
 progress_bar = true
 sort = yes
 alignment = center
 scale = 2
-frame_color = "#ee5396"
+frame_color = "#98971a"
 frame_width = 1
 separator_color= frame
-background = "#161616"
-foreground = "#fff"
+background = "#282828"
+foreground = "#ebdbb2"
 
 [urgency_critical]
-background = "#fff"
-foreground = "#161616"
+frame_color = "#cc241d"

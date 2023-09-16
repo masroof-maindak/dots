@@ -7,4 +7,5 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-polybar wspc & polybar task & polybar media & polybar sys
+#polybar wspc & polybar task & polybar media & polybar sys
+polybar main
