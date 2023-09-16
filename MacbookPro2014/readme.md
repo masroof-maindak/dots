@@ -1,12 +1,16 @@
 ## Petrichor
+![rofi](https://github.com/masroof-maindak/dots/assets/62666332/2b9512b1-f146-4ca9-a1ab-b69c847ca229)
+
+![windows](https://github.com/masroof-maindak/dots/assets/62666332/d7017240-de1e-42cf-9e7b-c3c724bbc519)
+
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Icons: [Gruvbox Plus](https://github.com/SylEleuth/gruvbox-plus-icon-pack)<br>
 GTK: [Elkowar](https://github.com/elkowar/gtk/tree/master)<br>
 Font: Maple Mono<br>
-WM: <br>
-- Back to Gruvbox...
+WM: BSPWM<br>
+- Back to Gruvbox... And BSPWM... And Polybar...
 - Most configs were re-used from Dirt as-is
-
+- i3 -> BSPWM
 
 ## Nocturn
 ![screen](https://github.com/masroof-maindak/dots/assets/62666332/614ff822-00ee-44c6-95e5-ffa809747203)
@@ -16,7 +20,7 @@ GTK: [RTL88](https://www.gnome-look.org/p/1974519)<br>
 Font: 0xProto<br>
 WM: i3<br>
 - Installed Ueberzug for images on st, uninstalled wez
-- BSPWM & Berry are henceforth unmaintained
+- Berry is henceforth unmaintained
 - Shorten rofi powermenu script
 - BSPWM -> i3
 - tint2 -> i3status-rs
