@@ -1,7 +1,7 @@
 ## Petrichor
-![rofi](https://github.com/masroof-maindak/dots/assets/62666332/2b9512b1-f146-4ca9-a1ab-b69c847ca229)
+![rofi](https://github.com/masroof-maindak/dots/assets/62666332/05a83848-0957-453c-b33a-bbfccea62d45)
 
-![windows](https://github.com/masroof-maindak/dots/assets/62666332/d7017240-de1e-42cf-9e7b-c3c724bbc519)
+![main](https://github.com/masroof-maindak/dots/assets/62666332/98190209-c063-400e-93d5-aa40bfe5aa59)
 
 Startpage: [Earthy](https://github.com/MujtabaAsim/Earthy) <br>
 Discord: [Joinemm](https://github.com/joinemm/discord-css/tree/master) <br>
