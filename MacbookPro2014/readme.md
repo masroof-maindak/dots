@@ -12,19 +12,6 @@ WM: BSPWM<br>
 - Back to Gruvbox... And BSPWM... And Polybar...
 - i3 -> BSPWM
 
-## Nocturn
-![screen](https://github.com/masroof-maindak/dots/assets/62666332/614ff822-00ee-44c6-95e5-ffa809747203)
-
-Discord: [ArticExploit](https://github.com/ArticExploit/solarized-discord-theme/tree/master)<br>
-GTK: [RTL88](https://www.gnome-look.org/p/1974519)<br>
-Font: 0xProto<br>
-WM: i3<br>
-- Installed Ueberzug for images on st, uninstalled wez
-- Berry is henceforth unmaintained
-- Shorten rofi powermenu script
-- BSPWM -> i3
-- tint2 -> i3status-rs
-
 ## Ivy<br>
 ![quote](https://github.com/MujtabaAsim/dots/assets/62666332/0944f951-a91c-4a51-a0f1-6757f9c88a4c)
 
@@ -44,17 +31,3 @@ Icons: [Papirus (Modded)](https://github.com/BattleCh1cken/oxocarbon-papirus-fol
 GTK + Discord: [Tsukki](https://github.com/tsukki9696)<br>
 Font: Fira Code Nerd<br>
 WM: bspwm<br>
-- Deleted Eww because of battery drain
-- Eww (bar) -> tint2
-
-## Nightshade
-![dash](https://github.com/MujtabaAsim/dots/assets/62666332/c0413b26-3246-4f18-9cfe-b7365ae557f6)
-
-Eww: [rxhyn](https://github.com/rxyhn/tokyo)'s profile module + sys info script<br>
-Font: Comic Shanns<br>
-WM: bspwm<br>
-- i3 -> bspwm
-- polybar -> Eww
-- rofi (pwrmnu) -> Eww
-- ncspot -> spotify_player
-- i3 is henceforth unmaintained
