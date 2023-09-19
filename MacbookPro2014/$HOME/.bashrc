@@ -20,7 +20,7 @@
 #}
 
 #export PS1="\[\e[48;2;140;207;126;38;2;20;23;30m\] λ \[\e[48;2;35;42;45;38;2;218;218;218m\] \\W \[\e[m\] "
-PS1="\W $ "
+PS1="\W >> "
 
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
@@ -38,18 +38,18 @@ alias p="pacman"
 alias pkg="pacman -Q | wc -l"
 alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"
 
+alias uni="cd ~/Documents/University/"
+
 alias i3w="startx ~/.xinitrc i3"
 alias ber="startx ~/.xinitrc berry"
 alias bsp="startx ~/.xinitrc bspwm"
-alias awm="startx ~/.xinitrc awesome"
 
-alias awc="cd .config/awesome/"
-alias bec="cd .config/berry/"
-alias ewc="cd .config/eww/"
-alias i3c="cd .config/i3/"
+alias bec="cd ~/.config/berry/"
+alias ewc="cd ~/.config/eww/"
+alias i3c="nvim ~/.config/i3/config"
 
-alias bsc="nvim .config/bspwm/bspwmrc"
-alias sxc="nvim .config/sxhkd/sxhkdrc"
+alias bsc="nvim ~/.config/bspwm/bspwmrc"
+alias sxc="nvim ~/.config/sxhkd/sxhkdrc"
 
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
