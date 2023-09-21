@@ -7,7 +7,7 @@ Xft.hintstyle:	hintslight
 Xft.rgba:	rgb
 Xft.lcdfilter:	lcddefault
 
-st.font: cozetteHiDpi:pixelsize=26
+st.font: Maple Mono:pixelsize=28
 
 ! window padding
 st.borderpx: 40
@@ -15,37 +15,38 @@ st.borderpx: 40
 !- 0.1 to 0.9 = transparency
 st.alpha: 1.0
 
-*background: #141b1e
-*foreground: #dadada
+
+*background: #282828
+*foreground: #ebdbb2
 
 ! Black + DarkGrey
-*color0:  #22292b
-*color8:  #575e60
+*color0:  #282828
+*color8:  #928374
 
 ! DarkRed + Red
-*color1:  #e06e6e
-*color9:  #ef7d7d
+*color1:  #cc241d
+*color9:  #fb4934
 
 ! DarkGreen + Green
-*color2:  #8ccf7e
-*color10: #9bdead
+*color2:  #98971a
+*color10: #b8bb26
 
 ! DarkYellow + Yellow
-*color3:  #e5c76b
-*color11: #f4d67a
+*color3:  #d79921
+*color11: #fabd2f
 
 ! DarkBlue + Blue
-*color4:  #67b0e8
-*color12: #6cb5ed
+*color4:  #458588
+*color12: #83a598
 
 ! DarkMagenta + Magenta
-*color5:  #c47fd5
-*color13: #ce89df
+*color5:  #b16286
+*color13: #d3869b
 
 ! DarkCyan + Cyan
-*color6:  #6da4cd
-*color14: #67cbe7
+*color6:  #689d6a
+*color14: #8ec07c
 
 ! LightGrey + White
-*color7:  #b3b9b8
-*color15: #bdc3c2
+*color7:  #a89984
+*color15: #ebdbb2

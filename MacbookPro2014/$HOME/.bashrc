@@ -40,14 +40,11 @@ alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percent
 
 alias uni="cd ~/Documents/University/"
 
-alias i3w="startx ~/.xinitrc i3"
-alias ber="startx ~/.xinitrc berry"
+alias doc="cd ~/Documents/"
+alias uni="cd ~/Documents/University/"
+alias cfg="cd ~/.config/"
+
 alias bsp="startx ~/.xinitrc bspwm"
-
-alias bec="cd ~/.config/berry/"
-alias ewc="cd ~/.config/eww/"
-alias i3c="nvim ~/.config/i3/config"
-
 alias bsc="nvim ~/.config/bspwm/bspwmrc"
 alias sxc="nvim ~/.config/sxhkd/sxhkdrc"
 
