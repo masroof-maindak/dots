@@ -1,16 +1,16 @@
 /*****----- Configuration -----*****/
 configuration {
-    font:                       "Liberation Serif 20";
-    terminal:                   "wezterm";
+    font:                       "CozetteVector 20";
+    terminal:                   "st";
 	modi:                       "drun";
     show-icons:                 false;
 	drun-display-format:        "{name}";  
 }
 
 * {
-    background:     #141b1e;
-    foreground:     #dadada;
-    selected:       #8ccf7e;
+    background:     #342F1E;
+    foreground:     #e8ecd4;
+    selected:       #ec9f05;
 }
 
 

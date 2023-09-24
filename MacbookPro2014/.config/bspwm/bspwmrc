@@ -1,5 +1,4 @@
 #! /bin/sh
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 xsetroot -cursor_name left_ptr &
 ~/.config/polybar/launch.sh &
@@ -8,19 +7,22 @@ xset s 480 dpms 600 600 600 &
 nitrogen --restore &
 dunst &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9
+# bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+# bspc monitor -d i ii iii iv v vi vii viii ix x
+# bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 0000 0001 0010 0011 0100 0101 0110 0111 1000
 
-normal="#3c3836"
-accent="#98971a"
+normal="#3a3124"
+accent="#ec9f05"
 
 bspc config presel_feedback_color $accent
 bspc config focused_border_color $accent
-bspc config normal_border_color $normal
+bspc config normal_border_color $normal 
 
-bspc config border_width         3
-bspc config window_gap          16
+bspc config border_width        4
+bspc config window_gap          20
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      false
 bspc config focus_follows_pointer true
@@ -32,5 +34,6 @@ bspc rule -a discord desktop='^4'
 bspc rule -a Gthumb desktop='^5'
 
 bspc rule -a feh state=floating
+bspc rule -a Zathura state=tiled
 bspc rule -a Cpupower-gui state=floating
 bspc rule -a Lxappearance state=floating

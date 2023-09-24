@@ -1,3 +1,8 @@
+## Vile
+Font: Cozette & CozetteVector<br>
+WM: BSPWM<br>
+- Made my own colour scheme, more [here](https://github.com/masroof-maindak/swamp.nvim)
+
 ## Petrichor
 ![rofi](https://github.com/masroof-maindak/dots/assets/62666332/05a83848-0957-453c-b33a-bbfccea62d45)
 
@@ -9,8 +14,7 @@ Icons: [Gruvbox Plus](https://github.com/SylEleuth/gruvbox-plus-icon-pack)<br>
 GTK: [Elkowar](https://github.com/elkowar/gtk/tree/master)<br>
 Font: Maple Mono<br>
 WM: BSPWM<br>
-- Back to Gruvbox... And BSPWM... And Polybar...
-- i3 -> BSPWM
+
 
 ## Ivy<br>
 ![quote](https://github.com/MujtabaAsim/dots/assets/62666332/0944f951-a91c-4a51-a0f1-6757f9c88a4c)
@@ -19,7 +23,6 @@ WM: BSPWM<br>
 
 Font: Cozette & Liberation Serif<br>
 WM: berry<br>
-- Pretty much everything else is from the official Everblush repo
+- Everything else is from the official Everblush repo
 - Barless, minimal attempt
-- Started using st in addition to wezterm (Siduck's (requires gd))
-- Probably my last time updating Rofi - no change except colours in the foreseeable future
+- Started using st instead of wezterm (Siduck's (requires gd))

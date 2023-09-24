@@ -5,10 +5,10 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Liberation Serif 20";
-    background:                  #141b1e;
-    foreground:                  #dadada;
-    urgent:                      #8ccf7e;
+    font:                        "CozetteVector 20";
+    background:                  #342F1E;
+    foreground:                  #e8ecd4;
+    urgent:                      #ec9f05;
 }
 
 
