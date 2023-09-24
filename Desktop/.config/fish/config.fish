@@ -12,8 +12,8 @@ if status is-interactive
     alias h="helix"
     alias r="ranger"
 
-    alias ric="helix .config/river/init"
-    alias riv="river"
+    alias uni="cd ~/Documents/university"
+    alias cfg="cd ~/.config"
     
     fish_add_path -mg $HOME/.local/bin
     fish_add_path -mg $HOME/.cargo/bin

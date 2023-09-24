@@ -13,7 +13,3 @@ EWW: [TheMidnightShow](https://github.com/TheMidnightShow/dotfiles)'s media modu
 GTK: [PK](https://github.com/prettykool/oomox-gruvish)<br>
 Font: Victor Mono<br>
 WM: River<br>
-- Hyprland -> River
-- Azote -> swww
-- Dunst -> Mako
-- tofi -> rofi
