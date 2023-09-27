@@ -1,4 +1,8 @@
 ## Vile
+![nvim](https://github.com/masroof-maindak/dots/assets/62666332/f57d0b36-58fd-4ede-8173-a71427dfcfdb)
+
+![music](https://github.com/masroof-maindak/dots/assets/62666332/b89eba08-2d58-485a-ba96-96ac9db156ff)
+
 Font: Cozette & CozetteVector<br>
 WM: BSPWM<br>
 - Made my own colour scheme, more [here](https://github.com/masroof-maindak/swamp.nvim)
