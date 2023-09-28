@@ -1,7 +1,7 @@
 ## Vile
-![chill](https://github.com/masroof-maindak/dots/assets/62666332/144c4ab8-3000-44d6-a188-1d64171e76b3)
+![main](https://github.com/masroof-maindak/dots/assets/62666332/358616cb-4085-414b-8fbf-622c640c1273)
 
-![main](https://github.com/masroof-maindak/dots/assets/62666332/822b3e09-e2e4-4a38-8aeb-30c8adbda4bd)
+![waves](https://github.com/masroof-maindak/dots/assets/62666332/c572410e-f687-493b-a063-e9162b6f713f)
 
 Font: Cozette & CozetteVector<br>
 WM: BSPWM<br>
