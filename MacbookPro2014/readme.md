@@ -1,7 +1,7 @@
 ## Vile
-![nvim](https://github.com/masroof-maindak/dots/assets/62666332/f57d0b36-58fd-4ede-8173-a71427dfcfdb)
+![chill](https://github.com/masroof-maindak/dots/assets/62666332/144c4ab8-3000-44d6-a188-1d64171e76b3)
 
-![music](https://github.com/masroof-maindak/dots/assets/62666332/b89eba08-2d58-485a-ba96-96ac9db156ff)
+![main](https://github.com/masroof-maindak/dots/assets/62666332/822b3e09-e2e4-4a38-8aeb-30c8adbda4bd)
 
 Font: Cozette & CozetteVector<br>
 WM: BSPWM<br>
