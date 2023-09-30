@@ -3,6 +3,8 @@
 
 ![waves](https://github.com/masroof-maindak/dots/assets/62666332/c572410e-f687-493b-a063-e9162b6f713f)
 
+![pool](https://github.com/masroof-maindak/dots/assets/62666332/11cecc74-b49c-49d6-8e3c-1dc5ae63923f)
+
 Font: Cozette & CozetteVector<br>
 WM: BSPWM<br>
 - Made my own colour scheme, more [here](https://github.com/masroof-maindak/swamp.nvim)
