@@ -2,52 +2,49 @@
 # wm independent hotkeys
 #
 
-# Spawn terminal
-super + {_,alt + }Return
-  {st, wezterm}
+# Spawn terminal 
+super + Return
+    st
 
 # Spawn terminal (floating)
 super + shift + Return
-  bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && wezterm
+    bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && st
 
-# Eww dashboard
+# powermenu
 super + e
-  $HOME/.config/rofi/scripts/powermenu.sh
-  #eww -c ~/.config/eww/dash open --toggle dash
+    $HOME/.config/rofi/scripts/powermenu.sh
 
-# Rofi launcher
+# rofi
 super + d
-  $HOME/.config/rofi/scripts/launcher.sh
+    $HOME/.config/rofi/scripts/launcher.sh
 
 # Applications
 super + {w, b, v}
- {thunar, firefox, code}
+    {thunar, firefox, code}
 
 # Screenshots
 super + {_,shift + }p
-  {maim -s ~/$(date +%s).png, shotgun}
+    {maim -s ~/$(date +%s).png, shotgun}
 
-# Vol
+# Vol 
 XF86Audio{Lower,Raise}Volume
-  amixer -D pulse sset Master {5%-, 5%+}
+    amixer -D pulse sset Master 5%{-,+}
 
 XF86AudioMute
-  amixer set Master toggle
+    amixer set Master toggle
 
 # Media
 XF86Audio{Next,Prev,Play}
-  playerctl {next, previous, play-pause}
+    playerctl {next, previous, play-pause}
 
 # Brightness
 XF86MonBrightness{Up,Down}
-  brightnessctl set {5%+, 5%-}
+    brightnessctl set 5%{+,-}
 
 # restart bspwm & sxhkd
 super + shift + {r, q}
-  {pkill -USR1 -x sxhkd, bspc wm -r}
+    {pkill -USR1 -x sxhkd, bspc wm -r}
 
-super + shift + q
-  bspc wm -r
 
 #
 # bspwm hotkeys
@@ -55,12 +52,19 @@ super + shift + q
 
 # Center a floating window
 super + c
-  eval "$(bspc query -T -n | jq -r '"X=\(.client.floatingRectangle.x+(.client.floatingRectangle.width/2)-1280)\nY=\(.client.floatingRectangle.y+(.client.floatingRectangle.height/2)-800)"')" && dx=$(($X * -1)) && dy=$(($Y * -1)) && bspc node -v $dx $dy
+    eval "$(bspc query -T -n | jq -r '"X=\(.client.floatingRectangle.x+(.client.floatingRectangle.width/2)-1280)\nY=\(.client.floatingRectangle.y+(.client.floatingRectangle.height/2)-800)"')" && dx=$(($X * -1)) && dy=$(($Y * -1)) && bspc node -v $dx $dy
 
 # close
 super + q
-	bspc node -c
+    bspc node -c
 
+# Make split ratios equal
+super + {equal,minus}
+	bspc node @/ --{equalize,balance}
+
+# rotate desktop
+alt + {_,shift +}r
+	bspc node @/ --rotate {90,-90}
 
 #
 # Focusing
@@ -139,4 +143,4 @@ super + Escape
 
 # preselect the ratio
 super + alt + {1-9}
-  bspc node -o 0.{1-9}
+    bspc node -o 0.{1-9}
