@@ -13,11 +13,11 @@ dunst &
 bspc monitor -d 0000 0001 0010 0011 0100 0101 0110 0111 1000
 
 normal="#3a3124"
-accent="#ec9f05"
+accent="#db930d"
 
 bspc config presel_feedback_color $accent
 bspc config focused_border_color $accent
-bspc config normal_border_color $normal 
+bspc config normal_border_color $normal
 
 bspc config border_width        4
 bspc config window_gap          20
@@ -29,7 +29,7 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Code desktop='^1'
 bspc rule -a firefox desktop='^2'
-bspc rule -a Spotify desktop='^3' #https://github.com/MujtabaAsim/Misc/blob/main/spotify_player.desktop
+bspc rule -a Spotify desktop='^3'
 bspc rule -a discord desktop='^4'
 bspc rule -a Gthumb desktop='^5'
 

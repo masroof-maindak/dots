@@ -13,16 +13,15 @@ set recolor true
 set smooth-scroll true
 set show-v-scrollbar true
 
-
 set default-fg                      "#D2C3A4"
 set default-bg                      "#211d13"
 
 set completion-bg                   "#3a3124"
 set completion-fg                   "#D2C3A4"
-set completion-highlight-bg         "#272316"
+set completion-highlight-bg         "#242015"
 set completion-highlight-fg         "#D2C3A4"
 set completion-group-bg             "#3a3124"
-set completion-group-fg             "#ec9f0d"
+set completion-group-fg             "#db930d"
 
 set statusbar-fg                    "#D2C3A4"
 set statusbar-bg                    "#3a3124"
@@ -30,24 +29,24 @@ set statusbar-bg                    "#3a3124"
 set notification-bg                 "#3a3124"
 set notification-fg                 "#D2C3A4"
 set notification-error-bg           "#3a3124"
-set notification-error-fg           "#b33951"
+set notification-error-fg           "#a82d56"
 set notification-warning-bg         "#3a3124"
 set notification-warning-fg         "#f1e9d0"
 
 set inputbar-fg                     "#D2C3A4"
 set inputbar-bg                     "#3a3124"
 
-set recolor-lightcolor              "#272316"
+set recolor-lightcolor              "#242015"
 set recolor-darkcolor               "#D2C3A4"
 
 set index-fg                        "#D2C3A4"
-set index-bg                        "#272316"
+set index-bg                        "#242015"
 set index-active-fg                 "#D2C3A4"
 set index-active-bg                 "#3a3124"
 
-set render-loading-bg               "#272316"
+set render-loading-bg               "#242015"
 set render-loading-fg               "#D2C3A4"
 
 set highlight-color                 "#3A3124"
-set highlight-fg                    "#F87C2A"
-set highlight-active-color          "#F87C2A"
+set highlight-fg                    "#7a7653"
+set highlight-active-color          "#7a7653"

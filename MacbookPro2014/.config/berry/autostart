@@ -3,18 +3,26 @@
 # Set decoration geometry
 berryc border_width 2
 berryc inner_border_width 4
-berryc title_height 40
-berryc edge_gap 13 13 106 13
+berryc title_height 36
+berryc edge_gap 13 13 13 13
+berryc edge_lock false
 
 # Text
-berryc draw_text "true"
-berryc set_font "ComicShannsMono Nerd Font-9"
+berryc draw_text false
+berryc set_font "CozetteHiDpi-26"
+berryc decorate_new true
+
+bgc="242015"
+normal="313124"
+accent="db930d"
 
 # Set decoration colors
-berryc focus_color         191724
-berryc unfocus_color       191724
-berryc inner_focus_color   9ccfd8
-berryc inner_unfocus_color 6e6a86 
+berryc focus_color         $bgc
+berryc unfocus_color       $bgc
+berryc inner_focus_color   $accent
+berryc inner_unfocus_color $normal 
+berryc text_focus_color    ebe0bb
+berryc text_unfocus_color  856a5d
 
 # Other options
 berryc smart_place "true"
@@ -35,7 +43,6 @@ berryc name_desktop 9 "j"
 # Start sxhkd and other programs
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
-$HOME/.config/polybar/launch.sh &
 xset s 480 dpms 600 600 600 &
-/usr/lib/polkit-1/polkit-d &
+~/.config/polybar/launsh.sh &
 dunst

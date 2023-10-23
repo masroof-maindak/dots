@@ -4,11 +4,11 @@ progress_bar = true
 sort = yes
 alignment = center
 scale = 2
-frame_color = "#ec9f0d"
+frame_color = "#db930d"
 frame_width = 2
 separator_color= frame
-background = "#272316"
+background = "#252015"
 foreground = "#ebe0bb"
 
 [urgency_critical]
-frame_color = "#b33951"
+frame_color = "#a82d56"

@@ -1,52 +1,41 @@
 Xft.dpi: 192
 
-Xft.antialias:	1
-Xft.hinting:	1
-Xft.autohint:	0
-Xft.hintstyle:	hintslight
-Xft.rgba:	rgb
-Xft.lcdfilter:	lcddefault
+Xft.antialias:  0
+Xft.hinting:    1
+Xft.autohint:   0
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgb
+Xft.lcdfilter:  lcddefault
 
-st.font: Maple Mono:pixelsize=28
+st.font: cozetteHiDpi:pixelsize=26
 
-! window padding
-st.borderpx: 40
+st.borderpx: 35
 
-!- 0.1 to 0.9 = transparency
 st.alpha: 1.0
 
+*background: #242015
+*foreground: #ebe0bb
 
-*background: #282828
-*foreground: #ebdbb2
+*color0:  #242015
+*color8:  #856A5D
 
-! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
+*color1:  #96294d
+*color9:  #a82d56
 
-! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
+*color2:  #7a7653
+*color10: #736f4e
 
-! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
+*color3:  #db930d
+*color11: #e69a0e
 
-! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
+*color4:  #91506c
+*color12: #80465f
 
-! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
+*color5:  #C1666B
+*color13: #b05d61
 
-! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
+*color6:  #508991
+*color14: #61A0A8
 
-! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
-
-! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+*color7:  #9F8875
+*color15: #ebe0bb
