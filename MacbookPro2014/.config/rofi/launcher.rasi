@@ -8,9 +8,9 @@ configuration {
 }
 
 * {
-    background:     #342F1E;
-    foreground:     #e8ecd4;
-    selected:       #ec9f05;
+    background:     #3A3124;
+    foreground:     #ebe0bb;
+    selected:       #db930d;
 }
 
 

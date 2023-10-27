@@ -7,7 +7,7 @@ scale = 2
 frame_color = "#db930d"
 frame_width = 2
 separator_color= frame
-background = "#252015"
+background = "#242015"
 foreground = "#ebe0bb"
 
 [urgency_critical]
