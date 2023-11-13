@@ -10,6 +10,10 @@ super + Return
 super + shift + Return
     bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && st
 
+# Spawn terminal (dimensions)
+super + shift + alt + Return
+    sel=$(slop) && bspc rule -a \* -o state=floating rectangle=$sel && st
+
 # powermenu
 super + e
     $HOME/.config/rofi/scripts/powermenu.sh

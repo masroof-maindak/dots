@@ -29,6 +29,7 @@ alias uni="cd ~/Documents/University/"
 alias cfg="cd ~/.config/"
 
 alias bsp="startx ~/.xinitrc bspwm"
+alias ber="startx ~/.xinitrc berry"
 
 alias brc="nvim ~/.bashrc"
 alias bsc="nvim ~/.config/bspwm/bspwmrc"

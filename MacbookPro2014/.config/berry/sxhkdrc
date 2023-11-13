@@ -3,8 +3,8 @@
 #
 
 # Spawn terminal
-super + {_,alt + }Return
-  {st, wezterm}
+super + Return
+  st
 
 # rofi powermenu
 super + e
