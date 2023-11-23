@@ -1,7 +1,3 @@
-#
-# wm independent hotkeys
-#
-
 # Spawn terminal 
 super + Return
     st
@@ -11,7 +7,7 @@ super + shift + Return
     bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && st
 
 # Spawn terminal (dimensions)
-super + shift + alt + Return
+super + shift + ctrl + Return
     sel=$(slop) && bspc rule -a \* -o state=floating rectangle=$sel && st
 
 # powermenu
@@ -28,7 +24,7 @@ super + {w, b, v}
 
 # Screenshots
 super + {_,shift + }p
-    {maim -s ~/$(date +%s).png, shotgun}
+    {shotgun $(slop -f "-i %i -g %g"), shotgun}
 
 # Vol 
 XF86Audio{Lower,Raise}Volume
@@ -78,16 +74,19 @@ alt + {_,shift +}r
 super + {_,shift + }u
 	bspc node -f {next,prev}.local.!hidden.window
 
-# Cycle between desktops
+# Cycle between workspaces
 super + {_,shift +}Tab
 	bspc desktop -f {next, prev}.local
 
+# Cycle between workspaces while bringing along the current window
+super + control + {_,shift +}Tab
+    id=$(bspc query --nodes --node); bspc node --to-desktop {next, prev}; bspc desktop --focus next; bspc node --focus ${id}
 
 #
 # move/resize
 #
 
-# swap the current node and the biggest window
+# swap the current node ad the biggest window
 super + ctrl + Return
 	bspc node -s biggest.window
 
