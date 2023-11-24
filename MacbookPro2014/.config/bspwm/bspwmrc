@@ -32,7 +32,6 @@ bspc config gapless_monocle      false
 bspc config single_monocle       true
 
 bspc config focus_follows_pointer true
-bspc config pointer_action1 resize_corner
 
 bspc rule -a Code desktop='^1'
 bspc rule -a firefox desktop='^2'
