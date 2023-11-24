@@ -3,6 +3,5 @@
       :class "time_module"
       :space-evenly false
       :orientation "h"
-      (label :text {formattime(EWW_TIME, "%H:%M")})
-    )
-)
+      :tooltip {formattime(EWW_TIME, "%c")}
+      (label :text {formattime(EWW_TIME, "%H:%M")})))
