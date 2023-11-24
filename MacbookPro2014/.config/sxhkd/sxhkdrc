@@ -114,9 +114,10 @@ super + ctrl + {h,j,k,l}
                 top 0 -20 || bspc node -z bottom 0 -20,\
                 right 20 0 || bspc node -z left 20 0}
 
-# Decide whether dragging the mouse resizes or moves
-super + {z,x}
-    bspc config pointer_action1 {move,resize_corner}
+# Toggle between resize and move mode
+alt + x
+    f="$HOME/.config/bspwm/pointerAction"; echo "$(if grep -q 'move' "$f"; then echo resize_corner; else echo move; fi)" > "$f" && bspc config pointer_action1 "$(cat "$f")"
+
 
 #
 # state/flags

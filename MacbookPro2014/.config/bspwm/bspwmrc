@@ -32,6 +32,8 @@ bspc config gapless_monocle      false
 bspc config single_monocle       true
 
 bspc config focus_follows_pointer true
+bspc config pointer_modifier    mod1 #alt 
+echo move > $HOME/.config/bspwm/pointerAction
 
 bspc rule -a Code desktop='^1'
 bspc rule -a firefox desktop='^2'
@@ -42,4 +44,4 @@ bspc rule -a Gthumb desktop='^5'
 bspc rule -a feh state=floating
 bspc rule -a Zathura state=tiled
 bspc rule -a Cpupower-gui state=floating
-bspc rule -a Lxappearance state=floating
+bspc rule -a Lxappearance state=floati
