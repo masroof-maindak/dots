@@ -109,15 +109,14 @@ super + {y,u,i,o}
 
 # expand/contract a tiled window 
 super + ctrl + {h,j,k,l}
-  bspc node -z {left -20 0 || bspc node -z right -20 0, \
-                bottom 0 20 || bspc node -z top 0 20,\
-                top 0 -20 || bspc node -z bottom 0 -20,\
-                right 20 0 || bspc node -z left 20 0}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+super + ctrl + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # Toggle between resize and move mode
-alt + x
-    f="$HOME/.config/bspwm/pointerAction"; echo "$(if grep -q 'move' "$f"; then echo resize_corner; else echo move; fi)" > "$f" && bspc config pointer_action1 "$(cat "$f")"
-
+super + x
+    mode=$(eww get mode); mode=$(if [ "$mode" = "move" ]; then echo "resize_corner"; else echo "move"; fi) && bspc config pointer_action1 "$mode" && eww update mode="$mode"
 
 #
 # state/flags

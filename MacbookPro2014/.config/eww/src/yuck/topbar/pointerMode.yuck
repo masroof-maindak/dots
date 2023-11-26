@@ -1,9 +1,0 @@
-(defwidget pointer_module []
-    (box
-      :class "pointer text"
-      :space-evenly false
-      :orientation "h"
-      :tooltip "Click to change to ${mode == 'move' ? 'Resize' : 'Move'}"
-      (button :onclick "eww update mode=${mode == 'move' ? 'resize_corner' : 'move'}" "${mode == 'move' ? 'move' : 'resize'}")))
-
-(defvar mode "move")
