@@ -1,19 +1,15 @@
 * {
-    font:                        "IBM Plex Mono 20";
-    background:                  #eee8d5;
-    foreground:                  #002b36;
-    selected:                    #859900;
+    font:                        "IBM Plex Mono 18";
+    background:                  #211d13;
+    foreground:                  #ebe0bb;
+    selected:                    #db930d;
 }
 
 window {
-    location:                    center;
-    anchor:                      center;
+    location:                    north;
+    anchor:                      north;
     fullscreen:                  false;
-    width:                       600px;
-    x-offset:                    0px;
-    y-offset:                    0px;
-
-    border-color:                @selected;
+    width:                       2560;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -26,26 +22,22 @@ mainbox {
 
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       4;
+    columns:                     10;
+    lines:                       1;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
     fixed-columns:               true;
-    
-    spacing:                     30px;
-    margin:                      50px;
+    margin:                      12px;
+    spacing:                     15px;
     background-color:            transparent;
     cursor:                      "default";
 }
 
 element {
     enabled:                     true;
-    padding:                     20px 10px;
-    border-radius:               0px;
+    padding:                     5px;
     background-color:            @background;
     text-color:                  @foreground;
     cursor:                      pointer;
@@ -54,10 +46,7 @@ element-text {
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            var(selected);
-    text-color:                  var(background);
+    text-color:                  var(selected);
 }

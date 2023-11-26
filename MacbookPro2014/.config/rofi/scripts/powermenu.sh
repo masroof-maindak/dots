@@ -3,18 +3,15 @@
 # Options
 shutdown='Shut Down'
 reboot='Reboot'
-lock='Lock'
 logout='Logout'
 
-# Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
 		-theme $HOME/.config/rofi/powermenu.rasi
 }
 
-# Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$logout\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$logout\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Actions
@@ -26,10 +23,7 @@ case ${chosen} in
     $reboot)
 		systemctl reboot
         ;;
-    $lock)
-		i3lock
-        ;;
     $logout)
-		i3-msg exit
+		bspc quit
         ;;
 esac

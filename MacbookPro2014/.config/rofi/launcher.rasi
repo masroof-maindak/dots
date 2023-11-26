@@ -1,5 +1,5 @@
 configuration {
-    font:                       "IBM Plex Mono 20";
+    font:                       "IBM Plex Mono 18";
     terminal:                   "st";
 	modi:                       "drun";
     show-icons:                 false;
@@ -7,20 +7,19 @@ configuration {
 }
 
 * {
-    background:     #eee8d5;
-    foreground:     #002b36;
-    selected:       #859900;
+    background:     #211d13;
+    foreground:     #ebe0bb;
+    selected:       #db930d;
 }
 
 window {
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    north;
+    anchor:                      north;
     fullscreen:                  false;
-    width:                       600px;
+    width:                       2560;
     x-offset:                    0px;
     y-offset:                    0px;
-
     enabled:                     true;
     border:                      0px;
     cursor:                      "default";
@@ -40,8 +39,8 @@ inputbar {
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     50px;
+    spacing:                     10px;
+    padding:                     12px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -49,26 +48,22 @@ listbox {
 
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       4;
+    columns:                     10;
+    lines:                       1;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
-    layout:                      vertical;
     reverse:                     false;
-    fixed-height:                true;
     fixed-columns:               true;
-    
-    spacing:                     30px;
+    spacing:                     15px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
 }
 
-/*****----- Elements -----*****/
 element {
     enabled:                     true;
-    padding:                     20px 30px;
+    padding:                     5px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
@@ -84,20 +79,7 @@ element normal.active {
     text-color:                  @foreground;
 }
 element selected.normal {
-    background-color:            @selected;
-    text-color: @background;
-}
-element selected.urgent {
-    text-color:                  @foreground;
-}
-element selected.active {
-    text-color:                  @foreground;
-}
-element-icon {
-    background-color:            transparent;
-    text-color:                  inherit;
-    size:                        32px;
-    cursor:                      inherit;
+    text-color:                  @selected;
 }
 element-text {
     background-color:            transparent;
