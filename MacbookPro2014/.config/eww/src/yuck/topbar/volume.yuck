@@ -1,0 +1,25 @@
+(defwidget volume_module [] 
+  (box
+    :orientation "h"
+    :space-evenly false 
+    :class "meter"
+    :tooltip "${volum.value}% volume"
+    (box
+      :space-evenly false
+      :spacing 2
+      (box
+        :class "scale_wrapper_box"
+        (scale 
+          :class "${volum.icon != '󰋋' ? 'muted_bar' : volum.value > 69 ? 'urgent_scale' : 'volume_bar'} scale"
+          :onchange "./scripts/volume --set {}"
+          :value {volum.value}
+          :orientation "h"
+          :max 101
+          :min 0))
+      (overlay
+        (label
+          :class "icons volume_icon"
+          :text {volum.icon})
+        (button :onclick "./scripts/volume --toggle")))))
+
+(deflisten volum :initial '{"icon": "󰋋", "value": "50" }' "./scripts/volume --get")
