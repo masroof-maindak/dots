@@ -50,9 +50,10 @@ $commonMargin: 6px;
 }
 
 .icons {
+    font-family: "Symbols Nerd Font Mono";
     background-color: $base01;
     min-width: 18px;
-    font-size: 14px;
+    font-size: 9px;
 }
 
 @import "./topbar/music.scss";

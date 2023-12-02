@@ -1,3 +1,3 @@
-reflector broadcom-wl playerctl pulseaudio pulseaudio-alsa qbittorrent alsa-utils brightnessctl networkmanager xorg-xinit ranger neovim firefox dunst thunar feh gthumb polybar ueberzug nitrogen slop shotgun rofi lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip zip jq noto-fonts noto-fonts-cjk
+reflector broadcom-wl playerctl pulseaudio pulseaudio-alsa qbittorrent alsa-utils brightnessctl networkmanager xorg-xinit ranger neovim firefox dunst thunar feh gthumb polybar ueberzug nitrogen slop shotgun rofi lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip zip jq noto-fonts noto-fonts-cjk gd discord ly ripgrep bspwm sxhkd brightnessctl
 
-`paru -S` b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player
+`paru -S` mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git
