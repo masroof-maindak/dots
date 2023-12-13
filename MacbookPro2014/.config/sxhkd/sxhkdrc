@@ -1,49 +1,49 @@
 # Spawn terminal 
 super + Return
-    st
+  st
 
 # Spawn terminal (floating)
 super + shift + Return
-    bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && st
+  bspc rule -a \* -o state=floating center=true rectangle=1000x600+0+0 && st
 
 # Spawn terminal (dimensions)
 super + shift + ctrl + Return
-    sel=$(slop) && bspc rule -a \* -o state=floating rectangle=$sel && st
+  sel=$(slop) && bspc rule -a \* -o state=floating rectangle=$sel && st
 
 # powermenu
 super + e
-    $HOME/.config/rofi/scripts/powermenu.sh
+  $HOME/.config/rofi/scripts/powermenu.sh
 
 # rofi
 super + d
-    $HOME/.config/rofi/scripts/launcher.sh
+  $HOME/.config/rofi/scripts/launcher.sh
 
 # Applications
 super + {w, b, v}
-    {thunar, firefox, code}
+  {thunar, firefox, code}
 
 # Screenshots
 super + {_,shift + }p
-    {shotgun $(slop -f "-i %i -g %g"), shotgun}
+  {shotgun $(slop -f "-i %i -g %g"), shotgun}
 
 # Vol 
 XF86Audio{Lower,Raise}Volume
-    amixer -D pulse sset Master 5%{-,+}
+  amixer -D pulse sset Master 5%{-,+}
 
 XF86AudioMute
-    amixer set Master toggle
+  amixer set Master toggle
 
 # Media
 XF86Audio{Next,Prev,Play}
-    playerctl {next, previous, play-pause}
+  playerctl {next, previous, play-pause}
 
 # Brightness
 XF86MonBrightness{Up,Down}
-    brightnessctl set 5%{+,-}
+  brightnessctl set 5%{+,-}
 
 # restart bspwm & sxhkd
 super + shift + {r, q}
-    {pkill -USR1 -x sxhkd, bspc wm -r}
+  {pkill -USR1 -x sxhkd, bspc wm -r}
 
 
 #
@@ -52,11 +52,11 @@ super + shift + {r, q}
 
 # Center a floating window
 super + c
-    eval "$(bspc query -T -n | jq -r '"X=\(.client.floatingRectangle.x+(.client.floatingRectangle.width/2)-1280)\nY=\(.client.floatingRectangle.y+(.client.floatingRectangle.height/2)-800)"')" && dx=$(($X * -1)) && dy=$(($Y * -1)) && bspc node -v $dx $dy
+  $HOME/.config/bspwm/centerWindow.sh
 
 # close
 super + q
-    bspc node -c
+  bspc node -c
 
 # Make split ratios equal
 super + {equal,minus}
@@ -80,7 +80,7 @@ super + {_,shift +}Tab
 
 # Cycle between workspaces while bringing along the current window
 super + control + {_,shift +}Tab
-    id=$(bspc query --nodes --node); bspc node --to-desktop {next, prev}; bspc desktop --focus {next,prev}; bspc node --focus ${id}
+  id=$(bspc query --nodes --node); bspc node --to-desktop {next, prev}; bspc desktop --focus {next,prev}; bspc node --focus ${id}
 
 
 #
@@ -109,15 +109,15 @@ super + {y,u,i,o}
 
 # expand/contract a tiled window 
 super + ctrl + {h,j,k,l}
-    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 super + ctrl + shift + {h,j,k,l}
-    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+  bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # Toggle between resize and move mode
 super + x
-    mode=$(eww get mode); mode=$(if [ "$mode" = "move" ]; then echo "resize_corner"; else echo "move"; fi) && bspc config pointer_action1 "$mode" && eww update mode="$mode"
-
+  $HOME/.config/bspwm/pointer1mode.sh
+  
 #
 # state/flags
 #

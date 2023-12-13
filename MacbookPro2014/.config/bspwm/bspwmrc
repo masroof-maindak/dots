@@ -2,8 +2,8 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
-eww daemon && eww open topbar
 /usr/lib/polkit-1/polkitd &
+eww open topbar &
 nitrogen --restore &
 dunst &
 
