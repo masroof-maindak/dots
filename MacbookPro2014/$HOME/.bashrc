@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1="\033[0;33m\W\033[0m\nΣ "
+PS1="\033[0;33m\W\033[0m ;; "
 
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
@@ -17,7 +17,8 @@ alias c="clear"
 alias q="exit"
 alias dd="dragon-drop"
 
-alias v="nvim"
+alias v="vim"
+alias hx="helix"
 alias r="ranger"
 alias p="pacman"
 
@@ -31,9 +32,9 @@ alias cfg="cd ~/.config/"
 alias bsp="startx ~/.xinitrc bspwm"
 alias ber="startx ~/.xinitrc berry"
 
-alias brc="nvim ~/.bashrc"
-alias bsc="nvim ~/.config/bspwm/bspwmrc"
-alias sxc="nvim ~/.config/sxhkd/sxhkdrc"
+alias brc="hx ~/.bashrc"
+alias bsc="hx ~/.config/bspwm/bspwmrc"
+alias sxc="hx ~/.config/sxhkd/sxhkdrc"
 
 case ":${PATH}:" in
     *:"$HOME/.local/bin":*)
