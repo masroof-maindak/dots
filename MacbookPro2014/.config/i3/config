@@ -160,20 +160,6 @@ for_window [class="feh"] floating enable
 
 focus_on_window_activation focus
 
-bar {
-        status_command i3status-rs
-        colors {
-        separator #cc241d
-        background #073642
-        statusline #fdf6e3
-        focused_workspace #2aa198 #2aa198 #fdf6e3
-        active_workspace #333333 #002b36 #fdf6e3
-        inactive_workspace #002b36 #002b36 #eee8d5
-        urgent_workspace #cb4b16 #dc322f #fdf6e3
-    }
-}
-
-
 client.focused          #2aa198 #2aa198 #fdf6e3 #268bd2
 client.focused_inactive #002b36 #073642 #839496 #073642
 client.unfocused        #002b36 #073642 #839496 #073642
