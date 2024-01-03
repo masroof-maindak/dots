@@ -1,0 +1,71 @@
+[{
+    "position": "bottom",
+    "name": "main",
+    "layer": "top",
+    "output": ["DP-1"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["mpris", "custom/spr", "pulseaudio", "custom/spr", "clock"],
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "persistent-workspaces":{
+            "DP-1":[1,2,3,4,5],
+            "DP-2":[6,7,8,9]
+        },
+        "format": "{icon}",
+        "sort-by-number": true
+    },
+
+    "mpris": {
+      "format": "{title} - {artist}",
+      "ignored-players": ["firefox"]
+    },
+
+    "clock": {
+        "format": "time: {:%I:%M %p}"
+    },
+    
+    "pulseaudio": {
+        "format": "volume: {volume}%",
+        "format-muted": "muted",
+        "tooltip-format": "{volume}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+
+    "custom/spr": {
+      "format": "|"
+    }
+}, 
+{
+    "name": "side",
+    "position": "bottom",
+    "layer": "top",
+    "output": ["DP-2"],
+    "modules-right": ["hyprland/workspaces" ],
+    "modules-left": ["clock", "custom/spr", "custom/scr"],
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "persistent-workspaces":{
+            "DP-1":[1,2,3,4,5],
+            "DP-2":[6,7,8,9]
+        },
+        "format": "{icon}",
+        "sort-by-number": true
+    },
+
+    "custom/spr": {
+      "format": "|"
+    },
+
+    "custom/scr": {
+      "format": "grim",
+      "on-click": "grim \"$(date +%s)\".png && notify-send 'screenshot taken.'"
+    },
+
+    "clock": {
+        "format": "{:%a, %d %b}"
+    }
+}]
+

@@ -1,29 +1,33 @@
 local wezterm = require 'wezterm'
 local config = {}
 
-config.font = wezterm.font('Maple Mono')
-config.font_size = 13.5
+-- config.font = wezterm.font('Maple Mono')
+-- config.font_size = 13.5
+config.font = wezterm.font('Terminess Nerd Font Mono')
+config.font_size = 15
 
 wezterm.on (
   'format-tab-title',
   function(tab)
-    local tab_bg = "#211d13"
-    local accent = "#db930d"
+    local tab_bg = "#073642"
+    local accent = "#859900"
     local text = tab_bg
     if not tab.is_active then
-      accent = "#4d3f32"
-      text = "#b8a58C"
+      accent = "#586e75"
+      text = "#eee8d5"
     end
       return wezterm.format({
         { Background = { Color = tab_bg } },
         { Foreground = { Color = accent } },
-        { Text = ' ' .. wezterm.nerdfonts.ple_left_half_circle_thick },
+        -- { Text = ' ' .. wezterm.nerdfonts.ple_left_half_circle_thick },
+        { Text = '█' },
         { Background = { Color = accent } },
         { Foreground = { Color = text } },
         { Text = tostring(tab.tab_index + 1) .. ': ' .. tab.active_pane.title },
         { Background = { Color = tab_bg } },
         { Foreground = { Color = accent } },
-        { Text = wezterm.nerdfonts.ple_right_half_circle_thick .. ' '},
+        -- { Text = wezterm.nerdfonts.ple_right_half_circle_thick .. ' '},
+        { Text = '█ '},
       })
   end
 )
@@ -40,12 +44,12 @@ config.tab_max_width = 38
 
 config.colors = {
   tab_bar = {
-    background = '#211d13',
+    background = '#073642',
 
     active_tab = {
       bg_color = '#ebe0bb',
       fg_color = '#242015',
-      -- "Half", "Normal" or "Bold"
+      -- "Half", "Normakl" or "Bold"
       intensity = 'Bold',
       -- "None", "Single" or "Double"
       underline = 'None',
@@ -69,7 +73,7 @@ config.colors = {
   },
 }
 
-config.color_scheme = "swamp"
+config.color_scheme = "Solarized Dark (Gogh)"
 config.color_schemes = {
     ["swamp"] = {
         foreground = "#ebe0bb",
@@ -86,6 +90,6 @@ config.color_schemes = {
 }
 
 config.inactive_pane_hsb = {saturation = 1.0, brightness = 1.0}
-config.window_padding = {left = 24, right = 24, top = 24, bottom = 24}
+config.window_padding = {left = 12, right = 12, top = 12, bottom = 12}
 
 return config
