@@ -4,7 +4,7 @@
     "layer": "top",
     "output": ["DP-1"],
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["mpris", "custom/spr", "pulseaudio", "custom/spr", "clock"],
+    "modules-right": ["mpris","custom/spr", "cpu", "custom/spr", "memory", "custom/spr", "pulseaudio", "custom/spr", "clock"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -22,11 +22,19 @@
     },
 
     "clock": {
-        "format": "time: {:%I:%M %p}"
+        "format": "time: {:%H:%M %p}"
+    },
+
+    "cpu": {
+        "format": "cpu: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "ram: {}%",
     },
     
     "pulseaudio": {
-        "format": "volume: {volume}%",
+        "format": "vol: {volume}%",
         "format-muted": "muted",
         "tooltip-format": "{volume}",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -43,7 +51,7 @@
     "layer": "top",
     "output": ["DP-2"],
     "modules-right": ["hyprland/workspaces" ],
-    "modules-left": ["clock", "custom/spr", "custom/scr"],
+    "modules-left": ["clock", "custom/spr", "user", "custom/spr", "custom/scr"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -53,6 +61,14 @@
         },
         "format": "{icon}",
         "sort-by-number": true
+    },
+
+    "user": {
+            "format": "uptime: {work_H}:{work_M}",
+            "interval": 1800,
+            "height": 30,
+            "width": 30,
+            "icon": false,
     },
 
     "custom/spr": {
@@ -65,7 +81,7 @@
     },
 
     "clock": {
-        "format": "{:%a, %d %b}"
+        "format": "date: {:%a, %d %b}"
     }
 }]
 

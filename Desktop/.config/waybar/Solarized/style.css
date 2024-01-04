@@ -39,6 +39,9 @@
     font-size: 20px;
 }
 
+#user,
+#cpu,
+#memory,
 #clock,
 #mpris,
 #custom-scr,
