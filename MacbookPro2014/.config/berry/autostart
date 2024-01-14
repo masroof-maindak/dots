@@ -4,12 +4,12 @@
 berryc border_width 0
 berryc inner_border_width 5
 berryc title_height 40
-berryc edge_gap 10 70 10 10
+berryc edge_gap 10 80 10 10
 berryc edge_lock false
 
 # Text
 berryc draw_text true
-berryc set_font "CozetteHiDpi-26"
+berryc set_font "CozetteHiDpi-13"
 berryc decorate_new true
 
 bgc="3a3124"
@@ -48,4 +48,4 @@ nitrogen --restore &
 xset s 480 dpms 600 600 600 &
 ~/.config/berry/launch.sh &
 dunst &
-picom
+# picom
