@@ -48,4 +48,4 @@ nitrogen --restore &
 xset s 480 dpms 600 600 600 &
 ~/.config/berry/launch.sh &
 dunst &
-# picom
+picom
