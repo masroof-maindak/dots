@@ -160,7 +160,7 @@ for_window [class="feh"] floating enable
 
 focus_on_window_activation focus
 
-client.focused          #2aa198 #2aa198 #fdf6e3 #268bd2
-client.focused_inactive #002b36 #073642 #839496 #073642
-client.unfocused        #002b36 #073642 #839496 #073642
-client.urgent           #002b36 #dc322f #fdf6e3 #002b36
+client.focused          #db930d #db930d #242015 #268bd2
+client.focused_inactive #242015 #3a3124 #db930d #3a3124
+client.unfocused        #242015 #3a3124 #db930d #3a3124
+client.urgent           #242015 #a82d56 #ebe0bb #242015
