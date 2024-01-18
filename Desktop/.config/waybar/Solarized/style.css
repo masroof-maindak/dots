@@ -1,9 +1,19 @@
+* {
+    all: unset;
+}
+
 #waybar {
+    padding: 0px 30px;
     color: #fdf6e3;
     background-color: #002b36;
     border-top: 3px solid #073642;
     font-family: "Terminess Nerd Font";
     font-size: 18px;
+}
+
+#custom-spr {
+    font-size: 20px;
+    margin: 0px 30px;
 }
 
 #workspaces {
@@ -13,7 +23,7 @@
 #workspaces button {
     padding: 1px 7px;
     border-radius: 0px;
-    margin: 0px 1px;
+    margin: 1px;
     color: #fdf6e3;
 }
 
@@ -31,20 +41,28 @@
 
 #workspaces button.active {
     background-color: #859900;
-    color: #073642;
+    color: #002b36;
     border: 1px solid #859900;
 }
 
-#custom-spr {
-    font-size: 20px;
+#taskbar {
+    all: unset;
 }
 
-#user,
-#cpu,
-#memory,
-#clock,
-#mpris,
-#custom-scr,
-#pulseaudio {
-    margin: 0px 30px;
+#taskbar button {
+    border-radius: 0px;
+    margin: 0px 2px;
+    padding: 0px 5px;
+    background: #073642;
 }
+
+#taskbar button.active {
+    color: #fdf6e3;
+    border: 1px solid #859900;
+}
+
+#taskbar button.fullscreen {
+    background: #859900;
+    color: #002b36;
+}
+

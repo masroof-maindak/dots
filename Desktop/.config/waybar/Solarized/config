@@ -3,7 +3,7 @@
     "name": "main",
     "layer": "top",
     "output": ["DP-1"],
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "custom/spr", "wlr/taskbar"],
     "modules-right": ["mpris","custom/spr", "cpu", "custom/spr", "memory", "custom/spr", "pulseaudio", "custom/spr", "clock"],
 
     "hyprland/workspaces": {
@@ -16,13 +16,30 @@
         "sort-by-number": true
     },
 
+    "wlr/taskbar": {
+        "format": "{name}",
+        "tooltip-format": "{title}",
+        "all-outputs": "true",
+        "on-click": "activate",
+        "on-click-right": "close",
+        "ignore-list": [
+           "Alacritty"
+        ],
+        "app_ids-mapping": {
+          "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+        }
+    },
+
     "mpris": {
       "format": "{title} - {artist}",
       "ignored-players": ["firefox"]
     },
 
     "clock": {
-        "format": "time: {:%H:%M %p}"
+        "format": "time: {:%H:%M %p} "
     },
 
     "cpu": {
@@ -42,7 +59,7 @@
     },
 
     "custom/spr": {
-      "format": "|"
+      "format": "*"
     }
 }, 
 {
@@ -81,7 +98,7 @@
     },
 
     "clock": {
-        "format": "date: {:%a, %d %b}"
+        "format": " date: {:%a, %d %b}"
     }
 }]
 
