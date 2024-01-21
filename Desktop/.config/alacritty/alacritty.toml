@@ -1,0 +1,34 @@
+[colors.bright]
+black = "0x856a5d"
+blue = "0x80465f"
+cyan = "0x61a0a8"
+green = "0x736f4e"
+magenta = "0xb05d61"
+red = "0xa82d56"
+white = "0xebe0bb"
+yellow = "0xe69a0e"
+
+[colors.normal]
+black = "0x242015"
+blue = "0x91506c"
+cyan = "0x508991"
+green = "0x7a7653"
+magenta = "0xc1666b"
+red = "0x96294d"
+white = "0x9f8875"
+yellow = "0xdb930d"
+
+[colors.primary]
+background = "0x242015"
+foreground = "0xebe0bb"
+
+[font]
+size = 13
+
+[font.normal]
+family = "GoMono Nerd Font"
+style = "Regular"
+
+[window.padding]
+x = 10
+y = 10

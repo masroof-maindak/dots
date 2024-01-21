@@ -1,0 +1,48 @@
+{
+    "position": "bottom",
+    "layer": "top",
+    "margin": "0px 10px 10px 10px",
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/spr",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "custom/spr",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 10
+        },
+        "sort-by-number": true
+    },
+    "mpris": {
+      "format": "<i><b>{title}</b> <small>by</small> <b>{artist}</b></i>",
+        "ignored-players": [
+            "firefox"
+        ]
+    },
+
+    "clock": {
+        "format": "<i>{:%I:%M <b>%p</b>}</i>"
+    },
+    
+    "pulseaudio": {
+        "format": "<i><b>vol</b> {volume}%</i>",
+        "format-muted": "muted",
+        "tooltip-format": "{volume}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol"
+    },
+
+    "custom/spr": {
+      "format": "|"
+    }
+}

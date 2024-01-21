@@ -1,0 +1,74 @@
+*{
+    all: unset;
+}
+
+@define-color color #ebe0bb;
+@define-color background-color #242015;
+@define-color background-color-alt #3a3124;
+@define-color accent #db930d;
+@define-color muted #856a5d;
+
+#waybar {
+    color: @color;
+    background-color: @background-color;
+    font-family: "GoMono Nerd Font";
+    font-size: 15px;
+    border: 6px solid @background-color-alt;
+}
+
+#custom-spr {
+    font-size: 16px;
+    margin: 12px 25px;
+    color: @muted;
+}
+
+#workspaces {
+    margin-left: 28px;
+}
+
+#workspaces button {
+    padding: 1px 2px;
+    border-radius: 0px;
+    margin: 0px 0px;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+#workspaces button.persistent {
+    color: @color;
+}
+
+#workspaces button.empty {
+    color: @muted;
+}
+
+#workspaces button.active {
+    color: @accent;
+}
+
+#clock {
+    margin-right: 30px;
+}
+
+/*
+#taskbar {
+    all: unset;
+}
+
+#taskbar button {
+    border-radius: 0px;
+    margin: 6px 3px;
+    padding: 0px 6px;
+    color: @muted;
+}
+
+#taskbar button.active {
+    color: @color;
+    border-bottom: 1px solid @accent;
+}
+
+#taskbar button.fullscreen {
+    background: @accent;
+    color: @background-color;
+}
+*/
