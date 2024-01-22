@@ -76,8 +76,7 @@ super + {_,shift +}Tab
 
 # Cycle between workspaces while bringing along the current window
 super + control + {_,shift +}Tab
-  id=$(bspc query --nodes --node); bspc node --to-desktop {next, prev}; bspc desktop --focus {next,prev}; bspc node --focus ${id}
-
+	bspc node -d {next,prev}.local --follow
 
 #
 # move/resize
