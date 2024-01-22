@@ -6,6 +6,7 @@
 @define-color background-color #242015;
 @define-color background-color-alt #3a3124;
 @define-color accent #db930d;
+@define-color urgent #a82d56;
 @define-color muted #856a5d;
 
 #waybar {
@@ -22,11 +23,20 @@
     color: @muted;
 }
 
-#workspaces {
+#mpris {
+    margin: 0px 30px;
+}
+
+#clock {
+    margin-right: 30px;
+}
+
+/*workspaces/tags*/
+#workspaces, #tags {
     margin-left: 28px;
 }
 
-#workspaces button {
+#workspaces button, #tags button {
     padding: 1px 2px;
     border-radius: 0px;
     margin: 0px 0px;
@@ -34,41 +44,39 @@
     margin-left: 2px;
 }
 
+/* Hyprland */
+/*All are persistent*/
 #workspaces button.persistent {
     color: @color;
 }
 
+/*Some are empty*/
 #workspaces button.empty {
     color: @muted;
 }
 
+/*One is focused*/
 #workspaces button.active {
     color: @accent;
 }
 
-#clock {
-    margin-right: 30px;
-}
-
-/*
-#taskbar {
-    all: unset;
-}
-
-#taskbar button {
-    border-radius: 0px;
-    margin: 6px 3px;
-    padding: 0px 6px;
+/* River */
+/*default colour*/
+#tags button {
     color: @muted;
 }
 
-#taskbar button.active {
+/*some are occupied*/
+#tags button.occupied {
     color: @color;
-    border-bottom: 1px solid @accent;
 }
 
-#taskbar button.fullscreen {
-    background: @accent;
-    color: @background-color;
+/*some are focused*/
+#tags button.focused {
+    color: @accent;
 }
-*/
+
+/*some are urgent*/
+#tags button.urgent {
+    color: @urgent;
+}
