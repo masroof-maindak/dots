@@ -4,17 +4,18 @@
 # documentation.
 
 waybar &
-swww init &
-kanshi &
+swaybg -i ~/Pictures/Wallpapers/misbehaving.jpg &
+dunst &
+# kanshi &
 
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
-riverctl map normal Super Return spawn foot
+riverctl map normal Super Return spawn wezterm
 
 riverctl map normal Super D spawn $HOME/.config/rofi/scripts/launcher.sh
 riverctl map normal Super E spawn $HOME/.config/rofi/scripts/powermenu.sh
 
-riverctl map normal Super+Shift P spawn 'grim "$(date + %s).png"'
-riverctl map normal Super P spawn 'grim -g "$(slurp -d)" "$(date + %s).png"'
+riverctl map normal Super+Shift P spawn 'grim $(date + %s).png'
+riverctl map normal Super P spawn 'grim -g $(slurp -d) $(date + %s).png'
 
 riverctl map normal Super W spawn thunar
 riverctl map normal Super B spawn firefox
@@ -39,7 +40,7 @@ riverctl map normal Super+Shift K swap previous
 riverctl map normal Super Period focus-output next
 riverctl map normal Super Comma focus-output previous
 
-# Super+Shift+{Period,Comma} to send the focused view to the next/previous output
+# Super+Shift+{Period,Comma} to send the focused view to the next/previous display
 riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
@@ -143,9 +144,9 @@ do
 done
 
 # Set backuround and border color
-riverctl background-color 0xfcf1c7
-riverctl border-color-focused 0x458588
-riverctl border-color-unfocused 0x282828
+riverctl background-color 0x211d13
+riverctl border-color-focused 0xdb930d
+riverctl border-color-unfocused 0x3a3124
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
@@ -157,11 +158,11 @@ riverctl rule-add float -app-id 'float*' -title 'foo'
 riverctl rule-add csd -app-id "bar"
 
 riverctl attach-mode bottom
-riverctl border-width 3
+riverctl border-width 6
 riverctl focus-follows-cursor normal
 riverctl set-cursor-warp on-output-change
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
-rivertile -view-padding 20 -outer-padding 20 -main-ratio 0.52 &
+rivertile -view-padding 10 -outer-padding 10 -main-ratio 0.52 &
