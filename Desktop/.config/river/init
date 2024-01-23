@@ -1,7 +1,5 @@
 #!/bin/sh
-
-# See the river(1), riverctl(1), and rivertile(1) man pages for complete
-# documentation.
+# See the river(1), riverctl(1), and rivertile(1) man pages for complete docs.
 
 waybar -c ~/.config/waybar/config_river &
 swaybg -i ~/Pictures/Wallpapers/misbehaving.jpg &
@@ -9,44 +7,47 @@ eww daemon &
 dunst &
 # kanshi &
 
-# Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
+# Start foot in tiled or floating mode
 riverctl map normal Super Return spawn 'foot'
 riverctl map normal Super+Shift Return spawn 'foot -a floatyFoot'
 
+# Rofi + Eww
 riverctl map normal Super D spawn 'rofi -show drun'
 riverctl map normal Super E spawn 'eww -c ~/.config/eww/ctrl/ open dash --toggle'
 
+# Screenshots
 riverctl map normal Super P spawn 'grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Screenshots/$(date +%F_%T).png'
 riverctl map normal Super+Shift P spawn 'grim - | wl-copy && wl-paste > ~/Screenshots/$(date +%F_%T)_full.png'
 
+# Common Software
 riverctl map normal Super W spawn 'thunar'
 riverctl map normal Super B spawn 'firefox'
 riverctl map normal Super V spawn 'code'
 
-# Super+Q to close the focused view
+# Super+Q to close the focused window
 riverctl map normal Super Q close
 
-# Super+Shift+E to exit river
+# Super+Shift+Q to exit river
 riverctl map normal Super+Shift Q exit
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
 riverctl map normal Super K focus-view previous
 
-# Super+Shift+J and Super+Shift+K to swap the focused view with the next/previous
+# Super+Shift+J and Super+Shift+K to swap the active window with the next/previous
 # view in the layout stack
 riverctl map normal Super+Shift J swap next
 riverctl map normal Super+Shift K swap previous
 
-# Super+Period and Super+Comma to focus the next/previous output
+# Super+Period and Super+Comma to focus the next/previous display
 riverctl map normal Super Period focus-output next
 riverctl map normal Super Comma focus-output previous
 
-# Super+Shift+{Period,Comma} to send the focused view to the next/previous display
+# Super+Shift+{Period,Comma} to send the active window to the next/previous display
 riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
-# Super+Return to bump the focused view to the top of the layout stack
+# Super+Return to bump the active window to the top of the layout stack
 # swap with highest master
 riverctl map normal Super+Control Return zoom
 
@@ -94,14 +95,14 @@ do
     # move to tag i
     riverctl map normal Super $i set-focused-tags $tags
 
-    # Super+Shift+[1-9] to tag focused view with tag [0-8]
+    # Super+Shift+[1-9] to tag active window with tag [0-8]
     # send to tag 1
     riverctl map normal Super+Shift $i set-view-tags $tags
 
     # Super+Control+[1-9] to toggle focus of tag [0-8]
     riverctl map normal Super+Control $i toggle-focused-tags $tags
 
-    # Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
+    # Super+Shift+Control+[1-9] to toggle tag [0-8] of active window
     riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
 done
 
@@ -109,7 +110,7 @@ all_tags=$(((1 << 32) - 1))
 # Super+0 to focus all tags
 # i.e show all windows of all tags
 riverctl map normal Super 0 set-focused-tags $all_tags
-# Super+Shift+0 to tag focused view with all tags
+# Super+Shift+0 to tag active window with all tags
 # i.e show current window on all tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
@@ -159,9 +160,14 @@ riverctl border-color-unfocused 0x3a3124
 riverctl set-repeat 50 300
 
 # Make all views with an app-id that starts with "float" and title "foo" start floating.
-riverctl rule-add float -app-id 'float*' -title 'foo'
-riverctl rule-add float -app-id 'Spotify'
-riverctl rule-add float -app-id 'floatyFoot'
+# THE FOLLOWING WILL BE IMPLEMENTED IN RIVER 0.3, REMOVE COMMENTS THEN
+# riverctl rule-add float -app-id 'float*' -title 'foo'
+# riverctl rule-add float -app-id 'Spotify'
+# riverctl rule-add float -app-id 'floatyFoot'
+
+# REMOVE THESE WHEN RIVER 0.3 COMES OUT
+riverctl float-filter-add app-id "floatyFoot"
+riverctl float-filter-add app-id "Spotify"
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add csd -app-id "bar"
