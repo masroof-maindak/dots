@@ -72,7 +72,7 @@ super + {_,shift + }semicolon
 
 # Cycle between workspaces
 super + {_,shift +}Tab
-	bspc desktop -f {next, prev}.local
+	bspc desktop -f {next, prev}.occupied
 
 # Cycle between workspaces while bringing along the current window
 super + control + {_,shift +}Tab
