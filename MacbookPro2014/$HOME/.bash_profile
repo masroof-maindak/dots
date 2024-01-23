@@ -8,7 +8,7 @@ export GDK_DPI_SCALE=0.5
 
 export TERM=st
 export TERMINAL=st
-export EDITOR=helix
-export VISUAL=helix
+export EDITOR=nvim
+export VISUAL=nvim
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

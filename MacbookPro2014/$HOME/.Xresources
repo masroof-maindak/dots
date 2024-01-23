@@ -1,17 +1,18 @@
 Xft.dpi: 192
-
-Xft.antialias:  0
+Xft.antialias:  1
 Xft.hinting:    1
 Xft.autohint:   0
 Xft.hintstyle:  hintslight
 Xft.rgba:       rgb
 Xft.lcdfilter:  lcddefault
 
-st.font: cozetteHiDpi:pixelsize=26
+! st.font: cozetteHiDpi:size=10
+st.font: Iosevka Nerd Font Mono:size=11
+! st.font: IBM Plex Mono:pixelsize=24
 
-st.borderpx: 35
+st.borderpx: 25
 
-st.alpha: 1.0
+st.alpha: 1
 
 *background: #242015
 *foreground: #ebe0bb

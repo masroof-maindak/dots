@@ -18,13 +18,13 @@ alias q="exit"
 alias dd="dragon-drop"
 
 alias v="vim"
-alias hx="helix"
 alias r="ranger"
 alias p="pacman"
 
 alias pkg="pacman -Q | wc -l"
 alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"
 
+alias scr="cd ~/Screenshots"
 alias doc="cd ~/Documents/"
 alias uni="cd ~/Documents/University/"
 alias cfg="cd ~/.config/"
@@ -32,9 +32,9 @@ alias cfg="cd ~/.config/"
 alias bsp="startx ~/.xinitrc bspwm"
 alias ber="startx ~/.xinitrc berry"
 
-alias brc="hx ~/.bashrc"
-alias bsc="hx ~/.config/bspwm/bspwmrc"
-alias sxc="hx ~/.config/sxhkd/sxhkdrc"
+alias brc="nvim ~/.bashrc"
+alias bsc="nvim ~/.config/bspwm/bspwmrc"
+alias sxc="nvim ~/.config/sxhkd/sxhkdrc"
 
 case ":${PATH}:" in
     *:"$HOME/.local/bin":*)
