@@ -2,7 +2,7 @@
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete docs.
 
 waybar -c ~/.config/waybar/config_river &
-swaybg -i ~/Pictures/Wallpapers/misbehaving.jpg &
+swww init &
 eww daemon &
 dunst &
 # kanshi &
@@ -30,12 +30,12 @@ riverctl map normal Super Q close
 # Super+Shift+Q to exit river
 riverctl map normal Super+Shift Q exit
 
-# Super+J and Super+K to focus the next/previous window in the layout stack
-riverctl map normal Super J focus-window next
-riverctl map normal Super K focus-window previous
+# Super+J and Super+K to focus the next/previous view in the layout stack
+riverctl map normal Super J focus-view next
+riverctl map normal Super K focus-view previous
 
 # Super+Shift+J and Super+Shift+K to swap the active window with the next/previous
-# window in the layout stack
+# view in the layout stack
 riverctl map normal Super+Shift J swap next
 riverctl map normal Super+Shift K swap previous
 
@@ -52,37 +52,37 @@ riverctl map normal Super+Shift Comma send-to-output previous
 riverctl map normal Super+Control Return zoom
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
-riverctl map -repeat normal Super H send-layout-cmd rivertile "main-ratio -0.05"
-riverctl map -repeat normal Super L send-layout-cmd rivertile "main-ratio +0.05"
+riverctl map -repeat normal Super H send-layout-cmd rivertile "main-ratio -0.02"
+riverctl map -repeat normal Super L send-layout-cmd rivertile "main-ratio +0.02"
 
 # Super+Shift+H and Super+Shift+L to increment/decrement the main count of rivertile(1)
 # increment/decrement number of masters in rivertile
 riverctl map normal Super+Shift H send-layout-cmd rivertile "main-count +1"
 riverctl map normal Super+Shift L send-layout-cmd rivertile "main-count -1"
 
-# Super+Alt+{H,J,K,L} to move windows
-riverctl map -repeat normal Super+Alt H move left 100
-riverctl map -repeat normal Super+Alt J move down 100
-riverctl map -repeat normal Super+Alt K move up 100
-riverctl map -repeat normal Super+Alt L move right 100
+# Super+Alt+{H,J,K,L} to move views
+riverctl map normal Super+Alt H move left 100
+riverctl map normal Super+Alt J move down 100
+riverctl map normal Super+Alt K move up 100
+riverctl map normal Super+Alt L move right 100
 
-# Super+Alt+Control+{H,J,K,L} to snap windows to screen edges
+# Super+Alt+Control+{H,J,K,L} to snap views to screen edges
 riverctl map normal Super+Alt+Control H snap left
 riverctl map normal Super+Alt+Control J snap down
 riverctl map normal Super+Alt+Control K snap up
 riverctl map normal Super+Alt+Control L snap right
 
-# Super+Alt+Shift+{H,J,K,L} to resize windows
-riverctl map -repeat normal Super+Alt+Shift H resize horizontal -100
-riverctl map -repeat normal Super+Alt+Shift J resize vertical 100
-riverctl map -repeat normal Super+Alt+Shift K resize vertical -100
-riverctl map -repeat normal Super+Alt+Shift L resize horizontal 100
+# Super+Alt+Shift+{H,J,K,L} to resize views
+riverctl map normal Super+Alt+Shift H resize horizontal -100
+riverctl map normal Super+Alt+Shift J resize vertical 100
+riverctl map normal Super+Alt+Shift K resize vertical -100
+riverctl map normal Super+Alt+Shift L resize horizontal 100
 
-# Super + Left Mouse Button to move windows
-riverctl map-pointer normal Super BTN_LEFT move-window
+# Super + Left Mouse Button to move views
+riverctl map-pointer normal Super BTN_LEFT move-view
 
-# Super + Right Mouse Button to resize windows
-riverctl map-pointer normal Super BTN_RIGHT resize-window
+# Super + Right Mouse Button to resize views
+riverctl map-pointer normal Super BTN_RIGHT resize-view
 
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
@@ -97,13 +97,13 @@ do
 
     # Super+Shift+[1-9] to tag active window with tag [0-8]
     # send to tag 1
-    riverctl map normal Super+Shift $i set-window-tags $tags
+    riverctl map normal Super+Shift $i set-view-tags $tags
 
     # Super+Control+[1-9] to toggle focus of tag [0-8]
     riverctl map normal Super+Control $i toggle-focused-tags $tags
 
     # Super+Shift+Control+[1-9] to toggle tag [0-8] of active window
-    riverctl map normal Super+Shift+Control $i toggle-window-tags $tags
+    riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
 done
 
 all_tags=$(((1 << 32) - 1))
@@ -112,7 +112,7 @@ all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 # Super+Shift+0 to tag active window with all tags
 # i.e show current window on all tags
-riverctl map normal Super+Shift 0 set-window-tags $all_tags
+riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
 # Super+Space to toggle float
 riverctl map normal Super Space toggle-float
@@ -159,7 +159,7 @@ riverctl border-color-unfocused 0x3a3124
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
 
-# Make all windows with an app-id that starts with "float" and title "foo" start floating.
+# Make all views with an app-id that starts with "float" and title "foo" start floating.
 # THE FOLLOWING WILL BE IMPLEMENTED IN RIVER 0.3, REMOVE COMMENTS THEN
 # riverctl rule-add float -app-id 'float*' -title 'foo'
 # riverctl rule-add float -app-id 'Spotify'
@@ -169,7 +169,7 @@ riverctl set-repeat 50 300
 riverctl float-filter-add app-id "floatyFoot"
 riverctl float-filter-add app-id "Spotify"
 
-# Make all windows with app-id "bar" and any title use client-side decorations
+# Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add csd -app-id "bar"
 
 riverctl attach-mode bottom
@@ -180,4 +180,4 @@ riverctl set-cursor-warp on-output-change
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
-rivertile -window-padding 5 -outer-padding 5 -main-ratio 0.52 &
+rivertile -view-padding 5 -outer-padding 5 -main-ratio 0.52 &
