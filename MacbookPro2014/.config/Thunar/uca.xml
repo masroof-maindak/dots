@@ -12,4 +12,26 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>wallpaper</icon>
+	<name>fehWall</name>
+	<submenu></submenu>
+	<unique-id>1706886782635515-1</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>wallpaper</icon>
+	<name>fehWallTile</name>
+	<submenu></submenu>
+	<unique-id>1706886782635515-1</unique-id>
+	<command>feh --bg-tile %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>
