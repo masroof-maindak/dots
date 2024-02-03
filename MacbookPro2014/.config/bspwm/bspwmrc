@@ -4,7 +4,7 @@ xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
 /usr/lib/polkit-1/polkitd &
 eww open topbar &
-nitrogen --restore &
+~/.fehbg &
 dunst &
 
 bspc monitor -d 1 2 3 4 5 6 7
