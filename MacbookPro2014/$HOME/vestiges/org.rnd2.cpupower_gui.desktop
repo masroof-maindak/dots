@@ -1,0 +1,48 @@
+[Desktop Entry]
+Version=1.1
+Name[el_GR]=Ρυθμίσεις διεπαφής χρήστη
+Name[hu]=cpupower-gui
+Name[nl]=cpupower-gui
+Name[it]=cpupower-gui
+Name[zh_CN]=cpupower 图形界面
+Name=cpupower-gui
+GenericName[el_GR]=Ρυθμίσεις συχνότητας επεξεργαστή
+GenericName[en]=CPU frequency settings
+GenericName[en_GB]=CPU frequency settings
+GenericName[nl]=CPU-snelheidsinstellingen
+GenericName[it]=Impostazioni della frequenza della CPU
+GenericName[zh_CN]=CPU 频率设置
+GenericName=CPU frequency settings
+Comment[el_GR]=Ορισμός ορίων συχνότητας επεξεργαστή
+Comment[en]=Sets the frequency limits of the CPU
+Comment[en_GB]=Sets the frequency limits of the CPU
+Comment[nl]=Stelt de snelheidsbeperkingen van de CPU in
+Comment[it]=Imposta i limiti di frequenza della CPU
+Comment[zh_CN]=设置 CPU 的频率限制
+Comment=Sets the frequency limits of the CPU
+Exec=cpupower-gui
+Icon=org.rnd2.cpupower_gui
+Terminal=false
+Type=Application
+DBusActivatable=true
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings
+Keywords[el_GR]=συχνότητα;όρια;
+Keywords[en]=frequency;limits;
+Keywords[en_GB]=frequency;limits;
+Keywords[hu]=frekvencia;korlát;
+Keywords[nl]=snelheid;beperkingen;
+Keywords[it]=frequenza;limiti;
+Keywords[zh_CN]=频率;限制;
+Keywords=frequency;limits;
+Actions=Performance;Balanced;
+
+[Desktop Action Performance]
+Name[el_GR]=Αλλαγή σε προφίλ επίδοσης
+Name=Switch to Performance profile
+Exec=gapplication launch org.rnd2.cpupower_gui Performance
+
+[Desktop Action Balanced]
+Name[el_GR]=Αλλαγή σε ισορροπημένο προφίλ
+Name=Switch to Balanced profile
+Exec=cpupower-gui

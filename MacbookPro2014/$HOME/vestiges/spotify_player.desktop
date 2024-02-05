@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+Exec=st -c Spotify -e spotify_player

@@ -1,0 +1,36 @@
+[[themes]]
+name = "swamp"
+[themes.palette]
+background = "#242015"
+foreground = "#ebe0bb"
+black = "#272316"
+red = "#96294d"
+green = "#7a7653"
+yellow = "#db930d"
+blue = "#91506c"
+magenta = "#c1666b"
+cyan = "#508991"
+white = "#9F8875"
+bright_black = "#3a3124"
+bright_red = "#a82d56"
+bright_green = "#746f4e"
+bright_yellow = "#b06733"
+bright_blue = "#80465f"
+bright_magenta = "#b05d61"
+bright_cyan = "#61a0a8"
+bright_white = "#ebe0bb"
+[themes.component_style]
+block_title = { fg = "BrightYellow"  }
+border = {}
+
+playback_track = { fg = "Yellow" }
+playback_artists = { fg = "Yellow" }
+playback_album = { fg = "Magenta" }
+playback_metadata = { fg = "White" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+
+current_playing = { fg = "Green" }
+page_desc = { fg = "BrightRed" }
+
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Reversed"] }
