@@ -88,23 +88,15 @@ if [ "$device" = "MacbookPro2014" ]; then
     chmod +x "$HOME"/.config/rofi/scripts/launcher.sh
     chmod +x "$HOME"/.config/rofi/scripts/powermenu.sh
 
-    # TODO: install Eww for X11
+    # Install Eww for X11
+    git clone https://github.com/elkowar/eww ~/Documents/Programs/eww
+    cd ~/Documents/Programs/eww || exit
+    cargo build -r --no-default-features --features x11
+    sudo mv target/release/eww $HOME/.local/bin
+    chmod +x $HOME/.local/bin/eww
 fi
 
-# git ssh setup - universal
-ssh-keygen -t rsa -b 4096 -C "mujtaba.asim.amin@gmail.com" -f $HOME/.ssh/id_rsa -N ""
-eval "$(ssh-agent -s)"
-ssh-add $HOME/.ssh/id_rsa
-cat $HOME/.ssh/id_rsa.pub > $HOME/paste-me-into-github-settings
-git config --global user.name "masroof-maindak"
-git config --global user.email "mujtaba.asim.amin@gmail.com"
-
-# TODO: install spotify-player - universal
-
-# TODO: vencord setup - universal
-
 # Install swamp GTK theme + Firefox chrome - universal
-# set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` in `about:config
 git clone https://github.com/masroof-maindak/swamp.nvim.git
 cd swamp.nvim || exit
 cd extras || exit
@@ -114,6 +106,21 @@ cd ..
 mv firefox/* "$HOME"/mozilla/firefox/*.default-release/chrome/
 cd ../..
 rm -rf swamp.nvim
+
+# git ssh setup - universal
+ssh-keygen -t rsa -b 4096 -C "mujtaba.asim.amin@gmail.com" -f $HOME/.ssh/id_rsa -N ""
+eval "$(ssh-agent -s)"
+ssh-add $HOME/.ssh/id_rsa
+cat $HOME/.ssh/id_rsa.pub > $HOME/paste-me-into-github-settings
+git config --global user.name "masroof-maindak"
+git config --global user.email "mujtaba.asim.amin@gmail.com"
+
+# Install spotify-player - universal
+git clone https://github.com/aome510/spotify-player.git $HOME/Documents/Programs/spotify-player
+cd $HOME/Documents/Programs/spotify-player || exit
+cargo build -r --features lyric-finder,notify
+sudo mv target/release/spotify-player $HOME/.local/bin/spotify_player
+chmod +x $HOME/.local/bin/spotify_player
 
 # clone neovim - universal
 git clone https://github.com/masroof-maindak/nvim.git "$HOME"/.config/nvim
