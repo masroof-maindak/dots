@@ -91,7 +91,13 @@ if [ "$device" = "MacbookPro2014" ]; then
     # TODO: install Eww for X11
 fi
 
-# TODO: git ssh setup - universal
+# git ssh setup - universal
+ssh-keygen -t rsa -b 4096 -C "mujtaba.asim.amin@gmail.com" -f $HOME/.ssh/id_rsa -N ""
+eval "$(ssh-agent -s)"
+ssh-add $HOME/.ssh/id_rsa
+cat $HOME/.ssh/id_rsa.pub > $HOME/paste-me-into-github-settings
+git config --global user.name "masroof-maindak"
+git config --global user.email "mujtaba.asim.amin@gmail.com"
 
 # TODO: install spotify-player - universal
 
