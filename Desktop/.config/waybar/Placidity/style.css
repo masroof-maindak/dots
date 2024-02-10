@@ -1,43 +1,91 @@
-#waybar {
-  color: #282828;
-  background-color: #fbf1c7;
-  border: 3px solid;
-  border-bottom: none;
-  font-family: "VictorMono";
-  font-size: 18px;
-
+*{
+    all: unset;
 }
 
-#tags {
-  margin: 13px 40px 10px;
-  font-size: 20px;
+@define-color color #282828;
+@define-color background-color #fbf1c7;
+@define-color background-color-alt #282828;
+@define-color accent #79740e;
+@define-color urgent #cc241d;
+@define-color muted #7c6f64;
+
+window#waybar {
+    color: @color;
+    background-color: transparent;
 }
 
-#tags button {
-  padding: 3px;
-  font-style: italic;
-  color: #928374;
-  border-radius: 5px;
-}
-
-#tags button.occupied {
-  color: #282828;
-}
-
-#tags button.focused {
-	color: #458588;
+.modules-left,
+.modules-center,
+.modules-right {
+    font-family: "GoMono Nerd Font";
+    font-size: 13px;
+    box-shadow: 5px 5px @background-color-alt;
+    background: @background-color;
+    border: 2px solid;
+    padding: 0px 30px;
+    margin: 0px 16px 10px 16px;
 }
 
 #custom-spr {
-  font-size: 20px;
-  margin: 0px -20px;
+    font-size: 14px;
+    margin: 7px 25px;
+    color: @muted;
 }
 
-#custom-scr,
-#pulseaudio {
-  margin: 0px 40px;
+#mpris {
+    /* margin: 0px 30px; */
 }
 
-#clock{
-  margin: 0px 40px;
+#clock {
+    /* margin-right: 30px; */
+}
+
+/*workspaces/tags*/
+#workspaces, #tags {
+    /* margin-left: 28px; */
+}
+
+#workspaces button, #tags button {
+    padding: 1px 2px;
+    border-radius: 0px;
+    margin: 0px 0px;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+/* Hyprland */
+/*All are persistent*/
+#workspaces button.persistent {
+    color: @color;
+}
+
+/*Some are empty*/
+#workspaces button.empty {
+    color: @muted;
+}
+
+/*One is focused*/
+#workspaces button.active {
+    color: @accent;
+}
+
+/* River */
+/*default colour*/
+#tags button {
+    color: @muted;
+}
+
+/*some are occupied*/
+#tags button.occupied {
+    color: @color;
+}
+
+/*some are focused*/
+#tags button.focused {
+    color: @accent;
+}
+
+/*some are urgent*/
+#tags button.urgent {
+    color: @urgent;
 }
