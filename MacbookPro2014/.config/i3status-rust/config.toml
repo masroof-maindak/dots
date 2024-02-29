@@ -1,0 +1,64 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "gruvbox-dark"
+[theme.overrides]
+idle_bg = "#3a3124"
+idle_fg = "#ebe0bb"
+info_bg = "#91506c"
+info_fg = "#ebe0bb"
+good_bg = "#7a7653"
+good_fg = "#ebe0bb"
+warning_bg = "#db930d"
+warning_fg = "#242015"
+critical_bg = "#96294d"
+critical_fg = "#ebe0bb"
+separator = " "
+separator_bg = "#242015"
+separator_fg = "#db930d"
+
+[[block]]
+block = "music"
+format = " $icon  {$combo.str(max_w:50)  $prev $play $next |}"
+
+[icons]
+icons = "awesome6"
+[icons.overrides]
+
+[[block]]
+block = "uptime"
+interval = 3600 # update every hour
+
+[[block]]
+block = "battery"
+interval = 30
+full_format = " $icon $percentage "
+
+[[block]]
+block = "sound"
+show_volume_when_muted = true
+[[block.click]]
+button = "left"
+cmd = ""
+
+[[block]]
+block = "time"
+interval = 60
+format = " \uf073   $timestamp.datetime(f:'%b %d, %A') "
+
+[[block]]
+block = "time"
+interval = 60
+format = " $icon  $timestamp.datetime(f:'%I:%M %p') "
+
+[[block]]
+block = "menu"
+text = " \uf011 "
+[[block.items]]
+display = " -&gt; Power Off &lt;-"
+cmd = "poweroff"
+confirm_msg = " Are you sure you want to power off? "
+[[block.items]]
+display = " -&gt;  Reboot   &lt;-"
+cmd = "reboot"
+confirm_msg = " Are you sure you want to reboot? "

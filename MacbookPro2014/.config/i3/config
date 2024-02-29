@@ -1,8 +1,8 @@
 set $mod Mod4
 
-font pango: 0xProto 9
+font pango: IBM Plex Sans 10
 exec_always --no-startup-id autotiling
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id ~/.fehbg
 exec --no-startup-id xset s 480 dpms 600 600 600
 exec --no-startup-id dunst
 exec --no-startup-id /usr/lib/polkit-1/polkitd
@@ -10,6 +10,7 @@ exec --no-startup-id /usr/lib/polkit-1/polkitd
 gaps inner 6
 smart_borders on
 floating_maximum_size 2400 x 1400
+default_border normal 0
 
 title_align center
 
@@ -31,8 +32,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 ## App shortcuts
-bindsym $mod+p exec maim -s ~/$(date +%s).png
-bindsym $mod+Shift+p exec shotgun
+bindsym $mod+p exec shotgun $(slop -f "-i %i -g %g") - | tee ~/Screenshots/$(date +%F_%T).png | xclip -t 'image/png' -selection clipboard
+bindsym $mod+Shift+p exec shotgun - | tee ~/Screenshots/$(date +%F_%T).png | xclip -t 'image/png' -selection clipboard
+
 bindsym $mod+w exec thunar
 bindsym $mod+b exec firefox
 bindsym $mod+c exec code
@@ -135,15 +137,15 @@ bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym h resize shrink width 10 px
-        bindsym j resize grow height 10 px
-        bindsym k resize shrink height 10 px
-        bindsym l resize grow width 10 px
+    bindsym h resize shrink width 10 px
+    bindsym j resize grow height 10 px
+    bindsym k resize shrink height 10 px
+    bindsym l resize grow width 10 px
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+# back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -164,3 +166,19 @@ client.focused          #db930d #db930d #242015 #268bd2
 client.focused_inactive #242015 #3a3124 #db930d #3a3124
 client.unfocused        #242015 #3a3124 #db930d #3a3124
 client.urgent           #242015 #a82d56 #ebe0bb #242015
+
+bar {
+    font pango:IBM Plex Sans, Font Awesome 6 Free 10
+    position bottom
+    status_command i3status-rs
+    tray_output none
+    colors {
+        separator #856
+        background #242015
+        statusline #ebe0bb
+        focused_workspace #db930d #db930d #242015
+        active_workspace #3a3124 #3a3124 #ebe0bb
+        inactive_workspace #3a3124 #3a3124 #db930d
+        urgent_workspace #a82d56 #a82d56 #ebe0bb
+    }
+}
