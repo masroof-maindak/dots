@@ -59,6 +59,7 @@ if [ "$device" = "MacbookPro2014" ]; then
     sudo mv "$deviceDir"/\$HOME/vestiges/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
     sudo mv "$deviceDir"/\$HOME/vestiges/org.rnd2.cpupower_gui.desktop /usr/share/applications/org.rnd2.cpupower_gui.desktop
     sudo mv "$deviceDir"/\$HOME/vestiges/spotify_player.desktop /usr/share/applications/spotify_player.desktop
+    sudo mv "$deviceDir"/\$HOME/vestiges/syncthing.desktop /usr/share/applications/syncthing.desktop
     rm -rf "$HOME"/vestiges
 
     # enable mbpfan and NetworkManager service - Mac

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=syncthing
+Exec=st -c Syncthing -e syncthing

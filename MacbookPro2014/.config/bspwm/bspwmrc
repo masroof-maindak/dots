@@ -40,8 +40,9 @@ bspc rule -a firefox desktop='^2'
 bspc rule -a Spotify desktop='^3' 
 bspc rule -a discord desktop='^4'
 bspc rule -a Gthumb desktop='^5'
+bspc rule -a Syncthing desktop='^7'
 
 bspc rule -a feh state=floating
 bspc rule -a Zathura state=tiled
 bspc rule -a Cpupower-gui state=floating
-bspc rule -a Lxappearance state=floati
+bspc rule -a Lxappearance state=floating
