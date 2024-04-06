@@ -1,9 +1,8 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
 
 PS1="\033[0;33m\W\033[0m ;; "
 

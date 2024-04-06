@@ -13,15 +13,14 @@
   :namespace "eww"
   :geometry (geometry
     :x "0%" :y "0%"
-    :width "3%" :height "69%"
-    :anchor "right center")
+    :width "3%" :height "80%"
+    :anchor "left center")
     (box
       :class "topbar_box"
       :orientation "v"
       (top_module)
       (center_module)
-      (bottom_module)
-    ))
+      (bottom_module)))
 
 (defwidget top_module []
   (box
@@ -32,8 +31,7 @@
     :halign "center"
     :spacing 6
     (pointer_module)
-    (workspaces)
-    ))
+    (workspaces)))
 
 (defwidget center_module []
   (box
@@ -42,8 +40,7 @@
     :orientation "v"
     :halign "center"
     :valign "center"
-    (time_module)
-    ))
+    (time_module)))
 
 (defwidget bottom_module []
   (box
