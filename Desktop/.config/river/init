@@ -2,9 +2,9 @@
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete docs.
 
 waybar -c ~/.config/waybar/config_river &
-swww init &
 eww daemon &
 dunst &
+swww-daemon  &
 # kanshi &
 
 # Start foot in tiled or floating mode
@@ -18,7 +18,6 @@ riverctl map normal Super E spawn 'eww -c ~/.config/eww/ctrl/ open dash --toggle
 # Screenshots
 riverctl map normal Super P spawn 'grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Screenshots/$(date +%F_%T).png'
 riverctl map normal Super+Shift P spawn 'grim - | wl-copy && wl-paste > ~/Screenshots/$(date +%F_%T)_full.png'
-
 # Common Software
 riverctl map normal Super W spawn 'thunar'
 riverctl map normal Super B spawn 'firefox'
@@ -96,7 +95,7 @@ do
     riverctl map normal Super $i set-focused-tags $tags
 
     # Super+Shift+[1-9] to tag active window with tag [0-8]
-    # send to tag 1
+    # send to tag i
     riverctl map normal Super+Shift $i set-view-tags $tags
 
     # Super+Control+[1-9] to toggle focus of tag [0-8]
@@ -139,12 +138,10 @@ riverctl map passthrough Super F11 enter-mode normal
 # not have a modifier
 for mode in normal locked
 do
-    # Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
     riverctl map -repeat $mode None XF86AudioRaiseVolume  spawn 'amixer sset Master 1%+'
     riverctl map -repeat $mode None XF86AudioLowerVolume  spawn 'amixer sset Master 1%-'
     riverctl map $mode None XF86AudioMute         spawn 'amixer sset Master toggle'
 
-    # Control MPRIS aware media players with playerctl (https://github.com/altdesktop/playerctl)
     riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
     riverctl map $mode None XF86AudioPlay  spawn 'playerctl play-pause'
     riverctl map $mode None XF86AudioPrev  spawn 'playerctl previous'
@@ -160,14 +157,9 @@ riverctl border-color-unfocused 0x3a3124
 riverctl set-repeat 50 300
 
 # Make all views with an app-id that starts with "float" and title "foo" start floating.
-# THE FOLLOWING WILL BE IMPLEMENTED IN RIVER 0.3, REMOVE COMMENTS THEN
-# riverctl rule-add float -app-id 'float*' -title 'foo'
-# riverctl rule-add float -app-id 'Spotify'
-# riverctl rule-add float -app-id 'floatyFoot'
-
-# REMOVE THESE WHEN RIVER 0.3 COMES OUT
-riverctl float-filter-add app-id "floatyFoot"
-riverctl float-filter-add app-id "Spotify"
+riverctl rule-add -app-id 'float*' -title 'foo' float
+riverctl rule-add -app-id 'Spotify' float
+riverctl rule-add -app-id 'floatyFoot' float
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add csd -app-id "bar"
