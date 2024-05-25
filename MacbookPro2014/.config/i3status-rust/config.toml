@@ -26,10 +26,6 @@ icons = "awesome6"
 [icons.overrides]
 
 [[block]]
-block = "uptime"
-interval = 3600 # update every hour
-
-[[block]]
 block = "battery"
 interval = 30
 full_format = " $icon $percentage "

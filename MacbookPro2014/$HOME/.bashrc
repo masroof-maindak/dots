@@ -23,6 +23,7 @@ alias dd="dragon-drop"
 
 alias v="nvim"
 alias p="pacman"
+alias l="lf"
 
 alias pkg="pacman -Q | wc -l"
 alias bt="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"

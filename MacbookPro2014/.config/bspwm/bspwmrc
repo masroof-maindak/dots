@@ -2,6 +2,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 xsetroot -cursor_name left_ptr &
 xset s 480 dpms 600 600 600 &
+xset r rate 300 50
 /usr/lib/polkit-1/polkitd &
 eww open topbar &
 ~/.fehbg &

@@ -4,6 +4,7 @@ font pango: IBM Plex Sans 10
 exec_always --no-startup-id autotiling
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id xset s 480 dpms 600 600 600
+exec --no-startup-id xset r rate 300 50
 exec --no-startup-id dunst
 exec --no-startup-id /usr/lib/polkit-1/polkitd
 
