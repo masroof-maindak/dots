@@ -37,6 +37,9 @@ XF86Audio{Next,Prev,Play}
 XF86MonBrightness{Up,Down}
   brightnessctl set 5%{+,-}
 
+XF86KbdBrightness{Up,Down}
+  brightnessctl --device='smc::kbd_backlight' set 5%{+,-}
+
 # restart bspwm & sxhkd
 super + shift + {r, q}
   {pkill -USR1 -x sxhkd, bspc wm -r}
