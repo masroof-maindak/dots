@@ -1,0 +1,26 @@
+.workspacesWidget {
+    margin: 7px 0px;
+    transition: 0.15s;
+    background-color: $base00;
+
+    .workspacesBox {
+        transition: 0.15s;
+        margin: 2px;
+        min-height: 10px;
+        min-width: 10px;
+        border-radius: 10;
+    }
+    
+    .activeWorkspace {
+        padding: 0px 5px;
+        background-color: $baseA0;
+    }
+
+    .inactiveWorkspace {
+        background-color: $base03;
+    }
+
+    .emptyWorkspace {
+        background-color: $base01;
+    }
+}

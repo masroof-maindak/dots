@@ -1,0 +1,19 @@
+(defwidget workspaces []
+    (eventbox
+      (box
+        :class "workspacesWidget"
+        :space-evenly false
+        (for num in {[0, 1, 2, 3, 4, 5, 6]}
+          (workspace :id {workspaces[num].id} :state {workspaces[num].state})))))
+  
+ (defwidget workspace [id state]
+    (eventbox
+      :onclick "./scripts/bspwm_setWorkspace --set ${id}"
+      :cursor "pointer"
+      (box
+        :class 'workspacesBox ${
+        state == "active" ? "activeWorkspace" :
+        state == "inactive" ? "inactiveWorkspace" :
+        "emptyWorkspace"}')))
+
+(deflisten workspaces :initial "{}" "./scripts/bspwm_getWorkspace")

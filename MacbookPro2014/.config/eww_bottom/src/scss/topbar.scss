@@ -1,0 +1,62 @@
+.topbar_box {
+  padding: 0px 6px;
+  border-top: 2px solid;
+  border-color: $base01;
+  background-color: $base00;
+}
+
+$commonMargin: 6px;
+
+//aqi
+.module_text {
+    padding: 2px 10px;
+    background-color: $base01;
+    font-weight: 600;
+}
+
+//clock + resize mode
+.text {
+    margin: $commonMargin 0px;
+    padding: 2px 10px;
+    background-color: $base01;
+    font-weight: 600;
+}
+
+// Volume and battery bar progress
+.scale trough {
+    min-height: 7px; 
+    min-width: 50px; 
+    background-color: $base01;
+    padding: 0px;
+}
+
+.scale trough highlight {
+    background-color: $base04;
+}
+
+.urgent_scale trough highlight {
+   background-color: $baseA0;
+}
+
+//wrapper AROUND the progress bar
+.scale_wrapper_box {
+    padding: 6px;
+    background-color: $base01;
+}
+
+// Volume and battery bars (whole thing's box)
+.meter {
+    margin: $commonMargin 0px;
+}
+
+.icons {
+    background-color: $base01;
+    font-family: "Symbols Nerd Font Mono";
+    min-width: 18px;
+    font-size: 9px;
+}
+
+@import "./topbar/music.scss";
+@import "./topbar/volume.scss";
+@import "./topbar/battery.scss";
+@import "./topbar/workspaces.scss";

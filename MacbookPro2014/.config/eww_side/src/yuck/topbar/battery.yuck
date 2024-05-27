@@ -1,0 +1,24 @@
+(defwidget battery_module [] 
+  (box
+    :space-evenly false 
+    :class "meter"
+    :tooltip "${batInfo.value}% battery"
+    (box
+      :space-evenly false
+      :orientation "v"
+      :spacing 2
+      (box
+        :class "scale_wrapper_box"
+        (scale 
+          :class "${batInfo.state == 'charging' ? 'charging': batInfo.value < 31 ? 'urgent_scale': 'discharging'} scale"
+          :value {batInfo.value}
+          :orientation "v"
+          :flipped true
+          :active false
+          :max 101
+          :min 0))
+      (label
+          :class "lightning icons"
+          :text "󱐋"))))
+
+(defpoll batInfo :interval "40s" :initial '{"value": "50", "state": "discharging" }' "./scripts/battery")

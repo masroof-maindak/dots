@@ -1,0 +1,54 @@
+(include "./src/yuck/topbar/workspaces.yuck")
+(include "./src/yuck/topbar/time_module.yuck")
+(include "./src/yuck/topbar/pointerMode.yuck")
+(include "./src/yuck/topbar/battery.yuck")
+(include "./src/yuck/topbar/volume.yuck")
+(include "./src/yuck/topbar/aqi.yuck")
+
+(defwindow topbar
+  :wm-ignore true
+  :stacking "fg"
+  :windowtype "dock"
+  :class "topbar_window"
+  :namespace "eww"
+  :geometry (geometry
+    :x "0%" :y "0%"
+    :width "3%" :height "80%"
+    :anchor "left center")
+    (box
+      :class "topbar_box"
+      :orientation "v"
+      (top_module)
+      (center_module)
+      (bottom_module)))
+
+(defwidget top_module []
+  (box
+    :class "left_module_box"
+    :space-evenly false
+    :orientation "v"
+    :valign "start"
+    :halign "center"
+    :spacing 6
+    (pointer_module)
+    (workspaces)))
+
+(defwidget center_module []
+  (box
+    :class "center_module_box"
+    :space-evenly false
+    :orientation "v"
+    :halign "center"
+    :valign "center"
+    (time_module)))
+
+(defwidget bottom_module []
+  (box
+    :class "right_module_box"
+    :space-evenly false
+    :orientation "v"
+    :halign "center"
+    :valign "end"
+    :spacing 6
+    (volume_module)
+    (battery_module)))

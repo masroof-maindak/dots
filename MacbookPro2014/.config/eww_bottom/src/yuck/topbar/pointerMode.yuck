@@ -1,0 +1,11 @@
+(defwidget pointer_module []
+    (eventbox
+      :space-evenly false
+      :orientation "h"
+      :tooltip "Click to change to ${mode == 'move' ? 'Resize' : 'Move'}"
+      :onclick "eww update mode=${mode == 'move' ? "resize_corner" : "move"} && bspc config pointer_action1 ${mode == 'move' ? "resize_corner" : "move"}"
+      (box
+        :class "text"
+        (label :text "${mode == 'move' ? 'move' : 'resize'}"))))
+
+(defvar mode "resize_corner")

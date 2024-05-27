@@ -1,0 +1,18 @@
+(defwidget aqi_module [] 
+  (box
+    :orientation "h"
+    :space-evenly false 
+    :class "meter"
+    :tooltip "Air quality index"
+    :spacing 2
+    (box
+      :space-evenly false
+      :spacing 2
+      (label
+          :class "leaf icons"
+          :text "󰌪"))
+      (label
+        :class "module_text"
+        :text {aqi})))
+
+(defpoll aqi :interval "1h" :initial '143' "./scripts/aqi.sh")
