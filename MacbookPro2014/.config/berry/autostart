@@ -3,13 +3,13 @@
 # Set decoration geometry
 berryc border_width 0
 berryc inner_border_width 0
-berryc title_height 40
+berryc title_height 35
 berryc edge_gap 10 68 10 10
 berryc edge_lock false
 
 # Text
 berryc draw_text true
-berryc set_font "CozetteHiDpi-13"
+berryc set_font "Maple Mono-9"
 berryc decorate_new true
 
 bgc="3a3124"
@@ -44,8 +44,9 @@ berryc name_desktop 9 "j"
 
 # Start sxhkd and other programs
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-nitrogen --restore &
+~/.fehbg &
 xset s 480 dpms 600 600 600 &
+xset r rate 300 50
 $HOME/.config/polybar/launch.sh &
 dunst
 # picom

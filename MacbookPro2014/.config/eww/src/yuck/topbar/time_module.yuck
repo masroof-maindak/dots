@@ -1,7 +1,0 @@
-(defwidget time_module []
-    (box
-      :class "text"
-      :space-evenly false
-      :orientation "v"
-      :tooltip {formattime(EWW_TIME, "%c")}
-      (label :text {formattime(EWW_TIME, "%H\\n%M\\n%S")})))

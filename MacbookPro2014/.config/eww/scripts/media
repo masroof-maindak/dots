@@ -1,7 +1,0 @@
-#!/usr/bin/bash
-playerctl --follow metadata --format {{title}} | while read -r _; do
-    line=$(playerctl metadata --format "{\"length\":\"$(( $(playerctl metadata --format '{{mpris:length}}') / 1000000 ))\",\"artist\":\"{{xesam:artist}}\",\"title\":\"$(playerctl metadata title | sed 's/"/\\"/g')\"}")
-    curl $(playerctl metadata mpris:artUrl) -o ~/.config/eww/cache/cover.png
-    echo $line
-    eww update albumArtLocation="/home/maindak/.config/eww/cache/cover.png"
-done
