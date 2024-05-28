@@ -120,7 +120,7 @@ git config --global user.email "mujtaba.asim.amin@gmail.com"
 git clone https://github.com/aome510/spotify-player.git $HOME/Documents/Programs/spotify-player
 cd $HOME/Documents/Programs/spotify-player || exit
 cargo build -r --features lyric-finder,notify
-sudo mv target/release/spotify-player $HOME/.local/bin/spotify_player
+mv target/release/spotify_player $HOME/.local/bin/spotify_player
 chmod +x $HOME/.local/bin/spotify_player
 
 # clone neovim - universal
