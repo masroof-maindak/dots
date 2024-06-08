@@ -1,0 +1,28 @@
+.progress trough highlight {
+    background-color: $red;
+}
+
+$minH: 20px;
+
+.progress trough {
+    min-height: $minH; 
+    min-width: 3px;
+    background-color: $base02;
+    padding: 0px;
+}
+
+.album {
+    background-size: cover;
+    background-position: center;
+    min-height: $minH;
+    min-width: 58px; 
+}
+
+.music_box {
+    margin: 4px;
+}
+
+.overlay_layer {
+    background: $base01;
+    opacity: 0.6;
+}

@@ -1,0 +1,25 @@
+(defwidget music_bar []
+    (box 
+    :orientation "h"
+    :class "music_box"
+    :tooltip "${playerctl.title} ~ ${playerctl.artist}"
+    :spacing 2
+    :space-evenly false
+        (scale
+            :class "progress"
+            :active false
+            :orientation "v"
+            :flipped true
+            :value "${playerctlStatus == "Playing" ? playerctlPos : 0}"
+            :max {playerctl.length}
+            :min 0)
+        (overlay
+            (box :class "album" :style "background-image: url('${albumArtLocation}');")
+            (box :class "overlay_layer")
+            (button :onclick "playerctl play-pause" :onrightclick "playerctl next"))))
+
+
+(deflisten playerctlStatus :initial false "playerctl --follow status")
+(deflisten playerctl :initial '{"length":"", "artist":"", "title": ""}' "./scripts/media")
+(defpoll playerctlPos :initial 1 :interval "2s" :run-while {playerctlStatus == "Playing"} "playerctl position | awk -F. '{print $1}'")
+(defvar albumArtLocation "/home/maindak/.config/eww/cache/bkp.png")

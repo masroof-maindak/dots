@@ -1,0 +1,31 @@
+$drkHrd: #211d13;
+$mainBG: #242015;
+$base01: #3a3124;
+$base02: #4d3f32;
+$base03: #5f4e41;
+$base04: #b8a58c;
+$base05: #d2c3a4;
+$mainFG: #ebe0bb;
+$green:  #717653;
+$red:    #a82d56;
+$blue:   #508991;
+$pink:   #c1666b;
+$purple: #91506c;
+
+$accent: #db930d;
+
+* {
+  all: unset;
+  color: $base04;
+  font-family: "Maple Mono";
+  font-size: 14px;
+}
+
+tooltip {
+  font-weight: 500;
+  background: $base01;
+  border: 3px solid $drkHrd;
+  padding: 10px 20px;
+}
+
+@import "./src/scss/topbar.scss";

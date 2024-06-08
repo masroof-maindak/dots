@@ -1,0 +1,58 @@
+.topbar_box {
+  padding: 0px 4px;
+  border: 3px solid $base01;
+  background-color: $mainBG;
+}
+
+.pfp_square_bar {
+  padding: 0px;
+  background-color: $accent;
+}
+
+//clock
+.text {
+    margin: 4px 0px;
+    padding: 0px 4px;
+    padding-top: 1px;
+    background-color: $base01;
+    font-weight: 600;
+}
+
+// Volume and battery bar progress
+.scale trough {
+    min-width: 40px; 
+    min-height: 7px; 
+    background-color: $base01;
+    padding: 0px;
+}
+.scale trough highlight {
+    background-color: $base04;
+}
+.urgent_scale trough highlight {
+   background-color: $accent;
+}
+
+//wrapper AROUND the progress bar
+.scale_wrapper_box {
+    padding: 6px;
+    background-color: $base01;
+}
+
+// Volume and battery bars (whole thing's box)
+.meter {
+    margin: 4px 0px;
+}
+
+.icons {
+    background-color: $base01;
+    font-family: "Symbols Nerd Font";
+    min-height: 18px;
+    min-width: 18px;
+    font-size: 11px;
+}
+
+@import "./topbar/music.scss";
+@import "./topbar/volume.scss";
+@import "./topbar/battery.scss";
+@import "./topbar/pointer.scss";
+@import "./topbar/workspaces.scss";

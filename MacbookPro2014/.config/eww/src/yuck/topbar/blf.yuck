@@ -1,0 +1,10 @@
+(defwidget blf_module []
+    (eventbox
+        :tooltip "Click to turn BLF ${filter == 'off' ? 'on' : 'off'}"
+        :onclick "redshift ${filter == 'off' ? "-O 3700" : "-x"} && eww update filter=${filter == 'off' ? "on" : "off"}"
+        (box
+          	(label 
+          	    :class "icons pointer_icon"
+          	    :text "${filter == 'off' ? '󰨀' : '󰧿'}"))))
+
+(defvar filter "off")

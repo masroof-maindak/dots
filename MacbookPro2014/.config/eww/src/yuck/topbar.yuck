@@ -1,0 +1,52 @@
+(include "./src/yuck/topbar/workspaces.yuck")
+(include "./src/yuck/topbar/time_module.yuck")
+(include "./src/yuck/topbar/pointerMode.yuck")
+(include "./src/yuck/topbar/battery.yuck")
+(include "./src/yuck/topbar/volume.yuck")
+(include "./src/yuck/topbar/music.yuck")
+(include "./src/yuck/topbar/blf.yuck")
+
+; eww open-many bar:b1 --arg b1:x=5 --arg b1:w=118 --arg b1:widget_name=wspBar bar:b2 --arg b2:x=128 --arg b2:w=214 --arg b2:widget_name=timeBar bar:b3 --arg b3:x=347 --arg b3:w=133 --arg b3:widget_name=musicBar
+
+(defwindow bar [x w widget_name]
+	:wm-ignore false
+	:stacking "bg"
+	:windowtype "dock"
+	:class "topbar_window"
+	:namespace "eww bar"
+	:geometry (geometry :x x :y 5 :width w :height 34 :anchor "top left")
+	:reserve (struts :distance "78px" :side "top") ; distance = height*2 (DPI issues) + y*2 (margin)
+	(box
+  	  	:class "topbar_box"
+  	  	:orientation "h"
+		:valign "fill"
+  	  	(literal :content "(${widget_name})")))
+
+(defwidget wspBar []
+  	(box
+  	  	:orientation "h"
+  	  	:valign "center"
+  	  	:halign "center"
+		:space-evenly false
+		:spacing 4
+  	  	(workspaces)))
+
+(defwidget timeBar []
+  	(box
+  	  	:class "timeBar_box"
+  	  	:space-evenly false
+  	  	:spacing 4
+  	  	:orientation "h"
+  	  	:valign "center"
+  	  	(time_module)
+		(volume_module)
+		(battery_module)))
+
+(defwidget musicBar []
+  	(box
+  	  	:space-evenly false
+  	  	:orientation "h"
+  	  	:spacing 6
+  	  	(music_bar)
+		(blf_module)
+		(pointer_module)))
