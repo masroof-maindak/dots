@@ -1,5 +1,4 @@
 configuration {
-    font:                       "IBM Plex Mono 18";
     terminal:                   "st";
 	modi:                       "drun";
     show-icons:                 false;
@@ -7,15 +6,16 @@ configuration {
 }
 
 * {
+    font:                       "Maple Mono 18";
     background:     #211d13;
-    foreground:     #ebe0bb;
-    selected:       #db930d;
+    foreground:     #5f4e41;
+    selected:       #ebe0bb;
 }
 
 window {
     transparency:                "real";
-    location:                    north;
-    anchor:                      north;
+    location:                    south;
+    anchor:                      south;
     fullscreen:                  false;
     width:                       2560;
     x-offset:                    0px;
