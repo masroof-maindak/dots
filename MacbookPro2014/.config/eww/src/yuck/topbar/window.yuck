@@ -1,0 +1,5 @@
+(defwidget active_window_name []
+    (box
+        (label :limit-width 50 :text name_var)))
+
+(deflisten name_var "xtitle -s")

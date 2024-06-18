@@ -1,0 +1,29 @@
+(defwidget volume_module [] 
+    (eventbox
+        :tooltip "${volum.value}% volume"
+		:onhover "eww update volum_reveal=true"
+		:onhoverlost "eww update volum_reveal=false"
+        (box
+			:class "meter"
+            :space-evenly false
+            :spacing 2
+            :orientation "h"
+			(revealer
+				:transition "slideleft"
+				:reveal volum_reveal
+				:duration "350ms"
+				(scale 
+					:class "${volum.icon == '' ? 'muted_bar' : 'null'} scale"
+					:onchange "./scripts/volume --set {}"
+					:value {volum.value}
+					:orientation "h"
+					:max 101
+					:min 0))
+            (overlay
+                (label
+                    :class "icons vol_icon ${volum.value > 80 ? 'urgent_vol' : 'null'}"
+                    :text {volum.icon})
+                (button :onclick "./scripts/volume --toggle")))))
+
+(defvar volum_reveal false)
+(deflisten volum :initial '{"icon": "", "value": "50" }' "./scripts/volume --get")

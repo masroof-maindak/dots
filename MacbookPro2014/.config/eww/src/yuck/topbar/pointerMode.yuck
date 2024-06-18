@@ -1,0 +1,10 @@
+(defwidget pointer_module []
+    (eventbox
+        :tooltip "Click to change mouse drag action to ${mode == 'move' ? 'resize' : 'move/swap'}"
+        :onclick "eww update mode=${mode == 'move' ? "resize_corner" : "move"} && bspc config pointer_action1 ${mode == 'move' ? "resize_corner" : "move"}"
+        (box
+          	(label 
+          	    :class "icons big_icon"
+          	    :text "${mode == 'move' ? '󰆾' : '󰩨'}"))))
+
+(defvar mode "resize_corner")

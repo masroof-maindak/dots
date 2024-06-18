@@ -1,0 +1,10 @@
+// Volume and battery bar progress
+.scale trough {
+    min-width: 50px;
+    min-height: 10px; 
+    background-color: $base01;
+}
+
+.scale trough highlight {
+    background-color: $base03;
+}

@@ -1,0 +1,20 @@
+.workspacesWidget {
+
+    .workspacesBox {
+        margin: 1px;
+        min-height: 8px;
+        min-width: 8px;
+    }
+    
+    .activeWorkspace {
+        background-color: $accent;
+    }
+
+    .inactiveWorkspace {
+        background-color: $base03;
+    }
+
+    .emptyWorkspace {
+        background-color: $base01;
+    }
+}

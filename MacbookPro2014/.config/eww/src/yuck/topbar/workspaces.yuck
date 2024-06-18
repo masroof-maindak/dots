@@ -1,0 +1,31 @@
+(defwidget workspaces []
+    (eventbox
+        :valign "center"
+        (box
+            :orientation "v"
+            :class "workspacesWidget"
+            :space-evenly false
+            (box
+                :orientation "h"
+                (for num in {[0, 1, 2]}
+                    (workspace :id {workspaces[num].id} :state {workspaces[num].state})))
+            (box
+                :orientation "h"
+                (for num in {[3, 4, 5]}
+                  (workspace :id {workspaces[num].id} :state {workspaces[num].state})))
+            (box
+                :orientation "h"
+                (for num in {[6, 7, 8]}
+                  (workspace :id {workspaces[num].id} :state {workspaces[num].state}))))))
+
+(defwidget workspace [id state]
+   (eventbox
+    	:onclick "bspc desktop -f ${id}"
+    	:cursor "pointer"
+    	(box
+    		:class 'workspacesBox ${
+    		state == "active" ? "activeWorkspace" :
+    		state == "inactive" ? "inactiveWorkspace" :
+    		"emptyWorkspace"}')))
+
+(deflisten workspaces :initial "{}" "./scripts/bspwm_getWorkspace")

@@ -1,0 +1,28 @@
+(defwidget battery_module [] 
+  	(eventbox
+  	  	:tooltip "${batInfo.value}% battery"
+		:onhover "eww update bat_reveal=true"
+		:onhoverlost "eww update bat_reveal=false"
+  	  	(box
+	  	  	:class "meter"
+  	  	  	:space-evenly false
+  	  	  	:orientation "h"
+  	  	  	:spacing 2
+			(revealer
+				:transition "slideleft"
+				:reveal bat_reveal
+				:duration "350ms"
+				(scale
+				  	:class "scale"
+				  	:value {batInfo.value}
+				  	:orientation "h"
+				  	:flipped false
+				  	:active false
+				  	:max 101
+				  	:min 0))
+  	  	  	(label
+  	  	  	    :class "icons big_icon ${batInfo.state == 'charging' ? 'charging': batInfo.value < 31 ? 'urgent' : 'null'}_icon"
+  	  	  	    :text "󱐋"))))
+
+(defvar bat_reveal false)
+(defpoll batInfo :interval "45s" :initial '{"value": "50", "state": "discharging"}' "./scripts/battery")

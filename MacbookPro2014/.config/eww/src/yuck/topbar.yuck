@@ -1,0 +1,65 @@
+(include "./src/yuck/topbar/workspaces.yuck")
+(include "./src/yuck/topbar/time_module.yuck")
+(include "./src/yuck/topbar/pointerMode.yuck")
+(include "./src/yuck/topbar/battery.yuck")
+(include "./src/yuck/topbar/window.yuck")
+(include "./src/yuck/topbar/volume.yuck")
+(include "./src/yuck/topbar/music.yuck")
+(include "./src/yuck/topbar/blf.yuck")
+
+(defwindow topbar []
+	:wm-ignore false
+	:stacking "bg"
+	:windowtype "dock"
+	:class "topbar_window"
+	:namespace "eww bar"
+	:geometry (geometry :y -5 :width 1270 :anchor "bottom center")
+	:reserve (struts :distance "94px" :side "bottom") ; distance = (real)height + y*2 (margin)
+	(box
+  	  	:class "topbar_box"
+  	  	:orientation "h"
+        :halign "fill"
+		:valign "fill"
+        (left)
+        (middle)
+        (right)))
+
+(defwidget left []
+  	(box
+  	  	:orientation "h"
+  	  	:valign "center"
+  	  	:halign "start"
+		:space-evenly false
+		:spacing 4
+  	  	(workspaces)
+        (sep)
+		(music_bar)))
+
+(defwidget right []
+  	(box
+  	  	:class "right_box"
+  	  	:space-evenly false
+  	  	:spacing 6
+  	  	:orientation "h"
+  	  	:halign "end"
+  	  	:valign "center"
+        (volume_module)
+        (battery_module)
+		(pointer_module)
+		(blf_module)
+        (sep)
+  	  	(time_module)))
+
+(defwidget middle []
+  	(box
+  	  	:space-evenly false
+  	  	:orientation "h"
+        :halign "center"
+  	  	:spacing 6
+		(active_window_name)
+    ))
+    
+
+(defwidget sep []
+  (box :vexpand "false" :hexpand "false" :valign "center"
+    (label :class "separ" :text "|" :valign "center")))
