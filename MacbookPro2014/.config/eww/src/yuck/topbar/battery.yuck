@@ -21,7 +21,7 @@
 				  	:max 101
 				  	:min 0))
   	  	  	(label
-  	  	  	    :class "icons big_icon ${batInfo.state == 'charging' ? 'charging': batInfo.value < 31 ? 'urgent' : 'null'}_icon"
+  	  	  	    :class "icons big_icon ${batInfo.state == 'charging' ? 'charging': batInfo.value < 15 ? 'v_urgent' : batInfo.value < 31 ? 'urgent' : 'null'}_icon"
   	  	  	    :text "󱐋"))))
 
 (defvar bat_reveal false)
