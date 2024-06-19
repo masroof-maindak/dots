@@ -18,10 +18,11 @@
                 :class "main_text"
                 :halign "start"
                 (label :limit-width 25 :text {playerctl.title}))
-            (box
-                :class "sub_text"
-                :halign "start"
-                (label :limit-width 25 :text {playerctl.artist}))))))
+            ; (box
+            ;     :class "sub_text"
+            ;     :halign "start"
+            ;     (label :limit-width 25 :text {playerctl.artist}))
+            ))))
 
 (deflisten playerctlStatus :initial false "playerctl --follow status")
 (deflisten playerctl :initial '{"length":"", "artist":"", "title": ""}' "./scripts/media")

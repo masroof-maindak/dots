@@ -32,22 +32,24 @@
 		:space-evenly false
 		:spacing 4
   	  	(workspaces)
-        (sep)
 		(music_bar)))
 
 (defwidget right []
   	(box
   	  	:class "right_box"
   	  	:space-evenly false
-  	  	:spacing 6
+  	  	:spacing 12
   	  	:orientation "h"
   	  	:halign "end"
   	  	:valign "center"
-        (volume_module)
-        (battery_module)
-		(pointer_module)
-		(blf_module)
-        (sep)
+		(box
+			:space-evenly false
+			:spacing 6
+			(volume_module)
+			(battery_module)
+			(pointer_module)
+			(blf_module))
+		(sep)
   	  	(time_module)))
 
 (defwidget middle []
@@ -56,10 +58,12 @@
   	  	:orientation "h"
         :halign "center"
   	  	:spacing 6
-		(active_window_name)
-    ))
+		(active_window_name)))
     
-
 (defwidget sep []
-  (box :vexpand "false" :hexpand "false" :valign "center"
-    (label :class "separ" :text "|" :valign "center")))
+	(box
+		:valign "center"
+		:orientation "h"
+		:width 1
+		:height 24
+		:class "separ"))

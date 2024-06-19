@@ -3,6 +3,7 @@
         :space-evenly false
         :orientation "v"
         :valign "center"
+        :style "margin-right: 2px;"
         (box
             :class "main_text"
             :halign "start"
@@ -11,5 +12,5 @@
         (box
             :class "sub_text"
             :halign "start"
-            (label :text {formattime(EWW_TIME, "%b %d, '%y")})))
+            (label :text {formattime(EWW_TIME, "%y/%m/%d")})))
 )
