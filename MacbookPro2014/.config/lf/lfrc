@@ -4,30 +4,33 @@ set mouse
 set ratios 2:5:7
 set info size
 set period 1
+set ifs "\n"
+set scrolloff 10
 
+
+#___
 set previewer ctpv
 set cleaner ctpvclear
 &ctpv -s $id
 &ctpvquit $id
 
-# set internal field separator (IFS) to "\n" for shell commands
-# This is useful to automatically split file names in $fs and $fx properly
-# since default file separator used in these variables (i.e. 'filesep' option)
-# is newline. You need to consider the values of these options and create your
-# commands accordingly.
-set ifs "\n"
 
-set scrolloff 10
-
-# Use the `dim` attribute instead of underline for the cursor in the preview pane
+#___
+# preview pane is `dim` insead of `underline`
 set cursorpreviewfmt "\033[7;2m"
 
+
+#___
 # use enter for shell commands
 map <enter> shell
 
+
+#___
 # show the result of execution of previous commands
 map ` !true
 
+
+#___
 # execute current file (must be executable)
 map x $$f
 map X !$f
@@ -36,10 +39,6 @@ map X !$f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
-# define a custom 'open' command
-# This command is called when current file is not a directory. You may want to
-# use either file extensions and/or mime types here. Below uses an editor for
-# text files and a file opener for the rest.
 cmd open &{{
     case $(file --mime-type -Lb $f) in
         text/*) lf -remote "send $id \$$EDITOR \$fx";;
@@ -47,20 +46,31 @@ cmd open &{{
     esac
 }}
 
+
+#___
 map p : paste;clear
 
-# mkdir command. See wiki if you want it to select created dir
+
+#___
+# mkdir command
 map a :push %mkdir<space>
 
-# define a custom 'rename' command without prompt for overwrite
-# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-# map r push :rename<space>
 
 cmd trash %set -f; mv $fx ~/.trash
 
-# select/jump to file/folder
+
+#___
+# Drag files
+cmd drag ${{
+  dragon-drop $fx
+}}
+map RA :drag
+
+
+#___
+# Select/Jump to file/folder
 cmd fzf_jump ${{
-  res="$(find . -maxdepth 8 | fzf --reverse --header='Jump to location')"
+  res="$(find . -maxdepth 8 | fzf --reverse --header='Jump...')"
   if [ -f "$res" ]; then
     cmd="select"
   elif [ -d "$res" ]; then
@@ -70,6 +80,8 @@ cmd fzf_jump ${{
 }}
 map <c-f> :fzf_jump
 
+
+#___
 # Search contents of files inside current directory
 cmd fzf_search ${{
     RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
@@ -83,22 +95,34 @@ cmd fzf_search ${{
 }}
 map gs :fzf_search
 
+
+#___
 # delete
 cmd delete ${{
     set -f
     printf "$fx\n"
-    printf "delete? [y/n]: "
+    printf "delete? [Y/n]: "
     read ans
-    [ "$ans" = "y" ] && rm -rf $fx
+    [ "$ans" = "n" ] || rm -rf $fx
 }}
 map D :delete
 
+
+#___
 # set wallpaper
 cmd setwall ${{
     feh --bg-fill "$f"
 }}
-map WA :setwall
 
+cmd setwallTile ${{
+    feh --bg-tile "$f"
+}}
+
+map WAL :setwall
+map WAT :setwallTile
+
+
+#___
 cmd toggle_preview %{{
     if [ "$lf_preview" = "true" ]; then
         lf -remote "send $id :set preview false; set ratios 1:5"
@@ -108,6 +132,8 @@ cmd toggle_preview %{{
 }}
 map zp toggle_preview
 
+
+#___
 # Edit config
 cmd edit-config ${{
     $EDITOR ~/.config/lf/lfrc
@@ -115,6 +141,9 @@ cmd edit-config ${{
 }}
 map C edit-config
 
+
+#___
+# Move in parent directory
 cmd move-parent &{{
     dironly="setlocal '$(dirname "$PWD")' dironly"
     lf -remote "send $id :updir; $dironly true; $1; $dironly false; open"
@@ -122,6 +151,8 @@ cmd move-parent &{{
 map J move-parent down
 map K move-parent up
 
+
+#___
 # extract
 cmd extract ${{
     set -f
@@ -136,6 +167,8 @@ cmd extract ${{
 }}
 map x extract
 
+
+#___
 # compress targz
 cmd tar ${{
     set -f
@@ -145,6 +178,8 @@ cmd tar ${{
     rm -rf $1
 }}
 
+
+#___
 # compress zip
 cmd zip ${{
     set -f
