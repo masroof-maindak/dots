@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias cur="cd ~/Documents/wrk/EdgeNodeUsageAnalysis/"
+
 # Binds
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
@@ -9,9 +11,14 @@ bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
 # Prompt
-PS1="\033[0;33m\W\033[0m ;; "
+PS1="\W \033[0;33m; \033[0m"
 # PS1="\033[0;33m\w\033[0m \n$ "
-# PS1="\033[0;33m\W\033[0m\nΣ "
+# PS1="\033[0;33m\u \033[2m\w \033[0m> "
+# PS1="\033[0;33m\u \033[2m\w \033[0m\nΣ "
+
+# Unlimited history
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # Aliases
 alias ls="ls -hN --color=auto --group-directories-first"
@@ -23,7 +30,7 @@ alias dd="dragon-drop"
 
 alias v="nvim"
 alias p="pacman"
-alias l="lf"
+alias l="lfcd"
 
 alias pkg="pacman -Q | wc -l"
 alias bt="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"
@@ -31,8 +38,10 @@ alias bt="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percenta
 alias scr="cd ~/Screenshots/"
 alias dow="cd ~/Downloads/"
 alias doc="cd ~/Documents/"
-alias uni="cd ~/Documents/University/"
-alias asm="cd ~/Documents/University/CAAL/ASM/"
+alias dev="cd ~/Documents/dev/"
+alias uni="cd ~/Documents/uni/"
+alias wrk="cd ~/Documents/wrk/"
+alias wrk2="cd ~/Documents/wrk2/"
 alias cfg="cd ~/.config/"
 
 alias bsp="startx ~/.xinitrc bspwm"
@@ -45,6 +54,7 @@ alias i3c="v ~/.config/i3/config"
 alias sxc="v ~/.config/sxhkd/sxhkdrc"
 
 alias pubip='curl ipinfo.io/ip'
+alias copy='xclip -selection clipboard <'
 
 # Functions
 lfcd () {
