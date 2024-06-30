@@ -2,7 +2,7 @@
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete docs.
 
 waybar -c ~/.config/waybar/config_river &
-eww daemon &
+# eww daemon &
 dunst &
 swww-daemon  &
 # kanshi &
@@ -163,6 +163,18 @@ riverctl rule-add -app-id 'floatyFoot' float
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add csd -app-id "bar"
+
+# borders
+riverctl rule-add -app-id dragon-drop ssd
+riverctl rule-add -app-id firefox ssd
+riverctl rule-add -app-id thunar ssd
+riverctl rule-add -app-id imv ssd
+
+# initial tags
+riverctl rule-add -app-id code tags 1
+riverctl rule-add -app-id firefox tags 2
+riverctl rule-add -app-id Spotify tags 3
+riverctl rule-add -app-id discord tags 4
 
 riverctl attach-mode bottom
 riverctl border-width 6
